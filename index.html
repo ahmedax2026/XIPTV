@@ -226,6 +226,8 @@
         }
 
 
+        /* ================= REAL LOGO ================= */
+
         .brand-logo {
 
             display:
@@ -234,106 +236,56 @@
             align-items:
                 center;
 
-            gap:
-                12px;
-
             text-decoration:
                 none;
+
+            height:
+                100%;
+
+            min-width:
+                0;
         }
 
 
-        .logo-graphic {
+        .brand-logo img {
 
             display:
-                flex;
+                block;
 
-            align-items:
+            width:
+                auto;
+
+            height:
+                56px;
+
+            max-width:
+                190px;
+
+            object-fit:
+                contain;
+
+            object-position:
                 center;
 
-            font-size:
-                30px;
-
-            font-weight:
-                900;
-
-            line-height:
-                1;
-        }
-
-
-        .logo-graphic .arrows {
-
-            color:
-                var(--red);
-
-            margin-left:
-                2px;
+            transition:
+                .3s ease;
 
             filter:
                 drop-shadow(
-                    0 0 7px
-                    rgba(229,9,26,.45)
+                    0 3px 12px
+                    rgba(229,9,26,.12)
                 );
         }
 
 
-        .logo-graphic .x-white {
+        .brand-logo:hover img {
 
-            color:
-                var(--text);
-
-            font-weight:
-                900;
+            transform:
+                scale(1.04);
         }
 
 
-        .brand-text-container {
-
-            display:
-                flex;
-
-            flex-direction:
-                column;
-
-            text-align:
-                right;
-        }
-
-
-        .brand-text-top {
-
-            font-size:
-                11px;
-
-            font-weight:
-                700;
-
-            color:
-                var(--muted);
-        }
-
-
-        .brand-text-bottom {
-
-            font-size:
-                21px;
-
-            font-weight:
-                900;
-
-            background:
-                var(--gold-gradient);
-
-            -webkit-background-clip:
-                text;
-
-            -webkit-text-fill-color:
-                transparent;
-
-            line-height:
-                1.1;
-        }
-
+        /* ================= HEADER ACTIONS ================= */
 
         .header-actions {
 
@@ -1821,24 +1773,15 @@
             }
 
 
-            .brand-text-top {
+            /* Mobile Logo */
 
-                font-size:
-                    9px;
-            }
+            .brand-logo img {
 
+                height:
+                    44px;
 
-            .brand-text-bottom {
-
-                font-size:
-                    18px;
-            }
-
-
-            .logo-graphic {
-
-                font-size:
-                    25px;
+                max-width:
+                    145px;
             }
 
 
@@ -1859,6 +1802,13 @@
 
                 height:
                     38px;
+            }
+
+
+            .header-actions {
+
+                gap:
+                    7px;
             }
 
 
@@ -2002,15 +1952,12 @@
 
     <a href="/" class="brand-logo" aria-label="X IPTV - الصفحة الرئيسية">
 
-        <div class="logo-graphic">
-            <span class="arrows">❯❯</span>
-            <span class="x-white">X</span>
-        </div>
-
-        <div class="brand-text-container">
-            <span class="brand-text-top">سيرفر IPTV</span>
-            <span class="brand-text-bottom">إكس</span>
-        </div>
+        <!-- صورة اللوجو -->
+        <img
+            src="LOGO.jpg"
+            alt="X IPTV - سيرفر إكس"
+            width="600"
+            height="180">
 
     </a>
 
@@ -2627,16 +2574,25 @@
 
             <div class="accordion-content">
 
+                <div class="rich-desc-box">
+
+                    <h3>
+                        <i class="fa-brands fa-android"></i>
+                        تطبيق X IPTV للأندرويد
+                    </h3>
+
+                    <p>
+                        حمّل تطبيق X IPTV على الموبايل وشاشات Android
+                        وأجهزة TV BOX واختر النسخة المناسبة لك.
+                    </p>
+
+                </div>
+
+
                 <p>
-                    حمّل تطبيق سيرفر إكس X IPTV على الموبايل أو شاشات
-                    Android وأجهزة TV BOX، واختر النسخة المناسبة لك.
-                </p>
-
-
-                <div style="margin-top:15px;">
 
                     <strong>
-                        📱 تطبيقات X IPTV:
+                        تحميل التطبيقات:
                     </strong>
 
                     <br>
@@ -2650,7 +2606,7 @@
 
                         <i class="fa-solid fa-download"></i>
 
-                        XTV PRO
+                        XTV PRO APK
 
                     </a>
 
@@ -2663,16 +2619,18 @@
 
                         <i class="fa-solid fa-download"></i>
 
-                        XTV Code V3
+                        XTV Code V3 APK
 
                     </a>
 
-                </div>
+                </p>
 
 
                 <p style="margin-top:15px;">
 
-                    🔑 أكواد Downloader:
+                    <strong>
+                        أكواد Downloader المتاحة:
+                    </strong>
 
                     <span class="code-badge">
                         5833417
@@ -2694,7 +2652,10 @@
 
 
                 <p style="margin-top:10px;">
-                    يمكنك تجربة أي من الأكواد المتاحة حسب التطبيق أو طريقة التحميل المناسبة لجهازك.
+
+                    يمكنك تجربة أي من الأكواد المتاحة حسب التطبيق
+                    أو طريقة التحميل المناسبة لجهازك.
+
                 </p>
 
             </div>
@@ -2726,10 +2687,19 @@
 
             <div class="accordion-content">
 
-                <p>
-                    لتشغيل سيرفر إكس على أجهزة iPhone وiPad وApple TV،
-                    يمكنك استخدام تطبيقات IPTV المتوافقة مع نظام Apple.
-                </p>
+                <div class="rich-desc-box">
+
+                    <h3>
+                        <i class="fa-brands fa-apple"></i>
+                        تطبيقات X IPTV لأجهزة Apple
+                    </h3>
+
+                    <p>
+                        لتشغيل سيرفر إكس على أجهزة iPhone وiPad وApple TV،
+                        يمكنك استخدام تطبيقات IPTV المتوافقة مع نظام Apple.
+                    </p>
+
+                </div>
 
 
                 <div style="margin-top:15px;">
@@ -2764,7 +2734,9 @@
 
                 <p style="margin-top:15px;">
 
-                    🔑 كود Code Play:
+                    <strong>
+                        كود Code Play:
+                    </strong>
 
                     <span class="code-badge">
                         070
@@ -2807,38 +2779,36 @@
 
                         <i class="fa-solid fa-display"></i>
 
-                        تشغيل X IPTV على شاشات LG و SAMSUNG
+                        تطبيق PLAYER 0
 
                     </h3>
 
 
                     <p>
-                        ابحث عن تطبيق <strong>PLAYER 0</strong>
-                        في متجر التطبيقات الخاص بالشاشة، ثم افتح التطبيق
-                        واختر <strong>PORTAL CODE</strong>.
+
+                        حمّل تطبيق
+                        <strong>PLAYER 0</strong>
+                        على شاشة LG أو Samsung،
+                        ثم ادخل إلى
+                        <strong>PORTAL CODE</strong>
+                        وأدخل الكود التالي مع اسم المستخدم وكلمة السر.
+
                     </p>
 
+
+                    <div style="margin-top:12px;">
+
+                        <strong>
+                            كود PORTAL CODE:
+                        </strong>
+
+                        <span class="code-badge">
+                            75886993
+                        </span>
+
+                    </div>
+
                 </div>
-
-
-                <p>
-
-                    🔑 كود الدخول الخاص بسيرفر X:
-
-                    <span class="code-badge">
-                        75886993
-                    </span>
-
-                </p>
-
-
-                <p style="margin-top:12px;">
-
-                    بعد إدخال الكود، قم بإدخال
-                    <strong>اسم المستخدم وكلمة السر</strong>
-                    الخاصة باشتراكك لإتمام التشغيل.
-
-                </p>
 
             </div>
 
