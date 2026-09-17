@@ -7,6 +7,10 @@
     <!-- ================= SEO ================= -->
     <title>X IPTV | سيرفر إكس - اشتراك وتجديد X IPTV</title>
 
+    <!-- ================= FAVICON ================= -->
+    <link rel="icon" type="image/jpeg" href="LOGO.jpg">
+    <link rel="apple-touch-icon" href="LOGO.jpg">
+
     <meta name="description"
           content="X IPTV - سيرفر إكس للبث عبر الإنترنت. تعرف على أسعار اشتراك X IPTV، طريقة التجديد، وطريقة تشغيل الخدمة على الموبايل والشاشات الذكية والكمبيوتر.">
 
@@ -226,8 +230,6 @@
         }
 
 
-        /* ================= REAL LOGO ================= */
-
         .brand-logo {
 
             display:
@@ -236,56 +238,106 @@
             align-items:
                 center;
 
+            gap:
+                12px;
+
             text-decoration:
                 none;
-
-            height:
-                100%;
-
-            min-width:
-                0;
         }
 
 
-        .brand-logo img {
+        .logo-graphic {
 
             display:
-                block;
+                flex;
 
-            width:
-                auto;
-
-            height:
-                56px;
-
-            max-width:
-                190px;
-
-            object-fit:
-                contain;
-
-            object-position:
+            align-items:
                 center;
 
-            transition:
-                .3s ease;
+            font-size:
+                30px;
+
+            font-weight:
+                900;
+
+            line-height:
+                1;
+        }
+
+
+        .logo-graphic .arrows {
+
+            color:
+                var(--red);
+
+            margin-left:
+                2px;
 
             filter:
                 drop-shadow(
-                    0 3px 12px
-                    rgba(229,9,26,.12)
+                    0 0 7px
+                    rgba(229,9,26,.45)
                 );
         }
 
 
-        .brand-logo:hover img {
+        .logo-graphic .x-white {
 
-            transform:
-                scale(1.04);
+            color:
+                var(--text);
+
+            font-weight:
+                900;
         }
 
 
-        /* ================= HEADER ACTIONS ================= */
+        .brand-text-container {
+
+            display:
+                flex;
+
+            flex-direction:
+                column;
+
+            text-align:
+                right;
+        }
+
+
+        .brand-text-top {
+
+            font-size:
+                11px;
+
+            font-weight:
+                700;
+
+            color:
+                var(--muted);
+        }
+
+
+        .brand-text-bottom {
+
+            font-size:
+                21px;
+
+            font-weight:
+                900;
+
+            background:
+                var(--gold-gradient);
+
+            -webkit-background-clip:
+                text;
+
+            -webkit-text-fill-color:
+                transparent;
+
+            line-height:
+                1.1;
+        }
+
 
         .header-actions {
 
@@ -1773,15 +1825,24 @@
             }
 
 
-            /* Mobile Logo */
+            .brand-text-top {
 
-            .brand-logo img {
+                font-size:
+                    9px;
+            }
 
-                height:
-                    44px;
 
-                max-width:
-                    145px;
+            .brand-text-bottom {
+
+                font-size:
+                    18px;
+            }
+
+
+            .logo-graphic {
+
+                font-size:
+                    25px;
             }
 
 
@@ -1802,13 +1863,6 @@
 
                 height:
                     38px;
-            }
-
-
-            .header-actions {
-
-                gap:
-                    7px;
             }
 
 
@@ -1952,12 +2006,15 @@
 
     <a href="/" class="brand-logo" aria-label="X IPTV - الصفحة الرئيسية">
 
-        <!-- صورة اللوجو -->
-        <img
-            src="LOGO.jpg"
-            alt="X IPTV - سيرفر إكس"
-            width="600"
-            height="180">
+        <div class="logo-graphic">
+            <span class="arrows">❯❯</span>
+            <span class="x-white">X</span>
+        </div>
+
+        <div class="brand-text-container">
+            <span class="brand-text-top">سيرفر IPTV</span>
+            <span class="brand-text-bottom">إكس</span>
+        </div>
 
     </a>
 
@@ -2574,25 +2631,16 @@
 
             <div class="accordion-content">
 
-                <div class="rich-desc-box">
-
-                    <h3>
-                        <i class="fa-brands fa-android"></i>
-                        تطبيق X IPTV للأندرويد
-                    </h3>
-
-                    <p>
-                        حمّل تطبيق X IPTV على الموبايل وشاشات Android
-                        وأجهزة TV BOX واختر النسخة المناسبة لك.
-                    </p>
-
-                </div>
-
-
                 <p>
+                    حمّل تطبيق سيرفر إكس X IPTV على الموبايل أو شاشات
+                    Android وأجهزة TV BOX، واختر النسخة المناسبة لك.
+                </p>
+
+
+                <div style="margin-top:15px;">
 
                     <strong>
-                        تحميل التطبيقات:
+                        📱 تطبيقات X IPTV:
                     </strong>
 
                     <br>
@@ -2606,7 +2654,7 @@
 
                         <i class="fa-solid fa-download"></i>
 
-                        XTV PRO APK
+                        XTV PRO
 
                     </a>
 
@@ -2619,18 +2667,16 @@
 
                         <i class="fa-solid fa-download"></i>
 
-                        XTV Code V3 APK
+                        XTV Code V3
 
                     </a>
 
-                </p>
+                </div>
 
 
                 <p style="margin-top:15px;">
 
-                    <strong>
-                        أكواد Downloader المتاحة:
-                    </strong>
+                    🔑 أكواد Downloader:
 
                     <span class="code-badge">
                         5833417
@@ -2652,10 +2698,7 @@
 
 
                 <p style="margin-top:10px;">
-
-                    يمكنك تجربة أي من الأكواد المتاحة حسب التطبيق
-                    أو طريقة التحميل المناسبة لجهازك.
-
+                    يمكنك تجربة أي من الأكواد المتاحة حسب التطبيق أو طريقة التحميل المناسبة لجهازك.
                 </p>
 
             </div>
@@ -2687,19 +2730,10 @@
 
             <div class="accordion-content">
 
-                <div class="rich-desc-box">
-
-                    <h3>
-                        <i class="fa-brands fa-apple"></i>
-                        تطبيقات X IPTV لأجهزة Apple
-                    </h3>
-
-                    <p>
-                        لتشغيل سيرفر إكس على أجهزة iPhone وiPad وApple TV،
-                        يمكنك استخدام تطبيقات IPTV المتوافقة مع نظام Apple.
-                    </p>
-
-                </div>
+                <p>
+                    لتشغيل سيرفر إكس على أجهزة iPhone وiPad وApple TV،
+                    يمكنك استخدام تطبيقات IPTV المتوافقة مع نظام Apple.
+                </p>
 
 
                 <div style="margin-top:15px;">
@@ -2734,9 +2768,7 @@
 
                 <p style="margin-top:15px;">
 
-                    <strong>
-                        كود Code Play:
-                    </strong>
+                    🔑 كود Code Play:
 
                     <span class="code-badge">
                         070
@@ -2779,36 +2811,38 @@
 
                         <i class="fa-solid fa-display"></i>
 
-                        تطبيق PLAYER 0
+                        تشغيل X IPTV على شاشات LG و SAMSUNG
 
                     </h3>
 
 
                     <p>
-
-                        حمّل تطبيق
-                        <strong>PLAYER 0</strong>
-                        على شاشة LG أو Samsung،
-                        ثم ادخل إلى
-                        <strong>PORTAL CODE</strong>
-                        وأدخل الكود التالي مع اسم المستخدم وكلمة السر.
-
+                        ابحث عن تطبيق <strong>PLAYER 0</strong>
+                        في متجر التطبيقات الخاص بالشاشة، ثم افتح التطبيق
+                        واختر <strong>PORTAL CODE</strong>.
                     </p>
 
-
-                    <div style="margin-top:12px;">
-
-                        <strong>
-                            كود PORTAL CODE:
-                        </strong>
-
-                        <span class="code-badge">
-                            75886993
-                        </span>
-
-                    </div>
-
                 </div>
+
+
+                <p>
+
+                    🔑 كود الدخول الخاص بسيرفر X:
+
+                    <span class="code-badge">
+                        75886993
+                    </span>
+
+                </p>
+
+
+                <p style="margin-top:12px;">
+
+                    بعد إدخال الكود، قم بإدخال
+                    <strong>اسم المستخدم وكلمة السر</strong>
+                    الخاصة باشتراكك لإتمام التشغيل.
+
+                </p>
 
             </div>
 
