@@ -1,12 +1,58 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سيرفر IPTV إكس | X IPTV - افضل سيرفر في العالم العربي</title>
+
+    <!-- SEO -->
+    <title>X IPTV | سيرفر إكس - اشتراك وتجديد X IPTV</title>
+    <meta name="description" content="X IPTV - سيرفر إكس للبث عبر الإنترنت. تعرف على باقات اشتراك X IPTV، طريقة التجديد، وتشغيل الخدمة على الموبايل والشاشات الذكية والكمبيوتر.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://xiptv.live/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="X IPTV | سيرفر إكس - اشتراك وتجديد X IPTV">
+    <meta property="og:description" content="تعرف على باقات X IPTV وطريقة الاشتراك والتجديد وتشغيل الخدمة على مختلف الأجهزة.">
+    <meta property="og:url" content="https://xiptv.live/">
+    <meta property="og:site_name" content="X IPTV">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="X IPTV | سيرفر إكس">
+    <meta name="twitter:description" content="اشتراك وتجديد X IPTV وتشغيل الخدمة على مختلف الأجهزة.">
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "X IPTV",
+      "alternateName": [
+        "سيرفر إكس",
+        "X IPTV"
+      ],
+      "url": "https://xiptv.live/"
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "X IPTV",
+      "alternateName": "سيرفر إكس",
+      "url": "https://xiptv.live/"
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         [data-theme="light"] {
             --bg-dark: #f8fafc;
@@ -614,25 +660,81 @@
             border-right: 4px solid var(--red-primary);
         }
 
-        .seo-keywords-section {
+        /* SEO / Information Section */
+        .seo-info-section {
+            padding: 80px 8%;
             background: var(--seo-bg);
-            padding: 60px 8%;
             border-top: 1px solid var(--border-color);
-            font-size: 12px;
+        }
+
+        .seo-info-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .seo-info-section h2 {
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .seo-info-section h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin: 30px 0 10px;
+            color: var(--red-primary);
+        }
+
+        .seo-info-section p {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+        .seo-info-section ul {
+            padding-right: 25px;
             color: var(--text-muted);
             line-height: 2;
-            text-align: justify;
         }
 
-        .seo-keywords-section h4 {
+        .seo-info-section li {
+            margin-bottom: 8px;
+        }
+
+        .faq-section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 40px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-silver);
+            border-radius: 16px;
+            padding: 22px 25px;
+            text-align: right;
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 10px;
             color: var(--text-main);
-            margin-bottom: 15px;
-            font-size: 16px;
         }
 
-        .seo-words-cloud {
-            opacity: 0.85;
-            word-spacing: 3px;
+        .faq-item p {
+            color: var(--text-muted);
+            line-height: 1.9;
+            font-size: 15px;
         }
 
         footer {
@@ -684,13 +786,15 @@
             .pricing-grid { grid-template-columns: 1fr; }
             .accordion-content { max-height: 0; }
             .accordion-item.active .accordion-content { max-height: 800px; }
+            .seo-info-section h2 { font-size: 26px; }
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <a href="#" class="brand-logo">
+        <a href="/" class="brand-logo" aria-label="X IPTV - الصفحة الرئيسية">
             <div class="logo-graphic">
                 <span class="arrows">❯❯</span><span class="x-white">X</span>
             </div>
@@ -701,69 +805,129 @@
         </a>
 
         <div class="header-actions">
-            <!-- زر تبديل الوضع (الافتراضي فاتح) -->
-            <button class="theme-toggle-btn" id="themeToggle" title="تغيير المظهر">
+            <button class="theme-toggle-btn" id="themeToggle" title="تغيير المظهر" aria-label="تغيير المظهر">
                 <i class="fa-solid fa-moon" id="themeIcon"></i>
             </button>
-            <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20سيرفر%20IPTV%20إكس" class="nav-btn" target="_blank">اشترك الآن</a>
+
+            <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20سيرفر%20IPTV%20إكس"
+               class="nav-btn"
+               target="_blank"
+               rel="noopener">
+                اشترك الآن
+            </a>
         </div>
     </header>
 
+    <!-- Hero -->
+    <main>
+
     <section class="hero">
         <div class="badge-pill">
-            <i class="fa-solid fa-shield-halved"></i> السيرفر المعتمد والأول في الوطن العربي
+            <i class="fa-solid fa-shield-halved"></i>
+            X IPTV - سيرفر إكس
         </div>
-        <h1>متعة المشاهدة الحقيقية مع <br><span class="red-text">سيرفر IPTV</span> <span class="silver-text">إكـس</span></h1>
-        <p>عالم الترفيه بين يديك! استمتع بأقوى البثوث المباشرة للبطولات الرياضية والأفلام بدون تقطيع وبأعلى جودة 4K على الإطلاق.</p>
-        
+
+        <h1>
+            X IPTV | سيرفر إكس
+            <br>
+            <span class="red-text">اشتراك وتجديد</span>
+            <span class="silver-text">X IPTV</span>
+        </h1>
+
+        <p>
+            استمتع بتجربة مشاهدة عبر الإنترنت مع X IPTV. تعرف على باقات الاشتراك،
+            طريقة التجديد، وتشغيل الخدمة على الشاشات الذكية والموبايل وأجهزة TV Box والكمبيوتر.
+        </p>
+
         <div class="hero-buttons">
-            <a href="#pricing" class="btn-main"><i class="fa-solid fa-cart-shopping"></i> تصفح الباقات</a>
-            <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20طلب%20تجربة%20مجانية%2024%20ساعة%20لسيرفر%20IPTV%20إكس" class="btn-sec" target="_blank"><i class="fa-solid fa-play"></i> تجربة مجانية 24 ساعة</a>
+            <a href="#pricing" class="btn-main">
+                <i class="fa-solid fa-cart-shopping"></i>
+                تصفح باقات X IPTV
+            </a>
+
+            <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20طلب%20تجربة%20مجانية%2024%20ساعة%20لسيرفر%20IPTV%20إكس"
+               class="btn-sec"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-solid fa-play"></i>
+                تجربة مجانية 24 ساعة
+            </a>
         </div>
 
         <div class="trust-banner">
-            <div class="trust-item"><i class="fa-solid fa-circle-check"></i> ضمان استرجاع الأموال</div>
-            <div class="trust-item"><i class="fa-solid fa-bolt"></i> تفعيل فوري بعد الدفع</div>
-            <div class="trust-item"><i class="fa-solid fa-headset"></i> دعم فني متواصل 24/7</div>
-            <div class="trust-item"><i class="fa-solid fa-server"></i> سيرفرات احتياطية وقت المباريات</div>
+            <div class="trust-item">
+                <i class="fa-solid fa-circle-check"></i>
+                ضمان استرجاع الأموال
+            </div>
+
+            <div class="trust-item">
+                <i class="fa-solid fa-bolt"></i>
+                تفعيل فوري بعد الدفع
+            </div>
+
+            <div class="trust-item">
+                <i class="fa-solid fa-headset"></i>
+                دعم فني متواصل 24/7
+            </div>
+
+            <div class="trust-item">
+                <i class="fa-solid fa-server"></i>
+                سيرفرات احتياطية وقت المباريات
+            </div>
         </div>
     </section>
 
-    <!-- الإحصائيات -->
+    <!-- Statistics -->
     <section class="stats-section">
         <div class="stat-item">
             <h3>+22,000</h3>
             <p>قناة بث مباشر</p>
         </div>
+
         <div class="stat-item">
             <h3>+80,000</h3>
             <p>فيلم ومسلسل</p>
         </div>
+
         <div class="stat-item">
             <h3>99.9%</h3>
             <p>ثبات واستقرار السيرفر</p>
         </div>
+
         <div class="stat-item">
             <h3>+15,000</h3>
             <p>عميل سعيد ومستمر</p>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing -->
     <section class="pricing-section" id="pricing">
-        <h2 class="section-title">اختر الباقة المناسبة لك</h2>
-        <p class="section-subtitle">تفعيل آلي وفوري بعد التواصل معنا عبر الواتساب</p>
+        <h2 class="section-title">اشتراك X IPTV - اختر الباقة المناسبة لك</h2>
+
+        <p class="section-subtitle">
+            باقات اشتراك سيرفر إكس X IPTV مع تفعيل بعد التواصل معنا عبر الواتساب
+        </p>
 
         <div class="region-selector">
-            <button class="region-btn active" id="btnEgypt" onclick="setRegion('egypt')">🇪🇬 داخل مصر</button>
-            <button class="region-btn" id="btnIntl" onclick="setRegion('intl')">🌍 خارج مصر</button>
+            <button class="region-btn active" id="btnEgypt" onclick="setRegion('egypt')">
+                🇪🇬 داخل مصر
+            </button>
+
+            <button class="region-btn" id="btnIntl" onclick="setRegion('intl')">
+                🌍 خارج مصر
+            </button>
         </div>
 
         <div class="pricing-grid">
+
             <!-- 3 Months -->
             <div class="price-card">
-                <h3>اشتراك 3 أشهر</h3>
-                <div class="price" id="price-3m">200 <span>ج.م</span></div>
+                <h3>اشتراك X IPTV لمدة 3 أشهر</h3>
+
+                <div class="price" id="price-3m">
+                    200 <span>ج.م</span>
+                </div>
+
                 <ul class="features-list">
                     <li><i class="fa-solid fa-check"></i> أكثر من 15,000 قناة</li>
                     <li><i class="fa-solid fa-check"></i> مكتبة أفلام ومسلسلات حديثة</li>
@@ -771,14 +935,26 @@
                     <li><i class="fa-solid fa-check"></i> دعم جميع الأجهزة</li>
                     <li><i class="fa-solid fa-check"></i> ضمان طوال فترة الاشتراك</li>
                 </ul>
-                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20(200%20ج.م)" class="card-btn" id="btn-3m-link" target="_blank">اشترك الآن</a>
+
+                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20(200%20ج.م)"
+                   class="card-btn"
+                   id="btn-3m-link"
+                   target="_blank"
+                   rel="noopener">
+                    اشترك الآن
+                </a>
             </div>
 
-            <!-- 12 Months Featured -->
+            <!-- 12 Months -->
             <div class="price-card featured">
                 <div class="badge-popular">الأكثر مبيعاً 🔥 (توفير أكبر)</div>
-                <h3>اشتراك 12 شهر (سنة)</h3>
-                <div class="price" id="price-12m">500 <span>ج.م</span></div>
+
+                <h3>اشتراك X IPTV لمدة 12 شهر</h3>
+
+                <div class="price" id="price-12m">
+                    500 <span>ج.م</span>
+                </div>
+
                 <ul class="features-list">
                     <li><i class="fa-solid fa-check"></i> أكثر من 22,000 قناة</li>
                     <li><i class="fa-solid fa-check"></i> مكتبة 4K ضخمة ومحدثة يومياً</li>
@@ -786,13 +962,24 @@
                     <li><i class="fa-solid fa-check"></i> تشغيل على جميع الأجهزة</li>
                     <li><i class="fa-solid fa-check"></i> تفعيل تلقائي فوري + دعم VIP</li>
                 </ul>
-                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20(500%20ج.م)" class="card-btn" id="btn-12m-link" target="_blank">اشترك الآن</a>
+
+                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20(500%20ج.م)"
+                   class="card-btn"
+                   id="btn-12m-link"
+                   target="_blank"
+                   rel="noopener">
+                    اشترك الآن
+                </a>
             </div>
 
             <!-- 6 Months -->
             <div class="price-card">
-                <h3>اشتراك 6 أشهر</h3>
-                <div class="price" id="price-6m">350 <span>ج.م</span></div>
+                <h3>اشتراك X IPTV لمدة 6 أشهر</h3>
+
+                <div class="price" id="price-6m">
+                    350 <span>ج.م</span>
+                </div>
+
                 <ul class="features-list">
                     <li><i class="fa-solid fa-check"></i> أكثر من 18,000 قناة</li>
                     <li><i class="fa-solid fa-check"></i> مكتبة أفلام ومسلسلات مترجمة</li>
@@ -800,125 +987,340 @@
                     <li><i class="fa-solid fa-check"></i> دعم فني متواصل 24/7</li>
                     <li><i class="fa-solid fa-check"></i> ضمان طوال فترة الاشتراك</li>
                 </ul>
-                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20(350%20ج.م)" class="card-btn" id="btn-6m-link" target="_blank">اشترك الآن</a>
+
+                <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20(350%20ج.م)"
+                   class="card-btn"
+                   id="btn-6m-link"
+                   target="_blank"
+                   rel="noopener">
+                    اشترك الآن
+                </a>
             </div>
+
         </div>
     </section>
 
-    <!-- Interactive Apps Accordion Section -->
+    <!-- Information about subscription and renewal -->
+    <section class="seo-info-section" id="subscription-info">
+        <div class="seo-info-container">
+
+            <h2>اشتراك X IPTV وتجديد سيرفر إكس</h2>
+
+            <p>
+                إذا كنت تبحث عن اشتراك X IPTV أو ترغب في تجديد اشتراك سيرفر إكس،
+                يمكنك الاطلاع على الباقات المتاحة واختيار المدة المناسبة لك.
+                تختلف الباقات حسب مدة الاشتراك والمزايا المتوفرة.
+            </p>
+
+            <h3>كيفية تجديد X IPTV؟</h3>
+
+            <p>
+                لتجديد X IPTV، يمكنك التواصل معنا من خلال زر الاشتراك الموجود في الموقع
+                وتوضيح أنك تريد تجديد اشتراكك الحالي. يفضل إرسال بيانات الاشتراك المطلوبة
+                للدعم الفني حتى يتم مراجعة الحساب وتحديد الباقة المناسبة للتجديد.
+            </p>
+
+            <ul>
+                <li>اختر مدة الاشتراك المناسبة.</li>
+                <li>تواصل مع الدعم الفني عبر الواتساب.</li>
+                <li>أرسل بيانات الاشتراك المطلوبة للتجديد.</li>
+                <li>اختر وسيلة الدفع المناسبة.</li>
+                <li>بعد تأكيد العملية يتم تفعيل أو تجديد الاشتراك حسب الباقة المختارة.</li>
+            </ul>
+
+            <h3>تشغيل X IPTV على الأجهزة المختلفة</h3>
+
+            <p>
+                يمكن تشغيل خدمة X IPTV على مجموعة من الأجهزة التي تدعم تطبيقات ومشغلات IPTV،
+                مثل أجهزة Android وSmart TV وTV Box والكمبيوتر، مع اختلاف طريقة الإعداد
+                حسب نوع الجهاز والتطبيق المستخدم.
+            </p>
+
+            <h3>اشتراك سيرفر إكس لمدة سنة</h3>
+
+            <p>
+                تتوفر باقة اشتراك X IPTV لمدة 12 شهرًا، ويمكن الاطلاع على السعر والمزايا
+                من قسم الباقات الموجود في هذه الصفحة. كما يمكنك التواصل مع الدعم الفني
+                للاستفسار عن التجديد أو المساعدة في تشغيل الخدمة.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Apps -->
     <section class="apps-section" id="apps">
-        <h2 class="section-title">تحميل مشغلات سيرفر اكس X IPTV</h2>
-        <p class="section-subtitle">اضغط على الخيار المطلوب لتظهر لك التفاصيل وروابط التحميل المباشرة</p>
+
+        <h2 class="section-title">تحميل مشغلات سيرفر إكس X IPTV</h2>
+
+        <p class="section-subtitle">
+            اضغط على الخيار المطلوب لتظهر لك التفاصيل وروابط التحميل المباشرة
+        </p>
 
         <div class="accordion-container">
-            
+
+            <!-- Main X IPTV -->
             <div class="accordion-item active">
+
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-tv icon-device"></i> سيرفر اكس x iptv - معلومات والتحميل المباشر</span>
+                    <span>
+                        <i class="fa-solid fa-tv icon-device"></i>
+                        سيرفر إكس X IPTV - معلومات والتحميل المباشر
+                    </span>
+
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
+
                 <div class="accordion-content">
-                    
+
                     <div class="rich-desc-box">
-                        <h3><i class="fa-solid fa-crown"></i> لماذا يعتبر سيرفر إكس X IPTV الخيار الأول في الوطن العربي؟</h3>
+
+                        <h3>
+                            <i class="fa-solid fa-crown"></i>
+                            معلومات عن سيرفر إكس X IPTV
+                        </h3>
+
                         <p>
-                            يعتبر <strong>سيرفر اكس X IPTV</strong> المعيار الذهبي لخدمات البث المباشر عبر الإنترنت في الوطن العربي والشرق الأوسط. تم بناء السيرفر على بنية تحتية متطورة معتمدة على خوادم فائقة السرعة موزعة سحابياً لضمان أعلى مستويات الثبات، حتى في أوقات الذروة والمباريات الجماهيرية الكبرى.
+                            يقدم X IPTV خدمة بث عبر الإنترنت مع باقات متنوعة لمشاهدة
+                            القنوات التلفزيونية والمحتوى الترفيهي. يمكن استخدام الخدمة
+                            على مجموعة من الأجهزة المختلفة، مع خيارات تشغيل مناسبة
+                            لأجهزة التلفزيون الذكية والهواتف وأجهزة TV Box والكمبيوتر.
                         </p>
+
                     </div>
 
                     <div class="feature-bullets">
+
                         <div class="feature-bullet-item">
-                            <i class="fa-solid fa-bolt-lightning" style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+                            <i class="fa-solid fa-bolt-lightning"
+                               style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+
                             <div>
-                                <strong>بث مباشر بدون تقطيع:</strong> تقنيات ضغط حديثة تضمن لك مشاهدة سلسة وبدون أي تأخير حتى مع السرعات المتوسطة.
+                                <strong>بث مباشر:</strong>
+                                إمكانية مشاهدة القنوات والبث المباشر عبر الإنترنت
+                                حسب الباقة والتطبيق المستخدم.
                             </div>
                         </div>
+
                         <div class="feature-bullet-item">
-                            <i class="fa-solid fa-trophy" style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+                            <i class="fa-solid fa-trophy"
+                               style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+
                             <div>
-                                <strong>تغطية شاملة للبطولات:</strong> متابعة كاملة لكل دوريات العالم (دوري أبطال أوروبا، الدوري الإنجليزي، الإسباني، البطولات الأفريقية الآسيوية).
+                                <strong>محتوى رياضي وترفيهي:</strong>
+                                الوصول إلى مجموعة متنوعة من القنوات والمحتوى
+                                الرياضي والترفيهي المتاح ضمن الخدمة.
                             </div>
                         </div>
+
                         <div class="feature-bullet-item">
-                            <i class="fa-solid fa-film" style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+                            <i class="fa-solid fa-film"
+                               style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+
                             <div>
-                                <strong>أكبر مكتبة سينمائية (VOD):</strong> آلاف الأفلام والمسلسلات الحديثة والوثائقيات مترجمة ومدبلجة بجودة 4K و Full HD وتُحدث يومياً.
+                                <strong>مكتبة VOD:</strong>
+                                توفر بعض الباقات مكتبة أفلام ومسلسلات ومحتوى
+                                عند الطلب حسب الخدمة المتاحة.
                             </div>
                         </div>
+
                         <div class="feature-bullet-item">
-                            <i class="fa-solid fa-display" style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+                            <i class="fa-solid fa-display"
+                               style="color: #e60012; font-size: 20px; margin-top:2px;"></i>
+
                             <div>
-                                <strong>توافق شامل مع الأجهزة:</strong> يعمل بسهولة على الشاشات الذكية (Smart TV)، أجهزة الأندرويد، الأيفون، أجهزة TV Box، والكمبيوتر.
+                                <strong>توافق الأجهزة:</strong>
+                                يمكن تشغيل الخدمة على أجهزة مختلفة مثل Smart TV
+                                وAndroid وTV Box والكمبيوتر حسب التطبيق المتوافق.
                             </div>
                         </div>
+
                     </div>
 
                     <p style="margin-top: 15px;">
-                        يمكنك تحميل التطبيق الرسمي المباشر فوراً عبر الرابط: 
-                        <a href="http://xiptv.net/xtv.apk" class="download-btn-inline" target="_blank"><i class="fa-solid fa-download"></i> تحميل X IPTV APK</a> 
-                        أو باستخدام كود التطبيق المباشر لبرنامج Downloader: <span class="code-badge">5833417</span>
+                        يمكنك تحميل التطبيق المباشر عبر الرابط:
+                        <a href="http://xiptv.net/xtv.apk"
+                           class="download-btn-inline"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-solid fa-download"></i>
+                            تحميل X IPTV APK
+                        </a>
+
+                        أو باستخدام كود التطبيق المباشر لبرنامج Downloader:
+                        <span class="code-badge">5833417</span>
                     </p>
+
                 </div>
             </div>
 
+            <!-- Android -->
             <div class="accordion-item">
+
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-brands fa-android icon-device"></i> تطبيق سيرفر اكس للاندرويد APK</span>
+                    <span>
+                        <i class="fa-brands fa-android icon-device"></i>
+                        تطبيق سيرفر إكس للاندرويد APK
+                    </span>
+
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
+
                 <div class="accordion-content">
-                    يمكنك تحميل برنامج سيرفر اكس للاندرويد x iptv apk على الموبايل وشاشات الأندرويد وأجهزة TV BOX بسهولة وسرعة عالية. <a href="http://xiptv.net/xtv.apk" class="download-btn-inline" target="_blank">اضغط هنا للتحميل</a> أو استخدم كود الداونلودر الخاص بنا: <span class="code-badge">5833417</span> لتثبيت التطبيق مباشرة.
+
+                    يمكنك تحميل برنامج سيرفر إكس للاندرويد X IPTV APK
+                    على الموبايل وشاشات الأندرويد وأجهزة TV BOX بسهولة.
+
+                    <a href="http://xiptv.net/xtv.apk"
+                       class="download-btn-inline"
+                       target="_blank"
+                       rel="noopener">
+                        اضغط هنا للتحميل
+                    </a>
+
+                    أو استخدم كود الداونلودر:
+                    <span class="code-badge">5833417</span>
+
                 </div>
             </div>
 
+            <!-- iPhone -->
             <div class="accordion-item">
+
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-brands fa-apple icon-device"></i> تشغيل سيرفر اكس لـ موبايل ايفون وايباد</span>
+                    <span>
+                        <i class="fa-brands fa-apple icon-device"></i>
+                        تشغيل سيرفر إكس على موبايل ايفون وايباد
+                    </span>
+
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
+
                 <div class="accordion-content">
-                    لتشغيل سيرفر اكس على جميع أجهزة الأيفون والأيباد وشاشات Apple TV بكل سهولة، نوصي باستخدام تطبيق Smarters Player Lite. <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar" class="download-btn-inline" target="_blank">اضغط هنا لتحميل التطبيق</a> واستمتع بالمشاهدة المباشرة فوراً.
+
+                    لتشغيل سيرفر إكس على أجهزة الأيفون والأيباد وشاشات Apple TV،
+                    يمكن استخدام تطبيقات IPTV المتوافقة مع النظام.
+
+                    <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar"
+                       class="download-btn-inline"
+                       target="_blank"
+                       rel="noopener">
+                        تحميل التطبيق
+                    </a>
+
                 </div>
             </div>
 
+            <!-- Computer -->
             <div class="accordion-item">
+
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-laptop icon-device"></i> تشغيل سيرفر اكس علي اللاب توب والكمبيوتر</span>
+                    <span>
+                        <i class="fa-solid fa-laptop icon-device"></i>
+                        تشغيل سيرفر إكس على اللاب توب والكمبيوتر
+                    </span>
+
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </div>
+
                 <div class="accordion-content">
-                    يمكنك تشغيل واشتراك سيرفر إكس على أجهزة الكمبيوتر واللاب توب بسهولة عبر تطبيق IPTV Smarters Pro المخصص لأنظمة الويندوز. <a href="https://www.mhiptv.net/iptv/IPTVSmartersPro-1.1.1.exe" class="download-btn-inline" target="_blank">اضغط هنا للتحميل المباشر</a> وتمتع بتجربة سينمائية ممتازة.
+
+                    يمكنك تشغيل X IPTV على أجهزة الكمبيوتر واللاب توب
+                    باستخدام تطبيق IPTV متوافق مع نظام Windows.
+
+                    <a href="https://www.mhiptv.net/iptv/IPTVSmartersPro-1.1.1.exe"
+                       class="download-btn-inline"
+                       target="_blank"
+                       rel="noopener">
+                        تحميل التطبيق
+                    </a>
+
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- SEO Keywords Section -->
-    <section class="seo-keywords-section">
-        <h4>الكلمات المفتاحية الأكثر بحثاً - سيرفر اكس X IPTV</h4>
-        <div class="seo-words-cloud">
-            <strong>xiptv</strong> | سيرفر اكس | تجديد سيرفر اكس | كود تفعيل سيرفر X iptv مجاني | XIPTV تحميل | Xiptv Pro APK | سيرفر X Modz | اشتراك سيرفر اكس X IPTV لمدة سنة | X IPTV Pro | X IPTV APK
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+
+        <h2 class="section-title">الأسئلة الشائعة عن X IPTV</h2>
+
+        <p class="section-subtitle">
+            إجابات مختصرة عن الاشتراك والتجديد وتشغيل X IPTV
+        </p>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <h3>ما هو X IPTV؟</h3>
+                <p>
+                    X IPTV هي خدمة بث عبر الإنترنت تتيح الوصول إلى محتوى تلفزيوني
+                    وترفيهي عبر التطبيقات والأجهزة المتوافقة مع الخدمة.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>كيف يمكن اشتراك X IPTV؟</h3>
+                <p>
+                    يمكنك اختيار الباقة المناسبة من قسم الباقات ثم التواصل مع الدعم
+                    الفني عبر الواتساب لمعرفة خطوات الاشتراك والتفعيل.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>كيفية تجديد X IPTV؟</h3>
+                <p>
+                    لتجديد الاشتراك، تواصل مع الدعم الفني واذكر أنك تريد تجديد
+                    اشتراك X IPTV الحالي، وسيتم توضيح خطوات التجديد والباقة المناسبة.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>هل يمكن تشغيل X IPTV على الهاتف؟</h3>
+                <p>
+                    نعم، يمكن تشغيل الخدمة على الأجهزة المتوافقة مع تطبيقات IPTV،
+                    وتختلف طريقة الإعداد حسب نظام الجهاز والتطبيق المستخدم.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>هل يمكن تشغيل سيرفر إكس على Smart TV؟</h3>
+                <p>
+                    يمكن تشغيل الخدمة على أجهزة Smart TV المتوافقة مع تطبيقات IPTV،
+                    مع اختلاف خطوات الإعداد حسب نظام التلفزيون.
+                </p>
+            </div>
+
         </div>
     </section>
 
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 سيرفر IPTV إكس | X IPTV</p>
+        <p>
+            جميع الحقوق محفوظة &copy; 2026 سيرفر IPTV إكس | X IPTV
+        </p>
     </footer>
 
-    <!-- Whatsapp Floating Button -->
-    <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20سيرفر%20IPTV%20إكس" class="whatsapp-float" target="_blank">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20سيرفر%20IPTV%20إكس"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener"
+       aria-label="التواصل مع X IPTV عبر واتساب">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <script>
-        // Theme Toggle Logic (Default is Light)
+        // Theme Toggle Logic
         const themeToggleBtn = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const htmlElement = document.documentElement;
 
         themeToggleBtn.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
+
             if (currentTheme === 'light') {
                 htmlElement.setAttribute('data-theme', 'dark');
                 themeIcon.classList.remove('fa-moon');
@@ -930,11 +1332,11 @@
             }
         });
 
-        // Accordion Toggle Logic
+        // Accordion
         function toggleAccordion(header) {
             const item = header.parentElement;
             const isActive = item.classList.contains('active');
-            
+
             document.querySelectorAll('.accordion-item').forEach(acc => {
                 acc.classList.remove('active');
             });
@@ -944,11 +1346,12 @@
             }
         }
 
-        // Region Pricing Toggle Logic
+        // Region Pricing
         function setRegion(region) {
+
             const btnEgypt = document.getElementById('btnEgypt');
             const btnIntl = document.getElementById('btnIntl');
-            
+
             const price3m = document.getElementById('price-3m');
             const price6m = document.getElementById('price-6m');
             const price12m = document.getElementById('price-12m');
@@ -958,6 +1361,7 @@
             const btn12mLink = document.getElementById('btn-12m-link');
 
             if (region === 'egypt') {
+
                 btnEgypt.classList.add('active');
                 btnIntl.classList.remove('active');
 
@@ -965,10 +1369,17 @@
                 price6m.innerHTML = '350 <span>ج.م</span>';
                 price12m.innerHTML = '500 <span>ج.م</span>';
 
-                btn3mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20(200%20ج.م)";
-                btn6mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20(350%20ج.م)";
-                btn12mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20(500%20ج.م)";
+                btn3mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20(200%20ج.م)";
+
+                btn6mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20(350%20ج.م)";
+
+                btn12mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20(500%20ج.م)";
+
             } else {
+
                 btnIntl.classList.add('active');
                 btnEgypt.classList.remove('active');
 
@@ -976,11 +1387,68 @@
                 price6m.innerHTML = '20 <span>$</span>';
                 price12m.innerHTML = '30 <span>$</span>';
 
-                btn3mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20($15)";
-                btn6mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20($20)";
-                btn12mLink.href = "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20($30)";
+                btn3mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%203%20أشهر%20($15)";
+
+                btn6mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20باقة%206%20أشهر%20($20)";
+
+                btn12mLink.href =
+                    "https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20الاشتراك%20في%20الباقة%20المميزة%2012%20شهر%20($30)";
             }
         }
     </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو X IPTV؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "X IPTV هي خدمة بث عبر الإنترنت تتيح الوصول إلى محتوى تلفزيوني وترفيهي عبر التطبيقات والأجهزة المتوافقة مع الخدمة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يمكن اشتراك X IPTV؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكنك اختيار الباقة المناسبة من قسم الباقات ثم التواصل مع الدعم الفني عبر الواتساب لمعرفة خطوات الاشتراك والتفعيل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيفية تجديد X IPTV؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لتجديد الاشتراك، تواصل مع الدعم الفني واذكر أنك تريد تجديد اشتراك X IPTV الحالي، وسيتم توضيح خطوات التجديد والباقة المناسبة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن تشغيل X IPTV على الهاتف؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكن تشغيل الخدمة على الأجهزة المتوافقة مع تطبيقات IPTV، وتختلف طريقة الإعداد حسب نظام الجهاز والتطبيق المستخدم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن تشغيل سيرفر إكس على Smart TV؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكن تشغيل الخدمة على أجهزة Smart TV المتوافقة مع تطبيقات IPTV، مع اختلاف خطوات الإعداد حسب نظام التلفزيون."
+          }
+        }
+      ]
+    }
+    </script>
+
 </body>
 </html>
+```
