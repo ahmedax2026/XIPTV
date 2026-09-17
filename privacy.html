@@ -1,147 +1,1126 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO -->
     <title>سياسة الخصوصية | X IPTV</title>
     <meta name="description" content="تعرف على سياسة الخصوصية في X IPTV وكيفية التعامل مع المعلومات وملفات تعريف الارتباط والروابط الخارجية.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://xiptv.live/privacy.html">
 
+    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="LOGO.jpg">
+    <link rel="apple-touch-icon" href="LOGO.jpg">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="سياسة الخصوصية | X IPTV">
+    <meta property="og:description" content="تعرف على سياسة الخصوصية في X IPTV وكيفية التعامل مع المعلومات وملفات تعريف الارتباط والروابط الخارجية.">
+    <meta property="og:url" content="https://xiptv.live/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://xiptv.live/LOGO.jpg">
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
-        *{box-sizing:border-box;margin:0;padding:0}
-        body{font-family:Cairo,sans-serif;background:#08111f;color:#f4f7fb;line-height:1.9}
-        .container{width:min(100% - 32px,1000px);margin:auto}
-        header{padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);background:#08111f}
-        .header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
-        .brand{text-decoration:none;color:white;font-size:24px;font-weight:800}
-        .brand span{color:#00d4ff}
-        .home-btn{color:#fff;text-decoration:none;padding:9px 18px;border-radius:10px;background:rgba(0,212,255,.12);border:1px solid rgba(0,212,255,.25)}
-        main{padding:55px 0 70px}
-        .hero{text-align:center;margin-bottom:35px}
-        .hero h1{font-size:clamp(30px,5vw,46px);margin-bottom:12px}
-        .hero h1 span{color:#00d4ff}
-        .hero p{color:#aeb9c8}
-        .content{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:30px}
-        section{margin-bottom:28px}
-        h2{color:#00d4ff;font-size:21px;margin-bottom:9px}
-        p,li{color:#d5dce5}
-        ul{padding-right:25px}
-        li{margin:6px 0}
-        .contact-box{margin-top:35px;text-align:center;padding:28px 20px;border-radius:18px;background:linear-gradient(135deg,rgba(0,212,255,.12),rgba(112,77,255,.12));border:1px solid rgba(0,212,255,.18)}
-        .contact-box h2{color:#fff}
-        .contact-btn{display:inline-block;margin-top:12px;padding:12px 28px;border-radius:12px;text-decoration:none;color:#fff;font-weight:700;background:linear-gradient(135deg,#00bfa5,#00d4ff)}
-        footer{text-align:center;padding:25px 15px;color:#8793a3;border-top:1px solid rgba(255,255,255,.08)}
-        .footer-links{margin-bottom:8px}
-        .footer-links a{color:#aeb9c8;text-decoration:none;margin:0 7px}
-        @media(max-width:600px){.header-inner{flex-direction:column}.home-btn{width:100%;text-align:center}.content{padding:22px 18px}}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --red: #e5091a;
+            --red-dark: #b70714;
+            --red-light: #ff2438;
+
+            --gold: #c9a35b;
+            --gold-light: #e2c27b;
+
+            --dark: #080a0f;
+            --dark-2: #0d1118;
+            --dark-3: #151a23;
+
+            --light: #f6f7f9;
+            --white: #ffffff;
+
+            --text: #10141c;
+            --muted: #667085;
+
+            --border: rgba(15,23,42,.09);
+            --card: rgba(255,255,255,.94);
+            --header: rgba(255,255,255,.88);
+
+            --hero: radial-gradient(
+                circle at 50% 0%,
+                rgba(229,9,26,.13),
+                transparent 55%
+            );
+
+            --red-gradient:
+                linear-gradient(
+                    135deg,
+                    #ff2438 0%,
+                    #e5091a 50%,
+                    #b70714 100%
+                );
+
+            --gold-gradient:
+                linear-gradient(
+                    135deg,
+                    #e2c27b,
+                    #b88938
+                );
+        }
+
+        [data-theme="dark"] {
+            --light: #080a0f;
+            --white: #ffffff;
+            --text: #ffffff;
+            --muted: #9aa4b2;
+
+            --border: rgba(255,255,255,.09);
+            --card: rgba(18,22,30,.92);
+            --header: rgba(8,10,15,.90);
+
+            --hero: radial-gradient(
+                circle at 50% 0%,
+                rgba(229,9,26,.20),
+                transparent 60%
+            );
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Cairo", sans-serif;
+            background:
+                var(--hero),
+                var(--light);
+            color: var(--text);
+            line-height: 1.9;
+            min-height: 100vh;
+
+            transition:
+                background .3s ease,
+                color .3s ease;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            width: min(100% - 32px, 1100px);
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            height: 76px;
+
+            background: var(--header);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid var(--border);
+
+            transition: .3s;
+        }
+
+        .header-inner {
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 15px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            text-decoration: none;
+            color: var(--text);
+
+            font-size: 20px;
+            font-weight: 800;
+
+            white-space: nowrap;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 11px;
+
+            color: #fff;
+
+            background: var(--red-gradient);
+
+            box-shadow:
+                0 7px 20px rgba(229,9,26,.22);
+
+            font-size: 17px;
+            font-weight: 900;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+
+            line-height: 1.1;
+        }
+
+        .brand-text small {
+            font-size: 9px;
+            color: var(--muted);
+
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .theme-btn {
+            width: 42px;
+            height: 42px;
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            background: var(--card);
+            color: var(--text);
+
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: .25s;
+        }
+
+        .theme-btn:hover {
+            border-color: rgba(201,163,91,.4);
+            color: var(--gold);
+
+            transform: translateY(-2px);
+        }
+
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+
+            padding: 10px 17px;
+
+            border-radius: 11px;
+
+            text-decoration: none;
+            color: #fff;
+
+            background: var(--red-gradient);
+
+            font-size: 13px;
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 22px rgba(229,9,26,.18);
+
+            transition: .25s;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 11px 28px rgba(229,9,26,.28);
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            padding: 65px 0 80px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            text-align: center;
+            margin-bottom: 38px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            padding: 6px 13px;
+            margin-bottom: 13px;
+
+            border-radius: 30px;
+
+            color: var(--gold);
+
+            background: rgba(201,163,91,.08);
+            border: 1px solid rgba(201,163,91,.20);
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .hero-badge i {
+            font-size: 10px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px,5vw,46px);
+
+            line-height: 1.3;
+
+            margin-bottom: 12px;
+
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            background: var(--red-gradient);
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero p {
+            max-width: 700px;
+
+            margin: auto;
+
+            color: var(--muted);
+
+            font-size: 15px;
+        }
+
+        /* =========================
+           CONTENT
+        ========================= */
+
+        .content {
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 22px;
+
+            padding: 36px;
+
+            box-shadow:
+                0 18px 55px rgba(15,23,42,.08);
+
+            transition:
+                background .3s,
+                border .3s,
+                box-shadow .3s;
+        }
+
+        [data-theme="dark"] .content {
+            box-shadow:
+                0 20px 60px rgba(0,0,0,.25);
+        }
+
+        section {
+            position: relative;
+
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        section h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: var(--text);
+
+            font-size: 21px;
+            font-weight: 800;
+
+            margin-bottom: 11px;
+        }
+
+        section h2::before {
+            content: "";
+
+            width: 5px;
+            height: 25px;
+
+            border-radius: 5px;
+
+            background: var(--red-gradient);
+
+            flex-shrink: 0;
+        }
+
+        p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-right: 25px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+        li {
+            margin: 8px 0;
+            padding-right: 3px;
+        }
+
+        li::marker {
+            color: var(--red);
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-box {
+            position: relative;
+            overflow: hidden;
+
+            margin-top: 35px;
+
+            text-align: center;
+
+            padding: 32px 20px;
+
+            border-radius: 20px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(229,9,26,.15),
+                    transparent 65%
+                ),
+                var(--dark-2);
+
+            border: 1px solid rgba(201,163,91,.18);
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,.12);
+        }
+
+        .contact-box::before {
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            top: -110px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background: rgba(229,9,26,.12);
+
+            filter: blur(45px);
+
+            pointer-events: none;
+        }
+
+        .contact-box h2 {
+            position: relative;
+
+            color: #fff;
+
+            font-size: 22px;
+            font-weight: 800;
+
+            margin-bottom: 5px;
+        }
+
+        .contact-box h2::before {
+            display: none;
+        }
+
+        .contact-box p {
+            position: relative;
+
+            color: #9aa4b2;
+
+            margin-bottom: 0;
+        }
+
+        .contact-btn {
+            position: relative;
+
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            margin-top: 15px;
+
+            padding: 12px 27px;
+
+            border-radius: 12px;
+
+            text-decoration: none;
+
+            color: #fff;
+
+            background: #25d366;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            box-shadow:
+                0 9px 25px rgba(37,211,102,.20);
+
+            transition: .25s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 13px 30px rgba(37,211,102,.30);
+        }
+
+        .contact-btn i {
+            font-size: 17px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 28px 15px 35px;
+
+            text-align: center;
+
+            color: var(--muted);
+
+            border-top: 1px solid var(--border);
+
+            font-size: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+
+            text-decoration: none;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            padding: 7px 11px;
+
+            border-radius: 10px;
+
+            border: 1px solid var(--border);
+
+            background: rgba(255,255,255,.02);
+
+            transition: .25s;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+
+            border-color:
+                rgba(201,163,91,.30);
+
+            background:
+                rgba(201,163,91,.07);
+
+            transform: translateY(-2px);
+        }
+
+        .footer-links .footer-contact {
+            color: #fff;
+
+            background:
+                rgba(37,211,102,.10);
+
+            border-color:
+                rgba(37,211,102,.20);
+        }
+
+        .footer-links .footer-contact:hover {
+            color: #fff;
+
+            background: #25d366;
+
+            border-color: #25d366;
+
+            box-shadow:
+                0 6px 20px rgba(37,211,102,.20);
+        }
+
+        /* =========================
+           FLOATING WHATSAPP
+        ========================= */
+
+        .floating-whatsapp {
+            position: fixed;
+
+            bottom: 20px;
+            left: 20px;
+
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            color: #fff;
+
+            background: #25d366;
+
+            text-decoration: none;
+
+            font-size: 24px;
+
+            box-shadow:
+                0 10px 30px rgba(37,211,102,.25);
+
+            z-index: 900;
+
+            transition: .25s;
+        }
+
+        .floating-whatsapp:hover {
+            transform:
+                translateY(-4px)
+                scale(1.04);
+
+            box-shadow:
+                0 14px 35px rgba(37,211,102,.35);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width:700px) {
+
+            header {
+                height: 70px;
+            }
+
+            .container {
+                width: min(100% - 22px,1100px);
+            }
+
+            .brand {
+                font-size: 17px;
+            }
+
+            .brand-icon {
+                width: 34px;
+                height: 34px;
+
+                border-radius: 10px;
+            }
+
+            .brand-text small {
+                display: none;
+            }
+
+            .home-btn {
+                padding: 8px 11px;
+                font-size: 11px;
+            }
+
+            .theme-btn {
+                width: 38px;
+                height: 38px;
+            }
+
+            .header-actions {
+                gap: 6px;
+            }
+
+            main {
+                padding: 45px 0 60px;
+            }
+
+            .hero {
+                margin-bottom: 28px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            .content {
+                padding: 24px 18px;
+                border-radius: 18px;
+            }
+
+            section h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul {
+                font-size: 13px;
+            }
+
+            .contact-box {
+                padding: 27px 16px;
+                border-radius: 17px;
+            }
+
+            .contact-box h2 {
+                font-size: 19px;
+            }
+
+            .footer-links {
+                gap: 7px;
+            }
+
+            .footer-links a {
+                font-size: 11px;
+                padding: 6px 8px;
+            }
+
+            .floating-whatsapp {
+                width: 48px;
+                height: 48px;
+
+                bottom: 15px;
+                left: 15px;
+
+                font-size: 21px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
     <div class="container header-inner">
-        <a href="index.html" class="brand"><span>X</span> IPTV</a>
-        <a href="index.html" class="home-btn">العودة للرئيسية</a>
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-icon">X</span>
+
+            <span class="brand-text">
+                سيرفر IPTV
+                <small>إكس IPTV</small>
+            </span>
+
+        </a>
+
+        <div class="header-actions">
+
+            <button
+                class="theme-btn"
+                id="themeToggle"
+                aria-label="تغيير الوضع">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <a href="index.html" class="home-btn">
+
+                <i class="fa-solid fa-house"></i>
+
+                الرئيسية
+
+            </a>
+
+        </div>
+
     </div>
 </header>
 
+
+<!-- MAIN -->
+
 <main>
+
 <div class="container">
 
-<div class="hero">
-    <h1>سياسة <span>الخصوصية</span></h1>
-    <p>نحرص على التعامل مع معلومات زوار الموقع بطريقة واضحة ومسؤولة.</p>
+    <div class="hero">
+
+        <div class="hero-badge">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            X IPTV
+
+        </div>
+
+        <h1>
+            سياسة
+            <span>الخصوصية</span>
+        </h1>
+
+        <p>
+            نحرص على التعامل مع معلومات زوار الموقع بطريقة واضحة ومسؤولة.
+        </p>
+
+    </div>
+
+
+    <div class="content">
+
+        <section>
+
+            <h2>
+                المعلومات التي قد يتم جمعها
+            </h2>
+
+            <p>
+                يمكن تصفح معظم محتوى الموقع دون إنشاء حساب. وقد يتم جمع المعلومات التي يختار المستخدم
+                تقديمها عند التواصل معنا، مثل الاسم أو رقم الهاتف أو تفاصيل الاستفسار.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                المعلومات التقنية
+            </h2>
+
+            <p>
+                قد يتم جمع بعض المعلومات التقنية تلقائيًا أثناء زيارة الموقع، مثل نوع الجهاز والمتصفح
+                وعنوان IP والصفحات التي تمت زيارتها، بحسب الخدمات التقنية أو التحليلية المستخدمة.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                كيفية استخدام المعلومات
+            </h2>
+
+            <ul>
+
+                <li>
+                    الرد على الاستفسارات وطلبات الدعم.
+                </li>
+
+                <li>
+                    تحسين أداء الموقع وتجربة المستخدم.
+                </li>
+
+                <li>
+                    معالجة طلبات الاشتراك أو التجديد عند الحاجة.
+                </li>
+
+                <li>
+                    اكتشاف المشكلات التقنية ومحاولات الاستخدام غير المصرح به.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                ملفات تعريف الارتباط Cookies
+            </h2>
+
+            <p>
+                قد يستخدم الموقع ملفات تعريف الارتباط لتحسين تجربة التصفح وتذكر بعض الإعدادات
+                وفهم كيفية استخدام الموقع.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                خدمات Google والإعلانات
+            </h2>
+
+            <p>
+                في حال تفعيل خدمات Google الإعلانية أو التحليلية على الموقع، فقد تستخدم Google
+                وشركاؤها ملفات تعريف الارتباط أو تقنيات مشابهة وفقًا لإعدادات المستخدم والسياسات
+                الخاصة بهذه الخدمات.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                الروابط الخارجية
+            </h2>
+
+            <p>
+                قد يحتوي الموقع على روابط لمواقع أو تطبيقات تابعة لجهات أخرى. عند الانتقال إلى
+                موقع خارجي، تصبح سياسة الخصوصية الخاصة بذلك الموقع هي المطبقة على استخدامك له.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                تحديث سياسة الخصوصية
+            </h2>
+
+            <p>
+                قد يتم تحديث هذه السياسة من وقت إلى آخر لمواكبة التغييرات في الخدمات أو المتطلبات
+                القانونية أو التقنية، وسيتم نشر النسخة المحدثة على هذه الصفحة.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <div class="contact-box">
+
+            <h2>
+                لديك سؤال حول الخصوصية؟
+            </h2>
+
+            <p>
+                يمكنك التواصل معنا مباشرة وسنساعدك في استفسارك.
+            </p>
+
+            <a
+                class="contact-btn"
+                href="https://wa.me/201212515179?text=السلام%20عليكم،%20لدي%20استفسار%20حول%20سياسة%20الخصوصية"
+                target="_blank"
+                rel="noopener">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                تواصل معنا
+
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div class="content">
-
-<section>
-<h2>المعلومات التي قد يتم جمعها</h2>
-<p>
-يمكن تصفح معظم محتوى الموقع دون إنشاء حساب. وقد يتم جمع المعلومات التي يختار المستخدم
-تقديمها عند التواصل معنا، مثل الاسم أو رقم الهاتف أو تفاصيل الاستفسار.
-</p>
-</section>
-
-<section>
-<h2>المعلومات التقنية</h2>
-<p>
-قد يتم جمع بعض المعلومات التقنية تلقائيًا أثناء زيارة الموقع، مثل نوع الجهاز والمتصفح
-وعنوان IP والصفحات التي تمت زيارتها، بحسب الخدمات التقنية أو التحليلية المستخدمة.
-</p>
-</section>
-
-<section>
-<h2>كيفية استخدام المعلومات</h2>
-<ul>
-<li>الرد على الاستفسارات وطلبات الدعم.</li>
-<li>تحسين أداء الموقع وتجربة المستخدم.</li>
-<li>معالجة طلبات الاشتراك أو التجديد عند الحاجة.</li>
-<li>اكتشاف المشكلات التقنية ومحاولات الاستخدام غير المصرح به.</li>
-</ul>
-</section>
-
-<section>
-<h2>ملفات تعريف الارتباط Cookies</h2>
-<p>
-قد يستخدم الموقع ملفات تعريف الارتباط لتحسين تجربة التصفح وتذكر بعض الإعدادات
-وفهم كيفية استخدام الموقع.
-</p>
-</section>
-
-<section>
-<h2>خدمات Google والإعلانات</h2>
-<p>
-في حال تفعيل خدمات Google الإعلانية أو التحليلية على الموقع، فقد تستخدم Google
-وشركاؤها ملفات تعريف الارتباط أو تقنيات مشابهة وفقًا لإعدادات المستخدم والسياسات
-الخاصة بهذه الخدمات.
-</p>
-</section>
-
-<section>
-<h2>الروابط الخارجية</h2>
-<p>
-قد يحتوي الموقع على روابط لمواقع أو تطبيقات تابعة لجهات أخرى. عند الانتقال إلى
-موقع خارجي، تصبح سياسة الخصوصية الخاصة بذلك الموقع هي المطبقة على استخدامك له.
-</p>
-</section>
-
-<section>
-<h2>تحديث سياسة الخصوصية</h2>
-<p>
-قد يتم تحديث هذه السياسة من وقت إلى آخر لمواكبة التغييرات في الخدمات أو المتطلبات
-القانونية أو التقنية، وسيتم نشر النسخة المحدثة على هذه الصفحة.
-</p>
-</section>
-
-<div class="contact-box">
-<h2>لديك سؤال حول الخصوصية؟</h2>
-<p>يمكنك التواصل معنا مباشرة وسنساعدك في استفسارك.</p>
-<a class="contact-btn" href="https://wa.me/201212515179" target="_blank" rel="noopener">
-💬 تواصل معنا
-</a>
-</div>
-
-</div>
-</div>
 </main>
 
+
+<!-- FOOTER -->
+
 <footer>
-<div class="footer-links">
-<a href="index.html">الرئيسية</a>
-<a href="about.html">من نحن</a>
-<a href="privacy.html">سياسة الخصوصية</a>
-<a href="terms.html">الشروط والأحكام</a>
-</div>
-© 2026 X IPTV - جميع الحقوق محفوظة
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            الرئيسية
+        </a>
+
+        <a href="about.html">
+            من نحن
+        </a>
+
+        <a href="privacy.html">
+            سياسة الخصوصية
+        </a>
+
+        <a href="terms.html">
+            الشروط والأحكام
+        </a>
+
+        <a
+            href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20التواصل%20مع%20X%20IPTV"
+            target="_blank"
+            rel="noopener"
+            class="footer-contact">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            تواصل معنا
+
+        </a>
+
+    </div>
+
+    © 2026 X IPTV - جميع الحقوق محفوظة
+
 </footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+    class="floating-whatsapp"
+    href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20التواصل%20مع%20X%20IPTV"
+    target="_blank"
+    rel="noopener"
+    aria-label="تواصل معنا عبر واتساب">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- THEME SCRIPT -->
+
+<script>
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const html =
+        document.documentElement;
+
+    const savedTheme =
+        localStorage.getItem("xiptv-theme");
+
+
+    if (savedTheme === "dark") {
+
+        html.setAttribute(
+            "data-theme",
+            "dark"
+        );
+
+        themeToggle.innerHTML =
+            '<i class="fa-solid fa-sun"></i>';
+
+    }
+
+
+    themeToggle.addEventListener(
+        "click",
+        function () {
+
+            const currentTheme =
+                html.getAttribute("data-theme");
+
+
+            if (currentTheme === "dark") {
+
+                html.setAttribute(
+                    "data-theme",
+                    "light"
+                );
+
+                localStorage.setItem(
+                    "xiptv-theme",
+                    "light"
+                );
+
+                themeToggle.innerHTML =
+                    '<i class="fa-solid fa-moon"></i>';
+
+            } else {
+
+                html.setAttribute(
+                    "data-theme",
+                    "dark"
+                );
+
+                localStorage.setItem(
+                    "xiptv-theme",
+                    "dark"
+                );
+
+                themeToggle.innerHTML =
+                    '<i class="fa-solid fa-sun"></i>';
+
+            }
+
+        }
+    );
+
+</script>
 
 </body>
 </html>
