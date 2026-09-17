@@ -1692,7 +1692,7 @@
         footer {
 
             padding:
-                25px 7%;
+                28px 7%;
 
             background:
                 #05070b;
@@ -1713,6 +1713,134 @@
 
 
         footer strong {
+
+            color:
+                #fff;
+        }
+
+
+        /* ================= FOOTER LINKS ================= */
+
+        .footer-links {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                10px;
+
+            margin-top:
+                17px;
+        }
+
+
+        .footer-links a {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                7px;
+
+            padding:
+                8px 15px;
+
+            border-radius:
+                11px;
+
+            text-decoration:
+                none;
+
+            color:
+                #aeb6c2;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid
+                rgba(255,255,255,.07);
+
+            font-size:
+                12px;
+
+            font-weight:
+                700;
+
+            transition:
+                all .3s ease;
+        }
+
+
+        .footer-links a:hover {
+
+            color:
+                var(--gold-light);
+
+            border-color:
+                rgba(201,163,91,.35);
+
+            background:
+                rgba(201,163,91,.07);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .footer-links .footer-contact {
+
+            color:
+                #fff;
+
+            background:
+                rgba(37,211,102,.10);
+
+            border-color:
+                rgba(37,211,102,.25);
+        }
+
+
+        .footer-links .footer-contact i {
+
+            color:
+                #25d366;
+        }
+
+
+        .footer-links .footer-contact:hover {
+
+            color:
+                #fff;
+
+            background:
+                #25d366;
+
+            border-color:
+                #25d366;
+
+            box-shadow:
+                0 6px 20px
+                rgba(37,211,102,.22);
+        }
+
+
+        .footer-links .footer-contact:hover i {
 
             color:
                 #fff;
@@ -1991,6 +2119,29 @@
                 font-size:
                     18px;
             }
+
+
+            /* FOOTER MOBILE */
+
+            .footer-links {
+
+                gap:
+                    8px;
+
+                margin-top:
+                    15px;
+            }
+
+
+            .footer-links a {
+
+                font-size:
+                    11px;
+
+                padding:
+                    7px 10px;
+            }
+
         }
 
     </style>
@@ -2998,6 +3149,41 @@
         جميع الحقوق محفوظة © 2026
         <strong>X IPTV - سيرفر إكس</strong>
     </p>
+
+
+    <div class="footer-links">
+
+        <a href="/about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            من نحن
+        </a>
+
+
+        <a href="/privacy.html">
+            <i class="fa-solid fa-shield-halved"></i>
+            سياسة الخصوصية
+        </a>
+
+
+        <a href="/terms.html">
+            <i class="fa-solid fa-file-contract"></i>
+            الشروط والأحكام
+        </a>
+
+
+        <a
+            href="https://wa.me/201212515179?text=السلام%20عليكم،%20أريد%20التواصل%20مع%20X%20IPTV"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-contact">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            تواصل معنا
+
+        </a>
+
+    </div>
 
 </footer>
 
