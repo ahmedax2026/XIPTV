@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>X IPTV | X Server - Subscription & Renewal</title>
+    <meta name="description" content="X IPTV - X Server for online streaming. Explore subscription prices, renewal, and how to use the service on Smart TVs, mobile devices, TV Boxes, and computers.">
+    <meta name="keywords" content="X IPTV, X Server, X IPTV subscription, X IPTV renewal, IPTV Egypt, IPTV subscription">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://xiptv.live/en.html">
+
+    <!-- Language versions -->
+    <link rel="alternate" hreflang="ar" href="https://xiptv.live/">
+    <link rel="alternate" hreflang="en" href="https://xiptv.live/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://xiptv.live/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="X IPTV | X Server - Subscription & Renewal">
+    <meta property="og:description" content="X IPTV - X Server for online streaming. Explore subscription plans, renewal, and supported devices.">
+    <meta property="og:url" content="https://xiptv.live/en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="X IPTV">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="X IPTV | X Server - Subscription & Renewal">
+    <meta name="twitter:description" content="X IPTV - X Server for online streaming.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="LOGO.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        :root {
+            --red: #e5091a;
+            --red-dark: #b70714;
+            --red-light: #ff2438;
+
+            --gold: #c9a35b;
+            --gold-light: #e2c27b;
+
+            --white: #ffffff;
+            --black: #050505;
+
+            --bg: #ffffff;
+            --bg-soft: #f7f7f8;
+            --card: #ffffff;
+            --text: #111111;
+            --text-soft: #666666;
+            --border: rgba(0,0,0,.08);
+
+            --shadow: 0 15px 45px rgba(0,0,0,.08);
+        }
+
+        [data-theme="dark"] {
+            --bg: #080808;
+            --bg-soft: #111111;
+            --card: #151515;
+            --text: #ffffff;
+            --text-soft: #b7b7b7;
+            --border: rgba(255,255,255,.08);
+
+            --shadow: 0 15px 45px rgba(0,0,0,.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", "Cairo", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            transition: background .3s ease, color .3s ease;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 32px));
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(255,255,255,.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        [data-theme="dark"] header {
+            background: rgba(8,8,8,.88);
+        }
+
+        .header-inner {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+        }
+
+        .brand-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, var(--red), var(--red-dark));
+            color: white;
+            font-size: 20px;
+            box-shadow: 0 8px 25px rgba(229,9,26,.25);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-text strong {
+            font-size: 17px;
+        }
+
+        .brand-text span {
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .icon-btn,
+        .language-toggle-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text);
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: .25s;
+            font-weight: 800;
+        }
+
+        .icon-btn:hover,
+        .language-toggle-btn:hover {
+            border-color: var(--red);
+            color: var(--red);
+            transform: translateY(-2px);
+        }
+
+        .header-whatsapp {
+            background: #25d366;
+            color: white;
+            padding: 11px 17px;
+            border-radius: 12px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            transition: .25s;
+        }
+
+        .header-whatsapp:hover {
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            padding: 85px 0 65px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: rgba(229,9,26,.08);
+            filter: blur(100px);
+            border-radius: 50%;
+            top: -180px;
+            right: -100px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(229,9,26,.08);
+            color: var(--red);
+            border: 1px solid rgba(229,9,26,.15);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 72px);
+            line-height: 1.05;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--red);
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: auto;
+            color: var(--text-soft);
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            min-height: 50px;
+            padding: 0 22px;
+            border-radius: 13px;
+            font-weight: 800;
+            transition: .25s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--red), var(--red-dark));
+            color: white;
+            box-shadow: 0 10px 30px rgba(229,9,26,.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(229,9,26,.3);
+        }
+
+        .btn-secondary {
+            background: var(--card);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--red);
+            color: var(--red);
+            transform: translateY(-3px);
+        }
+
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px 30px;
+            margin-top: 30px;
+            color: var(--text-soft);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .trust-row span {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .trust-row i {
+            color: var(--red);
+        }
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+            padding: 25px 0 65px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .stat-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-card h3 {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--text);
+        }
+
+        .stat-card h3 .red {
+            color: var(--red);
+        }
+
+        .stat-card p {
+            color: var(--text-soft);
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            color: var(--text-soft);
+        }
+
+        /* =========================
+           PRICING
+        ========================= */
+
+        .region-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .region-btn {
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text);
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .region-btn.active,
+        .region-btn:hover {
+            background: var(--red);
+            color: white;
+            border-color: var(--red);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .price-card {
+            position: relative;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 32px 25px;
+            box-shadow: var(--shadow);
+            transition: .3s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(229,9,26,.3);
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--red);
+        }
+
+        .popular {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .price-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--red);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .price small {
+            font-size: 15px;
+            color: var(--text-soft);
+            font-weight: 600;
+        }
+
+        .features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            margin: 11px 0;
+            color: var(--text-soft);
+        }
+
+        .features i {
+            color: var(--red);
+            margin-top: 5px;
+        }
+
+        .price-card .btn {
+            width: 100%;
+        }
+
+        /* =========================
+           SEO CONTENT
+        ========================= */
+
+        .seo-section {
+            background: var(--bg-soft);
+        }
+
+        .seo-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .seo-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .seo-content h3 {
+            font-size: 22px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        .seo-content p {
+            color: var(--text-soft);
+            margin-bottom: 14px;
+        }
+
+        .seo-content ul {
+            padding-left: 25px;
+            color: var(--text-soft);
+        }
+
+        .seo-content li {
+            margin: 8px 0;
+        }
+
+        /* =========================
+           DEVICES
+        ========================= */
+
+        .devices-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .accordion-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            border: 0;
+            background: transparent;
+            color: var(--text);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            cursor: pointer;
+            text-align: left;
+            font-weight: 800;
+            font-size: 16px;
+        }
+
+        .accordion-header i {
+            transition: .25s;
+            color: var(--red);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s ease;
+        }
+
+        .accordion-inner {
+            padding: 0 20px 22px;
+            color: var(--text-soft);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 800px;
+        }
+
+        .accordion-item.active .accordion-header i {
+            transform: rotate(180deg);
+        }
+
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin: 7px 0;
+            color: var(--red);
+            font-weight: 800;
+        }
+
+        .code-box {
+            display: inline-block;
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 9px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 5px 4px 5px 0;
+            color: var(--text);
+        }
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        .faq {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .faq .accordion-item {
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 35px 0;
+            border-top: 1px solid var(--border);
+            background: var(--bg-soft);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: var(--text-soft);
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--red);
+        }
+
+        .copyright {
+            color: var(--text-soft);
+            font-size: 14px;
+        }
+
+        /* =========================
+           FLOATING WHATSAPP
+        ========================= */
+
+        .floating-whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25d366;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 27px;
+            z-index: 999;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+            transition: .25s;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .devices-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 22px, 1180px);
+            }
+
+            .header-inner {
+                min-height: 66px;
+            }
+
+            .brand-text {
+                display: none;
+            }
+
+            .header-whatsapp {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+
+            .header-whatsapp span {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 0 45px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                letter-spacing: -1.5px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .trust-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .stats-grid {
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 18px 10px;
+            }
+
+            .stat-card h3 {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .section-heading {
+                margin-bottom: 28px;
+            }
+
+            .section-heading h2 {
+                font-size: 29px;
+            }
+
+            .region-switch {
+                flex-direction: column;
+            }
+
+            .region-btn {
+                width: 100%;
+            }
+
+            .floating-whatsapp {
+                width: 54px;
+                height: 54px;
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "X IPTV",
+        "url": "https://xiptv.live/en.html",
+        "description": "X IPTV - X Server for online streaming."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "X IPTV",
+        "url": "https://xiptv.live/"
+    }
+    </script>
+
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+    <div class="container header-inner">
+
+        <a href="en.html" class="brand">
+            <div class="brand-logo">❯❯ X</div>
+
+            <div class="brand-text">
+                <strong>X Server</strong>
+                <span>IPTV</span>
+            </div>
+        </a>
+
+        <div class="header-actions">
+
+            <button
+                id="themeToggle"
+                class="icon-btn"
+                title="Dark mode"
+                aria-label="Toggle dark mode">
+                <i id="themeIcon" class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- Back to Arabic page -->
+            <a
+                href="index.html"
+                class="language-toggle-btn"
+                title="العربية"
+                aria-label="Open Arabic version">
+                AR
+            </a>
+
+            <a
+                href="https://wa.me/+201212674742"
+                target="_blank"
+                class="header-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Subscribe Now</span>
+            </a>
+
+        </div>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-tv"></i>
+                X IPTV - X Server
+            </div>
+
+            <h1>
+                X IPTV
+                <span>| X Server</span>
+                <br>
+                Subscription & Renewal
+            </h1>
+
+            <p>
+                Enjoy an online streaming experience with X IPTV.
+                Explore subscription plans, renewal options and how to
+                use the service on Smart TVs, mobile devices, TV Boxes
+                and computers.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#pricing" class="btn btn-primary">
+                    <i class="fa-solid fa-tags"></i>
+                    View Plans
+                </a>
+
+                <a
+                    href="https://wa.me/+201212674742?text=Hello%2C%20I%20would%20like%20to%20try%20X%20IPTV%20for%2024%20hours."
+                    target="_blank"
+                    class="btn btn-secondary">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    24-Hour Free Trial
+                </a>
+
+            </div>
+
+            <div class="trust-row">
+
+                <span>
+                    <i class="fa-solid fa-bolt"></i>
+                    Fast Activation
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-headset"></i>
+                    Continuous Technical Support
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    All Devices
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-display"></i>
+                    4K to LOW Quality
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Stable Service
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3><span class="red">+</span>28,000</h3>
+                <p>Live TV Channels</p>
+            </div>
+
+            <div class="stat-card">
+                <h3><span class="red">+</span>120,000</h3>
+                <p>Movies & Series</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>99.9<span class="red">%</span></h3>
+                <p>Service Stability</p>
+            </div>
+
+            <div class="stat-card">
+                <h3><span class="red">+</span>23,230</h3>
+                <p>Customers</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRICING
+========================= -->
+
+<section id="pricing">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>X IPTV Subscription</h2>
+
+            <p>
+                Choose the subscription period that suits you
+            </p>
+
+        </div>
+
+
+        <div class="region-switch">
+
+            <button
+                id="btnEgypt"
+                class="region-btn active"
+                onclick="setRegion('egypt')">
+                🇪🇬 Egypt
+            </button>
+
+            <button
+                id="btnIntl"
+                class="region-btn"
+                onclick="setRegion('intl')">
+                🌍 International
+            </button>
+
+        </div>
+
+
+        <div class="pricing-grid">
+
+            <!-- 3 MONTHS -->
+
+            <div class="price-card">
+
+                <h3>3-Month Subscription</h3>
+
+                <div class="price" id="price-3m">
+                    200 <small>EGP</small>
+                </div>
+
+                <ul class="features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        More than 15,000 channels
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Movies & series library
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Full HD / 4K quality
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Compatible devices
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Technical support
+                    </li>
+
+                </ul>
+
+                <a
+                    id="btn-3m-link"
+                    href="https://wa.me/+201212674742"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Subscribe Now
+                </a>
+
+            </div>
+
+
+            <!-- 12 MONTHS -->
+
+            <div class="price-card featured">
+
+                <div class="popular">
+                    Best Seller 🔥
+                </div>
+
+                <h3>12-Month Subscription</h3>
+
+                <div class="price" id="price-12m">
+                    500 <small>EGP</small>
+                </div>
+
+                <ul class="features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        More than 22,000 channels
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Movies & series library
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        4K / Full HD quality
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Compatible devices
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Continuous technical support
+                    </li>
+
+                </ul>
+
+                <a
+                    id="btn-12m-link"
+                    href="https://wa.me/+201212674742"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Subscribe Now
+                </a>
+
+            </div>
+
+
+            <!-- 6 MONTHS -->
+
+            <div class="price-card">
+
+                <h3>6-Month Subscription</h3>
+
+                <div class="price" id="price-6m">
+                    350 <small>EGP</small>
+                </div>
+
+                <ul class="features">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        More than 18,000 channels
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Subtitled movies & series
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        4K / Full HD quality
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Compatible devices
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Technical support
+                    </li>
+
+                </ul>
+
+                <a
+                    id="btn-6m-link"
+                    href="https://wa.me/+201212674742"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Subscribe Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SEO CONTENT
+========================= -->
+
+<section class="seo-section">
+
+    <div class="container">
+
+        <div class="seo-content">
+
+            <h2>
+                X IPTV Subscription & X Server Renewal
+            </h2>
+
+            <p>
+                If you are looking for an X IPTV subscription or want
+                to renew your X Server subscription, you can explore
+                the available plans and choose the period that suits you.
+            </p>
+
+            <h3>
+                How to Renew X IPTV?
+            </h3>
+
+            <p>
+                To renew X IPTV, contact us through WhatsApp and mention
+                that you want to renew your current subscription.
+                Our support team will explain the renewal steps and
+                available plans.
+            </p>
+
+            <ul>
+
+                <li>
+                    Choose your subscription period.
+                </li>
+
+                <li>
+                    Contact technical support.
+                </li>
+
+                <li>
+                    Send the required subscription information.
+                </li>
+
+                <li>
+                    Choose your preferred payment method.
+                </li>
+
+                <li>
+                    Your subscription will be activated or renewed
+                    after confirmation.
+                </li>
+
+            </ul>
+
+
+            <h3>
+                Using X IPTV on Different Devices
+            </h3>
+
+            <p>
+                X IPTV can be used on compatible devices and IPTV
+                applications, including Android devices, Smart TVs,
+                TV Boxes and computers. Setup steps may vary depending
+                on the device and application.
+            </p>
+
+
+            <h3>
+                One-Year X Server Subscription
+            </h3>
+
+            <p>
+                A 12-month X IPTV subscription is available.
+                You can check the current price and included features
+                in the subscription section or contact us directly
+                for subscription and renewal information.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DEVICES
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Using X IPTV on Your Devices
+            </h2>
+
+            <p>
+                Choose your device to learn how to use and download
+                the required application.
+            </p>
+
+        </div>
+
+
+        <div class="devices-grid">
+
+
+            <!-- GENERAL INFO -->
+
+            <div class="accordion-item active">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        <i class="fa-solid fa-tv"></i>
+                        &nbsp;
+                        X Server X IPTV
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        <h3 style="margin-bottom:10px;">
+                            About X IPTV
+                        </h3>
+
+                        <p>
+                            X IPTV provides online streaming with
+                            different packages for watching television
+                            channels and entertainment content across
+                            compatible devices.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <strong>Live Streaming:</strong>
+                            Watch live TV channels and online broadcasts
+                            depending on the selected package and application.
+                        </p>
+
+                        <p>
+                            <strong>Sports & Entertainment:</strong>
+                            A variety of channels and entertainment content
+                            available within the service.
+                        </p>
+
+                        <p>
+                            <strong>VOD Library:</strong>
+                            Movies, series and on-demand content depending
+                            on the available service and package.
+                        </p>
+
+                        <p>
+                            <strong>Device Compatibility:</strong>
+                            Smart TV, Android, TV Box and computer,
+                            depending on the compatible application.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANDROID -->
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        <i class="fa-brands fa-android"></i>
+                        &nbsp;
+                        Android APK
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        <p>
+                            Download X IPTV applications for Android
+                            phones, Android TVs and TV Boxes.
+                            Choose the version that works best for your device.
+                        </p>
+
+                        <p>
+                            <strong>📱 X IPTV Applications:</strong>
+                        </p>
+
+                        <a
+                            href="https://eurofinal.site/XTV_PRO.apk"
+                            target="_blank"
+                            class="download-link">
+                            <i class="fa-solid fa-download"></i>
+                            XTV PRO
+                        </a>
+
+                        <br>
+
+                        <a
+                            href="https://eurofinal.site/XTV_Code_V3.apk"
+                            target="_blank"
+                            class="download-link">
+                            <i class="fa-solid fa-download"></i>
+                            XTV Code V3
+                        </a>
+
+                        <p style="margin-top:15px;">
+                            <strong>🔑 Downloader Codes:</strong>
+                        </p>
+
+                        <span class="code-box">5833417</span>
+                        <span class="code-box">7814261</span>
+                        <span class="code-box">8539550</span>
+                        <span class="code-box">2965285</span>
+
+                        <p style="margin-top:12px;">
+                            You can try any of the available codes
+                            depending on your application or preferred
+                            download method.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IPHONE -->
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        <i class="fa-brands fa-apple"></i>
+                        &nbsp;
+                        iPhone & iPad
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        <p>
+                            To use X Server on iPhone, iPad and Apple TV,
+                            you can use compatible IPTV applications
+                            available for Apple devices.
+                        </p>
+
+                        <br>
+
+                        <a
+                            href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar"
+                            target="_blank"
+                            class="download-link">
+                            <i class="fa-solid fa-download"></i>
+                            Smarters Player Lite
+                        </a>
+
+                        <br>
+
+                        <a
+                            href="https://apps.apple.com/eg/app/code-play/id1661811116?l=ar"
+                            target="_blank"
+                            class="download-link">
+                            <i class="fa-solid fa-download"></i>
+                            Code Play
+                        </a>
+
+                        <p style="margin-top:15px;">
+                            <strong>🔑 Code Play Code:</strong>
+                        </p>
+
+                        <span class="code-box">070</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SMART TV -->
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        <i class="fa-solid fa-display"></i>
+                        &nbsp;
+                        LG & Samsung Smart TVs
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        <h3 style="margin-bottom:10px;">
+                            X IPTV on LG & Samsung TVs
+                        </h3>
+
+                        <p>
+                            Search for the <strong>PLAYER 0</strong>
+                            application in your TV's app store.
+                            Open the application and select
+                            <strong>PORTAL CODE</strong>.
+                        </p>
+
+                        <p style="margin-top:15px;">
+                            <strong>🔑 X Server Portal Code:</strong>
+                        </p>
+
+                        <span class="code-box">75886993</span>
+
+                        <p style="margin-top:12px;">
+                            After entering the code, enter the username
+                            and password provided with your subscription
+                            to complete the setup.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPUTER -->
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        <i class="fa-solid fa-laptop"></i>
+                        &nbsp;
+                        Computer & Laptop
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        <p>
+                            You can use X IPTV on Windows computers
+                            and laptops with a compatible IPTV application.
+                        </p>
+
+                        <br>
+
+                        <a
+                            href="https://www.mhiptv.net/iptv/IPTVSmartersPro-1.1.1.exe"
+                            target="_blank"
+                            class="download-link">
+                            <i class="fa-solid fa-download"></i>
+                            Download IPTV Smarters Pro
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Quick answers about X IPTV subscription and renewal
+            </p>
+
+        </div>
+
+
+        <div class="faq">
+
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        What is X IPTV?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        X IPTV is an online streaming service that
+                        provides access to television and entertainment
+                        content through compatible applications and devices.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        How can I subscribe to X IPTV?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        Choose the subscription plan you want from
+                        the pricing section and contact our technical
+                        support team through WhatsApp to learn about
+                        the activation process.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        How can I renew X IPTV?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        Contact technical support and mention that
+                        you want to renew your current X IPTV subscription.
+                        Our team will explain the available renewal options.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        Can X IPTV be used on a mobile phone?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        Yes. X IPTV can be used on compatible mobile
+                        devices through supported IPTV applications.
+                        Setup may vary depending on the device and application.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <button
+                    class="accordion-header"
+                    onclick="toggleAccordion(this)">
+
+                    <span>
+                        Can X IPTV be used on Smart TVs?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="accordion-inner">
+
+                        X IPTV can be used on compatible Smart TVs
+                        through supported IPTV applications.
+                        Setup steps depend on the TV operating system
+                        and application.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="copyright">
+            All Rights Reserved © 2026 X IPTV - X Server
+        </div>
+
+        <div class="footer-links">
+
+            <a href="/about.html">
+                About Us
+            </a>
+
+            <a href="/privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="/terms.html">
+                Terms & Conditions
+            </a>
+
+            <a
+                href="https://wa.me/+201212674742"
+                target="_blank">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+    href="https://wa.me/+201212674742"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Contact us on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<script>
+
+    /* =========================
+       THEME
+    ========================= */
+
+    const themeToggleBtn =
+        document.getElementById('themeToggle');
+
+    const themeIcon =
+        document.getElementById('themeIcon');
+
+    const htmlElement =
+        document.documentElement;
+
+
+    function applyTheme(theme) {
+
+        const safeTheme =
+            theme === 'dark' ? 'dark' : 'light';
+
+        htmlElement.setAttribute(
+            'data-theme',
+            safeTheme
+        );
+
+        themeIcon.classList.toggle(
+            'fa-moon',
+            safeTheme === 'light'
+        );
+
+        themeIcon.classList.toggle(
+            'fa-sun',
+            safeTheme === 'dark'
+        );
+
+        themeToggleBtn.title =
+            safeTheme === 'dark'
+                ? 'Light mode'
+                : 'Dark mode';
+
+        themeToggleBtn.setAttribute(
+            'aria-label',
+            safeTheme === 'dark'
+                ? 'Light mode'
+                : 'Dark mode'
+        );
+    }
+
+
+    themeToggleBtn.addEventListener(
+        'click',
+        () => {
+
+            const currentTheme =
+                htmlElement.getAttribute('data-theme') || 'light';
+
+            const nextTheme =
+                currentTheme === 'light'
+                    ? 'dark'
+                    : 'light';
+
+            applyTheme(nextTheme);
+
+            localStorage.setItem(
+                'xiptv-theme',
+                nextTheme
+            );
+
+        }
+    );
+
+
+    applyTheme(
+        localStorage.getItem('xiptv-theme') || 'light'
+    );
+
+
+    /* =========================
+       ACCORDION
+    ========================= */
+
+    function toggleAccordion(header) {
+
+        const item =
+            header.parentElement;
+
+        const isActive =
+            item.classList.contains('active');
+
+
+        document
+            .querySelectorAll('.accordion-item')
+            .forEach(acc => {
+                acc.classList.remove('active');
+            });
+
+
+        if (!isActive) {
+            item.classList.add('active');
+        }
+
+    }
+
+
+    /* =========================
+       REGION / PRICES
+    ========================= */
+
+    function setRegion(region) {
+
+        const btnEgypt =
+            document.getElementById('btnEgypt');
+
+        const btnIntl =
+            document.getElementById('btnIntl');
+
+
+        const price3 =
+            document.getElementById('price-3m');
+
+        const price6 =
+            document.getElementById('price-6m');
+
+        const price12 =
+            document.getElementById('price-12m');
+
+
+        const link3 =
+            document.getElementById('btn-3m-link');
+
+        const link6 =
+            document.getElementById('btn-6m-link');
+
+        const link12 =
+            document.getElementById('btn-12m-link');
+
+
+        const whatsapp =
+            '+201212674742';
+
+
+        if (region === 'egypt') {
+
+            btnEgypt.classList.add('active');
+            btnIntl.classList.remove('active');
+
+
+            price3.innerHTML =
+                '200 <small>EGP</small>';
+
+            price6.innerHTML =
+                '350 <small>EGP</small>';
+
+            price12.innerHTML =
+                '500 <small>EGP</small>';
+
+
+            link3.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 3 months.'
+                );
+
+
+            link6.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 6 months.'
+                );
+
+
+            link12.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 12 months.'
+                );
+
+        }
+
+
+        else {
+
+            btnEgypt.classList.remove('active');
+            btnIntl.classList.add('active');
+
+
+            price3.innerHTML =
+                '$15';
+
+            price6.innerHTML =
+                '$20';
+
+            price12.innerHTML =
+                '$30';
+
+
+            link3.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 3 months. I am outside Egypt.'
+                );
+
+
+            link6.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 6 months. I am outside Egypt.'
+                );
+
+
+            link12.href =
+                'https://wa.me/' +
+                whatsapp +
+                '?text=' +
+                encodeURIComponent(
+                    'Hello, I would like to subscribe to X IPTV for 12 months. I am outside Egypt.'
+                );
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
