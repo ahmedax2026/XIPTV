@@ -588,17 +588,14 @@
             display:
                 inline-flex;
 
+            align-items:
+                center;
+
             width:
                 max-content;
 
             animation:
-                tickerScroll 32s linear infinite;
-        }
-
-        .ticker-wrap:hover .ticker-track {
-
-            animation-play-state:
-                paused;
+                tickerScroll 70s linear infinite;
         }
 
         @keyframes tickerScroll {
@@ -623,16 +620,19 @@
                 center;
 
             gap:
-                9px;
+                8px;
+
+            margin:
+                0 6px;
 
             padding:
-                0 24px;
+                8px 18px;
 
-            color:
-                #c7cedb;
+            border-radius:
+                30px;
 
             font-size:
-                13.5px;
+                13px;
 
             font-weight:
                 800;
@@ -643,34 +643,67 @@
             white-space:
                 nowrap;
 
-            border-left:
-                1px solid
-                rgba(255,255,255,.09);
-
             transition:
-                color .3s;
+                .3s;
         }
 
-        [dir="ltr"] .ticker-item {
+        .ticker-item.accent-red {
 
-            border-left:
-                none;
+            color:
+                #ffb4bb;
 
-            border-right:
+            background:
+                rgba(229,9,26,.14);
+
+            border:
                 1px solid
-                rgba(255,255,255,.09);
+                rgba(229,9,26,.30);
         }
 
-        .ticker-item:hover {
+        .ticker-item.accent-gold {
+
+            color:
+                var(--gold-light);
+
+            background:
+                rgba(201,163,91,.14);
+
+            border:
+                1px solid
+                rgba(201,163,91,.32);
+        }
+
+        .ticker-item.accent-red:hover {
 
             color:
                 #fff;
+
+            background:
+                var(--red-gradient);
+
+            border-color:
+                transparent;
+
+            transform:
+                translateY(-2px);
+        }
+
+        .ticker-item.accent-gold:hover {
+
+            color:
+                #17130a;
+
+            background:
+                var(--gold-gradient);
+
+            border-color:
+                transparent;
+
+            transform:
+                translateY(-2px);
         }
 
         .ticker-item i {
-
-            color:
-                var(--gold);
 
             font-size:
                 11px;
@@ -2843,7 +2876,10 @@
                     12px;
 
                 padding:
-                    0 16px;
+                    7px 14px;
+
+                margin:
+                    0 4px;
             }
 
 
@@ -4795,24 +4831,48 @@ function setRegion(region) {
 const waNumber = '201212515179';
 
 const tickerKeywords = [
-    { text: 'اشتراك X IPTV',                  msg: 'السلام عليكم، أريد الاشتراك في X IPTV' },
-    { text: 'تجديد سيرفر إكس',                msg: 'السلام عليكم، أريد تجديد اشتراك سيرفر إكس' },
-    { text: 'تجربة مجانية 24 ساعة',           msg: 'السلام عليكم، أريد تجربة مجانية 24 ساعة لسيرفر X IPTV' },
-    { text: 'سيرفر X IPTV مصر',               msg: 'السلام عليكم، أريد الاستفسار عن سيرفر X IPTV في مصر' },
-    { text: 'اشتراك سنة كاملة',               msg: 'السلام عليكم، أريد الاشتراك في باقة 12 شهر' },
-    { text: 'اشتراك 6 أشهر',                  msg: 'السلام عليكم، أريد الاشتراك في باقة 6 أشهر' },
-    { text: 'اشتراك 3 أشهر',                  msg: 'السلام عليكم، أريد الاشتراك في باقة 3 أشهر' },
-    { text: 'دعم فني متواصل',                 msg: 'السلام عليكم، محتاج دعم فني بخصوص اشتراكي' },
-    { text: 'جودة 4K ثابتة',                  msg: 'السلام عليكم، أريد الاستفسار عن جودة البث في X IPTV' },
-    { text: 'أفضل سيرفر IPTV 2026',           msg: 'السلام عليكم، أريد الاشتراك في أفضل سيرفر IPTV' },
-    { text: 'تجديد اشتراك منتهي',             msg: 'السلام عليكم، اشتراكي منتهي وأريد تجديده' },
-    { text: 'تشغيل X IPTV على السامسونج',     msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على شاشة سامسونج' },
-    { text: 'تشغيل X IPTV على الآيفون',       msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على الآيفون' },
-    { text: 'تشغيل على أندرويد بوكس',         msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على أندرويد بوكس' },
-    { text: 'أسعار الباقات',                  msg: 'السلام عليكم، أريد معرفة أسعار باقات X IPTV' },
-    { text: 'كود التفعيل',                    msg: 'السلام عليكم، أريد كود تفعيل X IPTV' },
-    { text: 'سيرفر ثابت بدون تقطيع',          msg: 'السلام عليكم، أريد الاشتراك في سيرفر ثابت بدون تقطيع' },
-    { text: 'استفسار عن الاشتراك',            msg: 'السلام عليكم، عندي استفسار قبل الاشتراك في X IPTV' }
+    { text: 'اشتراك X IPTV',              msg: 'السلام عليكم، أريد الاشتراك في X IPTV' },
+    { text: 'تجديد X IPTV',               msg: 'السلام عليكم، أريد تجديد اشتراك X IPTV' },
+    { text: 'اشتراك سيرفر إكس',           msg: 'السلام عليكم، أريد الاشتراك في سيرفر إكس' },
+    { text: 'تجديد سيرفر إكس',            msg: 'السلام عليكم، أريد تجديد اشتراك سيرفر إكس' },
+    { text: 'X Server',                    msg: 'السلام عليكم، أريد الاشتراك في X Server' },
+    { text: 'X IPTV Egypt',                msg: 'السلام عليكم، أريد الاشتراك في X IPTV مصر' },
+    { text: 'IPTV مصر',                    msg: 'السلام عليكم، أريد الاستفسار عن IPTV في مصر' },
+    { text: 'اشتراك IPTV',                 msg: 'السلام عليكم، أريد الاشتراك في IPTV' },
+    { text: 'IPTV بدون تقطيع',             msg: 'السلام عليكم، أريد سيرفر IPTV بدون تقطيع' },
+    { text: 'تجربة X IPTV',                msg: 'السلام عليكم، أريد تجربة X IPTV' },
+    { text: 'تجربة مجانية 24 ساعة',        msg: 'السلام عليكم، أريد تجربة مجانية 24 ساعة لسيرفر X IPTV' },
+    { text: 'كود تفعيل X IPTV',            msg: 'السلام عليكم، أريد كود تفعيل X IPTV' },
+    { text: 'أسعار X IPTV',                msg: 'السلام عليكم، أريد معرفة أسعار X IPTV' },
+    { text: 'باقات X IPTV',                msg: 'السلام عليكم، أريد معرفة باقات X IPTV' },
+    { text: 'اشتراك IPTV 3 شهور',          msg: 'السلام عليكم، أريد الاشتراك في باقة 3 شهور' },
+    { text: 'اشتراك IPTV 6 شهور',          msg: 'السلام عليكم، أريد الاشتراك في باقة 6 شهور' },
+    { text: 'اشتراك IPTV سنة',             msg: 'السلام عليكم، أريد الاشتراك في باقة سنة كاملة' },
+    { text: 'قنوات رياضية',                msg: 'السلام عليكم، أريد الاستفسار عن القنوات الرياضية' },
+    { text: 'قنوات عالمية',                msg: 'السلام عليكم، أريد الاستفسار عن القنوات العالمية' },
+    { text: 'Live TV',                     msg: 'السلام عليكم، أريد الاستفسار عن خدمة البث المباشر' },
+    { text: 'Movies & Series',             msg: 'السلام عليكم، أريد الاستفسار عن مكتبة الأفلام والمسلسلات' },
+    { text: 'جودة 4K',                     msg: 'السلام عليكم، أريد الاستفسار عن جودة 4K' },
+    { text: 'Full HD',                     msg: 'السلام عليكم، أريد الاستفسار عن جودة Full HD' },
+    { text: 'Smart TV',                    msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على Smart TV' },
+    { text: 'Samsung TV',                  msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على شاشة سامسونج' },
+    { text: 'LG TV',                       msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على شاشة LG' },
+    { text: 'Android TV',                  msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على Android TV' },
+    { text: 'TV Box',                      msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على TV Box' },
+    { text: 'Android Box',                 msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على Android Box' },
+    { text: 'IPTV على الموبايل',           msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على الموبايل' },
+    { text: 'IPTV على الآيفون',            msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على الآيفون' },
+    { text: 'IPTV على الكمبيوتر',          msg: 'السلام عليكم، أريد طريقة تشغيل X IPTV على الكمبيوتر' },
+    { text: 'IPTV لجميع الأجهزة',          msg: 'السلام عليكم، أريد الاستفسار عن تشغيل X IPTV على جميع الأجهزة' },
+    { text: 'كيفية تشغيل X IPTV',          msg: 'السلام عليكم، محتاج أعرف كيفية تشغيل X IPTV' },
+    { text: 'كيفية تجديد X IPTV',          msg: 'السلام عليكم، محتاج أعرف كيفية تجديد X IPTV' },
+    { text: 'تجديد اشتراك منتهي',          msg: 'السلام عليكم، اشتراكي منتهي وأريد تجديده' },
+    { text: 'دعم فني X IPTV',              msg: 'السلام عليكم، محتاج دعم فني بخصوص X IPTV' },
+    { text: 'أسعار اشتراك X IPTV',         msg: 'السلام عليكم، أريد معرفة أسعار اشتراك X IPTV' },
+    { text: 'اشتراك اكس',                  msg: 'السلام عليكم، أريد الاشتراك في اكس' },
+    { text: 'XIPTV',                  msg: 'السلام عليكم، أريد الاشتراك في اكس' },
+    { text: 'XIPTV APK',                  msg: 'السلام عليكم، أريد الاشتراك في اكس' },
+    { text: 'تجديد اشتراك اكس',            msg: 'السلام عليكم، أريد تجديد اشتراك اكس' }
 ];
 
 function buildTicker() {
@@ -4820,17 +4880,18 @@ function buildTicker() {
     const track = document.getElementById('tickerTrack');
     if (!track) return;
 
-    const itemsHTML = tickerKeywords.map(k => {
+    const itemsHTML = tickerKeywords.map((k, i) => {
 
         const link = `https://wa.me/${waNumber}?text=${encodeURIComponent(k.msg)}`;
+        const accent = i % 2 === 0 ? 'accent-red' : 'accent-gold';
 
-        return `<a href="${link}" class="ticker-item" target="_blank" rel="noopener">
+        return `<a href="${link}" class="ticker-item ${accent}" target="_blank" rel="noopener">
                     <i class="fa-brands fa-whatsapp"></i>${k.text}
                 </a>`;
 
     }).join('');
 
-    /* تكرار المحتوى مرتين لضمان حركة متصلة بدون فراغات */
+    /* تكرار المحتوى مرتين لضمان حركة متصلة بدون فراغات، والانيميشن مستمر دايمًا بدون توقف */
     track.innerHTML = itemsHTML + itemsHTML;
 }
 
