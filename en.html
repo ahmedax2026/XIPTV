@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="light">
 <head>
@@ -8,26 +7,32 @@
     <!-- ================= SEO ================= -->
     <title>X IPTV | X Server - X IPTV Subscription & Renewal</title>
 
-   <!-- ================= FAVICON ================= -->
-<link rel="icon" type="image/jpeg" href="/favicon.jpg">
-<link rel="shortcut icon" type="image/jpeg" href="/favicon.jpg">
-<link rel="apple-touch-icon" href="/favicon.jpg">
+  <!-- Favicon & App Icons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<meta property="og:image" content="https://xiptv.live/logo.png">
+<meta name="twitter:image" content="https://xiptv.live/logo.png">
+<meta name="theme-color" content="#e5091a">
 
     <meta name="description"
-          content="X IPTV - X Server online streaming service. Explore X IPTV subscription plans, renewal options, and how to use the service on Smart TVs, mobile phones, TV Boxes, and computers.">
+          content="X IPTV - X Server for online streaming. Discover X IPTV subscription plans, renewal options, and how to use the service on mobile phones, Smart TVs, TV Boxes, and computers.">
 
     <meta name="keywords"
-          content="X IPTV, X Server, X IPTV subscription, X IPTV renewal, IPTV Egypt, IPTV subscription">
+          content="X IPTV, X TV, XTV, X Server, X IPTV subscription, X IPTV renewal, X Server subscription, IPTV Egypt">
 
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://xiptv.live/en.html">
+    <link rel="canonical" href="https://xiptv.live/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="X IPTV | X Server - X IPTV Subscription & Renewal">
     <meta property="og:description"
-          content="X IPTV subscription and renewal with support for Smart TVs, mobile devices, TV Boxes, and computers.">
-    <meta property="og:url" content="https://xiptv.live/en.html">
+          content="X IPTV subscription and renewal with X Server support across different devices.">
+    <meta property="og:url" content="https://xiptv.live/">
     <meta property="og:site_name" content="X IPTV">
     <meta property="og:locale" content="en_US">
 
@@ -35,7 +40,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="X IPTV | X Server">
     <meta name="twitter:description"
-          content="X IPTV subscription and renewal with support for multiple devices.">
+          content="X IPTV subscription and renewal with support for different devices.">
 
     <!-- ================= STRUCTURED DATA ================= -->
 
@@ -49,8 +54,7 @@
         "X IPTV Subscription",
         "X IPTV Renewal"
       ],
-      "url": "https://xiptv.live/en.html",
-      "inLanguage": "en"
+      "url": "https://xiptv.live/"
     }
     </script>
 
@@ -60,7 +64,9 @@
       "@type": "Organization",
       "name": "X IPTV",
       "alternateName": "X Server",
-      "url": "https://xiptv.live/en.html"
+      "url": "https://xiptv.live/",
+      "logo": "https://xiptv.live/logo.png",
+      "image": "https://xiptv.live/logo.png"
     }
     </script>
 
@@ -163,7 +169,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', 'Cairo', sans-serif;
+            font-family: Inter, 'Cairo', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -209,7 +215,7 @@
             position: fixed;
 
             top: 0;
-            left: 0;
+            right: 0;
 
             width: 100%;
 
@@ -290,7 +296,7 @@
             color:
                 var(--red);
 
-            margin-right:
+            margin-left:
                 2px;
 
             filter:
@@ -320,7 +326,7 @@
                 column;
 
             text-align:
-                left;
+                right;
 
             min-width:
                 0;
@@ -490,12 +496,708 @@
         }
 
 
+        /* ================= KEYWORDS TICKER ================= */
+
+        .ticker-wrap {
+
+            position:
+                fixed;
+
+            top:
+                76px;
+
+            right:
+                0;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            overflow:
+                hidden;
+
+            background:
+                var(--dark-2);
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,.06);
+
+            padding:
+                11px 0;
+
+            z-index:
+                999;
+        }
+
+        .ticker-wrap::before,
+        .ticker-wrap::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            top:
+                0;
+
+            bottom:
+                0;
+
+            width:
+                60px;
+
+            z-index:
+                2;
+
+            pointer-events:
+                none;
+        }
+
+        .ticker-wrap::before {
+
+            right:
+                0;
+
+            background:
+                linear-gradient(
+                    to left,
+                    var(--dark-2),
+                    transparent
+                );
+        }
+
+        .ticker-wrap::after {
+
+            left:
+                0;
+
+            background:
+                linear-gradient(
+                    to right,
+                    var(--dark-2),
+                    transparent
+                );
+        }
+
+        .ticker-track {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            width:
+                max-content;
+
+            animation:
+                tickerScroll 70s linear infinite;
+        }
+
+        @keyframes tickerScroll {
+
+            0% {
+                transform:
+                    translateX(0);
+            }
+
+            100% {
+                transform:
+                    translateX(-50%);
+            }
+        }
+
+        .ticker-item {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            margin:
+                0 6px;
+
+            padding:
+                8px 18px;
+
+            border-radius:
+                30px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                800;
+
+            text-decoration:
+                none;
+
+            white-space:
+                nowrap;
+
+            transition:
+                .3s;
+        }
+
+        .ticker-item.accent-red {
+
+            color:
+                #ffb4bb;
+
+            background:
+                rgba(229,9,26,.14);
+
+            border:
+                1px solid
+                rgba(229,9,26,.30);
+        }
+
+        .ticker-item.accent-gold {
+
+            color:
+                var(--gold-light);
+
+            background:
+                rgba(201,163,91,.14);
+
+            border:
+                1px solid
+                rgba(201,163,91,.32);
+        }
+
+        .ticker-item.accent-red:hover {
+
+            color:
+                #fff;
+
+            background:
+                var(--red-gradient);
+
+            border-color:
+                transparent;
+
+            transform:
+                translateY(-2px);
+        }
+
+        .ticker-item.accent-gold:hover {
+
+            color:
+                #17130a;
+
+            background:
+                var(--gold-gradient);
+
+            border-color:
+                transparent;
+
+            transform:
+                translateY(-2px);
+        }
+
+        .ticker-item i {
+
+            font-size:
+                11px;
+        }
+
+
+        /* ================= PROMO SLIDER ================= */
+
+        .promo-slider {
+
+            padding:
+                0 7% 60px;
+
+            position:
+                relative;
+        }
+
+        .slider-box {
+
+            position:
+                relative;
+
+            max-width:
+                760px;
+
+            margin:
+                auto;
+
+            background:
+                var(--card);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                26px;
+
+            padding:
+                50px 60px 40px;
+
+            text-align:
+                center;
+
+            overflow:
+                hidden;
+
+            min-height:
+                230px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            box-shadow:
+                0 18px 45px
+                rgba(15,23,42,.06);
+        }
+
+        .slider-box::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                340px;
+
+            height:
+                340px;
+
+            border-radius:
+                50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(229,9,26,.07),
+                    transparent 70%
+                );
+
+            top:
+                -140px;
+
+            left:
+                -80px;
+
+            pointer-events:
+                none;
+        }
+
+        .slider-box::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                280px;
+
+            height:
+                280px;
+
+            border-radius:
+                50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(201,163,91,.08),
+                    transparent 70%
+                );
+
+            bottom:
+                -120px;
+
+            right:
+                -70px;
+
+            pointer-events:
+                none;
+        }
+
+        .slide {
+
+            display:
+                none;
+
+            width:
+                100%;
+
+            position:
+                relative;
+            z-index: 1;
+        }
+
+        .slide.active {
+
+            display:
+                block;
+
+            animation:
+                slideIn .6s
+                cubic-bezier(.22,1,.36,1);
+        }
+
+        @keyframes slideIn {
+
+            from {
+                opacity:
+                    0;
+
+                transform:
+                    translateY(16px)
+                    scale(.98);
+            }
+
+            to {
+                opacity:
+                    1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+        }
+
+        .slide-icon-circle {
+
+            width:
+                66px;
+
+            height:
+                66px;
+
+            border-radius:
+                50%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            margin:
+                0 auto 20px;
+
+            box-shadow:
+                0 12px 26px
+                rgba(229,9,26,.28);
+        }
+
+        .slide-icon-circle.accent-red {
+
+            background:
+                var(--red-gradient);
+        }
+
+        .slide-icon-circle.accent-gold {
+
+            background:
+                var(--gold-gradient);
+
+            box-shadow:
+                0 12px 26px
+                rgba(201,163,91,.30);
+        }
+
+        .slide-icon-circle i {
+
+            font-size:
+                26px;
+
+            color:
+                #fff;
+        }
+
+        .slide-tag {
+
+            display:
+                inline-block;
+
+            padding:
+                5px 15px;
+
+            border-radius:
+                20px;
+
+            font-size:
+                11.5px;
+
+            font-weight:
+                800;
+
+            margin-bottom:
+                14px;
+        }
+
+        .slide-tag.accent-red {
+
+            color:
+                var(--red);
+
+            background:
+                rgba(229,9,26,.08);
+
+            border:
+                1px solid
+                rgba(229,9,26,.20);
+        }
+
+        .slide-tag.accent-gold {
+
+            color:
+                var(--gold);
+
+            background:
+                rgba(201,163,91,.10);
+
+            border:
+                1px solid
+                rgba(201,163,91,.25);
+        }
+
+        .slide h3 {
+
+            font-size:
+                23px;
+
+            font-weight:
+                900;
+
+            margin-bottom:
+                10px;
+
+            line-height:
+                1.5;
+        }
+
+        .slide p {
+
+            color:
+                var(--muted);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.9;
+
+            max-width:
+                480px;
+
+            margin:
+                auto;
+        }
+
+        .slider-nav {
+
+            position:
+                absolute;
+
+            top:
+                50%;
+
+            transform:
+                translateY(-50%);
+
+            width:
+                38px;
+
+            height:
+                38px;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                var(--card);
+
+            color:
+                var(--text);
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            cursor:
+                pointer;
+
+            font-size:
+                13px;
+
+            z-index:
+                2;
+
+            transition:
+                .3s;
+        }
+
+        .slider-nav:hover {
+
+            color:
+                #fff;
+
+            background:
+                var(--red-gradient);
+
+            border-color:
+                transparent;
+        }
+
+        .slider-nav.prev {
+            left: 14px;
+        }
+
+        .slider-nav.next {
+            right: 14px;
+        }
+
+        .slider-dots {
+
+            position:
+                absolute;
+
+            bottom:
+                18px;
+
+            left:
+                50%;
+
+            transform:
+                translateX(-50%);
+
+            display:
+                flex;
+
+            gap:
+                8px;
+
+            z-index:
+                2;
+        }
+
+        .dot {
+
+            width:
+                8px;
+
+            height:
+                8px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--border);
+
+            cursor:
+                pointer;
+
+            transition:
+                .3s;
+
+            border:
+                none;
+
+            padding:
+                0;
+        }
+
+        .dot.active {
+
+            width:
+                24px;
+
+            border-radius:
+                6px;
+
+            background:
+                var(--red);
+        }
+
+        .slider-progress-track {
+
+            position:
+                absolute;
+
+            bottom:
+                0;
+
+            left:
+                0;
+
+            right:
+                0;
+
+            height:
+                3px;
+
+            background:
+                var(--border);
+
+            z-index:
+                2;
+        }
+
+        .slider-progress-bar {
+
+            height:
+                100%;
+
+            width:
+                0%;
+
+            background:
+                var(--red-gradient);
+        }
+
+        .slider-progress-bar.animate {
+
+            transition:
+                width 4.5s linear;
+
+            width:
+                100%;
+        }
+
+
         /* ================= HERO ================= */
 
         .hero {
 
             padding:
-                165px 7% 75px;
+                209px 7% 75px;
 
             text-align:
                 center;
@@ -835,7 +1537,7 @@
             position:
                 absolute;
 
-            right:
+            left:
                 0;
 
             top:
@@ -865,10 +1567,11 @@
         }
 
 
+
+        /* Keep only the % sign red */
         .percent-red {
             color: var(--red) !important;
         }
-
 
         .plus-red {
             color: var(--red) !important;
@@ -1036,7 +1739,7 @@
                 22px;
 
             text-align:
-                left;
+                right;
 
             box-shadow:
                 0 10px 35px
@@ -1077,11 +1780,11 @@
             top:
                 -13px;
 
-            left:
+            right:
                 50%;
 
             transform:
-                translateX(-50%);
+                translateX(50%);
 
             background:
                 var(--red-gradient);
@@ -1335,7 +2038,7 @@
 
         .seo-info-section ul {
 
-            padding-left:
+            padding-right:
                 23px;
 
             color:
@@ -1389,7 +2092,7 @@
                 hidden;
 
             text-align:
-                left;
+                right;
         }
 
 
@@ -1433,7 +2136,7 @@
             color:
                 var(--red);
 
-            margin-right:
+            margin-left:
                 8px;
         }
 
@@ -1574,7 +2277,7 @@
             background:
                 rgba(201,163,91,.06);
 
-            border-left:
+            border-right:
                 3px solid
                 var(--gold);
 
@@ -1692,7 +2395,7 @@
                 20px 22px;
 
             text-align:
-                left;
+                right;
         }
 
 
@@ -1889,7 +2592,7 @@
             position:
                 fixed;
 
-            right:
+            left:
                 22px;
 
             bottom:
@@ -1944,75 +2647,84 @@
         }
 
 
+
         /* ================= LANGUAGE SWITCH ================= */
 
         .language-toggle-btn {
-
-            min-width:
-                42px;
-
-            height:
-                42px;
-
-            padding:
-                0 10px;
-
-            border-radius:
-                21px;
-
-            border:
-                1px solid var(--border);
-
-            background:
-                var(--card);
-
-            color:
-                var(--text);
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            cursor:
-                pointer;
-
-            font-family:
-                Inter, sans-serif;
-
-            font-size:
-                12px;
-
-            font-weight:
-                800;
-
-            transition:
-                .3s;
-
-            flex-shrink:
-                0;
-
-            text-decoration:
-                none;
+            min-width: 42px;
+            height: 42px;
+            padding: 0 10px;
+            border-radius: 21px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-family: Inter, sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            transition: .3s;
+            flex-shrink: 0;
         }
-
 
         .language-toggle-btn:hover {
-
-            color:
-                var(--red);
-
-            border-color:
-                var(--red);
-
-            transform:
-                translateY(-2px);
+            color: var(--red);
+            border-color: var(--red);
+            transform: translateY(-2px);
         }
 
+        [dir="ltr"] body,
+        [dir="ltr"] button,
+        [dir="ltr"] a {
+            font-family: Inter, 'Cairo', sans-serif;
+        }
+
+        [dir="ltr"] .brand-text-container {
+            text-align: left;
+        }
+
+        [dir="ltr"] .price-card,
+        [dir="ltr"] .accordion-item,
+        [dir="ltr"] .faq-item {
+            text-align: left;
+        }
+
+        [dir="ltr"] .feature-bullet-item {
+            border-right: 0;
+            border-left: 3px solid var(--gold);
+        }
+
+        [dir="ltr"] .seo-info-section ul {
+            padding-right: 0;
+            padding-left: 23px;
+        }
+
+        [dir="ltr"] .icon-device {
+            margin-left: 0;
+            margin-right: 8px;
+        }
+
+        [dir="ltr"] .whatsapp-float {
+            left: auto;
+            right: 22px;
+        }
+
+        @media(max-width: 600px) {
+            [dir="ltr"] .whatsapp-float {
+                left: auto;
+                right: 16px;
+            }
+
+            .language-toggle-btn {
+                width: 36px;
+                min-width: 36px;
+                height: 36px;
+                padding: 0;
+                font-size: 11px;
+            }
+        }
 
         /* ================= TABLET ================= */
 
@@ -2134,25 +2846,6 @@
             }
 
 
-            .language-toggle-btn {
-
-                width:
-                    36px;
-
-                min-width:
-                    36px;
-
-                height:
-                    36px;
-
-                padding:
-                    0;
-
-                font-size:
-                    11px;
-            }
-
-
             .nav-btn {
 
                 padding:
@@ -2166,12 +2859,116 @@
             }
 
 
+            /* TICKER */
+
+            .ticker-wrap {
+
+                top:
+                    66px;
+
+                padding:
+                    8px 0;
+            }
+
+            .ticker-item {
+
+                font-size:
+                    12px;
+
+                padding:
+                    7px 14px;
+
+                margin:
+                    0 4px;
+            }
+
+
+            /* PROMO SLIDER */
+
+            .promo-slider {
+
+                padding:
+                    0 16px 40px;
+            }
+
+            .slider-box {
+
+                padding:
+                    38px 22px 34px;
+
+                border-radius:
+                    20px;
+
+                min-height:
+                    190px;
+            }
+
+            .slide-icon-circle {
+
+                width:
+                    54px;
+
+                height:
+                    54px;
+
+                margin-bottom:
+                    14px;
+            }
+
+            .slide-icon-circle i {
+
+                font-size:
+                    21px;
+            }
+
+            .slide-tag {
+
+                font-size:
+                    10.5px;
+
+                padding:
+                    4px 12px;
+            }
+
+            .slide h3 {
+
+                font-size:
+                    16.5px;
+            }
+
+            .slide p {
+
+                font-size:
+                    12.5px;
+            }
+
+            .slider-nav {
+
+                width:
+                    32px;
+
+                height:
+                    32px;
+
+                font-size:
+                    11px;
+            }
+
+            .slider-nav.prev {
+                left: 8px;
+            }
+
+            .slider-nav.next {
+                right: 8px;
+            }
+
+
             /* HERO */
 
             .hero {
 
                 padding:
-                    125px 18px 45px;
+                    165px 18px 45px;
             }
 
 
@@ -2689,7 +3486,7 @@
                 height:
                     52px;
 
-                right:
+                left:
                     16px;
 
                 bottom:
@@ -2712,9 +3509,7 @@
 
 <header>
 
-    <a href="en.html"
-       class="brand-logo"
-       aria-label="X IPTV - Home">
+    <a href="/" class="brand-logo" aria-label="X IPTV - Home">
 
         <div class="logo-graphic">
             <span class="arrows">❯❯</span>
@@ -2722,7 +3517,7 @@
         </div>
 
         <div class="brand-text-container">
-            <span class="brand-text-top">IPTV SERVER</span>
+            <span class="brand-text-top">IPTV Server</span>
             <span class="brand-text-bottom">X</span>
         </div>
 
@@ -2734,27 +3529,24 @@
         <button
             class="theme-toggle-btn"
             id="themeToggle"
-            title="Dark Mode"
-            aria-label="Toggle theme">
+            title="Change appearance"
+            aria-label="Change appearance">
 
             <i class="fa-solid fa-moon" id="themeIcon"></i>
 
         </button>
 
-
         <a
-            href="index.html"
+            href="/"
             class="language-toggle-btn"
             title="العربية"
             aria-label="Open Arabic version">
-
-            AR
-
+            EN
         </a>
 
 
         <a
-            href="https://wa.me/201212515179?text=Hello%2C%20I%20want%20to%20subscribe%20to%20X%20IPTV"
+            href="https://wa.me/201212515179?text=Hello, I would like to subscribe to X IPTV Server"
             class="nav-btn"
             target="_blank"
             rel="noopener">
@@ -2766,6 +3558,17 @@
     </div>
 
 </header>
+
+
+<!-- ================= KEYWORDS TICKER ================= -->
+
+<div class="ticker-wrap" role="navigation" aria-label="Quick subscription links">
+
+    <div class="ticker-track" id="tickerTrack">
+        <!-- Ticker content is added automatically by JavaScript for continuous scrolling -->
+    </div>
+
+</div>
 
 
 <!-- ================= MAIN ================= -->
@@ -2806,9 +3609,8 @@
     <p>
 
         Enjoy an online streaming experience with X IPTV.
-        Explore our subscription plans, renewal options, and learn
-        how to use the service on Smart TVs, mobile phones,
-        TV Boxes, and computers.
+        Explore subscription and renewal plans and learn how to use the service
+        on Smart TVs, mobile phones, TV Boxes, and computers.
 
     </p>
 
@@ -2825,7 +3627,7 @@
 
 
         <a
-            href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20request%20a%2024-hour%20free%20trial%20for%20X%20IPTV"
+            href="https://wa.me/201212515179?text=Hello, I would like to request a free 24-hour trial of X IPTV Server"
             class="btn-sec"
             target="_blank"
             rel="noopener">
@@ -2848,12 +3650,12 @@
 
         <div class="trust-item">
             <i class="fa-solid fa-headset"></i>
-            Ongoing Technical Support
+            Continuous technical support throughout your subscription
         </div>
 
         <div class="trust-item">
             <i class="fa-solid fa-mobile-screen"></i>
-            All Compatible Devices
+            All Devices
         </div>
 
         <div class="trust-item">
@@ -2863,7 +3665,77 @@
 
         <div class="trust-item">
             <i class="fa-solid fa-shield-halved"></i>
-            Stable Service
+            Excellent Stability
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROMO SLIDER ================= -->
+
+<section class="promo-slider" aria-label="Service Features">
+
+    <div class="slider-box">
+
+        <button class="slider-nav prev" onclick="goToSlide((currentSlide - 1 + slides.length) % slides.length)" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="slide active">
+            <div class="slide-icon-circle accent-red">
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <span class="slide-tag accent-red">Performance</span>
+            <h3>Smooth Streaming Without Freezing</h3>
+            <p>Dedicated high-capacity servers provide smooth and stable viewing, even during peak times and major matches.</p>
+        </div>
+
+        <div class="slide">
+            <div class="slide-icon-circle accent-gold">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="slide-tag accent-gold">Speed</span>
+            <h3>Instant Activation in Minutes</h3>
+            <p>Contact us on WhatsApp and your subscription will be active shortly, with no unnecessary waiting or complications.</p>
+        </div>
+
+        <div class="slide">
+            <div class="slide-icon-circle accent-red">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <span class="slide-tag accent-red">Support</span>
+            <h3>Real Technical Support, Not Automated Messages</h3>
+            <p>Our support team stays with you throughout your subscription to help resolve setup or playback issues promptly.</p>
+        </div>
+
+        <div class="slide">
+            <div class="slide-icon-circle accent-gold">
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <span class="slide-tag accent-gold">Compatibility</span>
+            <h3>Works Across All Your Devices</h3>
+            <p>From your mobile phone and Smart TV to a regular TV with a TV Box, one subscription covers all your needs.</p>
+        </div>
+
+        <div class="slide">
+            <div class="slide-icon-circle accent-red">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <span class="slide-tag accent-red">No-Risk Trial</span>
+            <h3>Try It Yourself First</h3>
+            <p>Want to check the quality before paying? Request a free 24-hour trial and experience the difference yourself.</p>
+        </div>
+
+        <button class="slider-nav next" onclick="goToSlide((currentSlide + 1) % slides.length)" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots"></div>
+
+        <div class="slider-progress-track">
+            <div class="slider-progress-bar" id="sliderProgressBar"></div>
         </div>
 
     </div>
@@ -2877,7 +3749,7 @@
 
     <div class="stat-item">
         <h3><span class="plus-red">+</span>28,000</h3>
-        <p>Live TV Channels</p>
+        <p>Live Channels</p>
     </div>
 
     <div class="stat-item">
@@ -2956,7 +3828,7 @@
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    More than 15,000 channels
+                    Over 15,000 channels
                 </li>
 
                 <li>
@@ -2983,7 +3855,7 @@
 
 
             <a
-                href="https://wa.me/201212515179?text=Hello%2C%20I%20want%20to%20subscribe%20to%20the%203-month%20plan%20%28200%20EGP%29"
+                href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%203-month%20plan%20(200%20EGP)"
                 class="card-btn"
                 id="btn-3m-link"
                 target="_blank"
@@ -3019,7 +3891,7 @@
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    More than 22,000 channels
+                    Over 22,000 channels
                 </li>
 
                 <li>
@@ -3034,19 +3906,19 @@
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    Compatible device support
+                    Works on compatible devices
                 </li>
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    Ongoing technical support
+                    Continuous technical support
                 </li>
 
             </ul>
 
 
             <a
-                href="https://wa.me/201212515179?text=Hello%2C%20I%20want%20to%20subscribe%20to%20the%20premium%2012-month%20plan%20%28500%20EGP%29"
+                href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%2012-month%20premium%20plan%20(500%20EGP)"
                 class="card-btn"
                 id="btn-12m-link"
                 target="_blank"
@@ -3077,12 +3949,12 @@
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    More than 18,000 channels
+                    Over 18,000 channels
                 </li>
 
                 <li>
                     <i class="fa-solid fa-check"></i>
-                    Movies & series with subtitles
+                    Subtitled movies & series
                 </li>
 
                 <li>
@@ -3104,7 +3976,7 @@
 
 
             <a
-                href="https://wa.me/201212515179?text=Hello%2C%20I%20want%20to%20subscribe%20to%20the%206-month%20plan%20%28350%20EGP%29"
+                href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%206-month%20plan%20(350%20EGP)"
                 class="card-btn"
                 id="btn-6m-link"
                 target="_blank"
@@ -3133,9 +4005,8 @@
 
 
         <p>
-            If you are looking for an X IPTV subscription or want to renew
-            your X Server subscription, you can explore the available plans
-            and choose the subscription period that suits you.
+            If you are looking for an X IPTV subscription or want to renew your X Server subscription,
+            you can review the available plans and choose the period that suits you.
         </p>
 
 
@@ -3145,9 +4016,8 @@
 
 
         <p>
-            To renew X IPTV, contact us through WhatsApp and let us know
-            that you want to renew your current subscription. Our support
-            team will explain the renewal steps and available plan options.
+            To renew X IPTV, contact us via WhatsApp and let us know that you want to renew
+            your current subscription. We will explain the renewal steps and the suitable plan.
         </p>
 
 
@@ -3170,21 +4040,21 @@
             </li>
 
             <li>
-                Your subscription will be activated or renewed after confirmation.
+                Your subscription will be activated or renewed after the payment is confirmed.
             </li>
 
         </ul>
 
 
         <h3>
-            Using X IPTV on Different Devices
+            Using X IPTV on Devices
         </h3>
 
 
         <p>
-            The service can be used on compatible IPTV applications and
-            devices such as Android, Smart TV, TV Box, and computers.
-            Setup steps may vary depending on the device and application.
+            The service can be used on devices compatible with IPTV applications,
+            such as Android, Smart TV, TV Box, and computers. Setup steps vary
+            depending on the device and application used.
         </p>
 
 
@@ -3194,10 +4064,9 @@
 
 
         <p>
-            An X IPTV 12-month subscription plan is available.
-            You can check the current price and features in the subscription
-            section or contact us directly for subscription and renewal
-            information.
+            A 12-month X IPTV plan is available. You can check the current price
+            and features in the plans section or contact us directly to ask about
+            subscription and renewal.
         </p>
 
     </div>
@@ -3210,12 +4079,12 @@
 <section class="apps-section" id="apps">
 
     <h2 class="section-title">
-        Use X IPTV on Your Devices
+        Using X IPTV on Devices
     </h2>
 
 
     <p class="section-subtitle">
-        Select your device to learn how to use and download the required application
+        Choose your device to learn how to set up and download the app
     </p>
 
 
@@ -3259,10 +4128,10 @@
 
 
                     <p>
-                        X IPTV provides an online streaming service with
-                        different plans for watching TV channels and
-                        entertainment content across a range of compatible
-                        devices.
+                        X IPTV provides online streaming with a variety of plans
+                        for watching TV channels and entertainment content,
+                        and the service can be used on a range of
+                        compatible devices.
                     </p>
 
                 </div>
@@ -3276,9 +4145,9 @@
                         <i class="fa-solid fa-bolt-lightning"></i>
 
                         <div>
-                            <strong>Live Streaming:</strong>
-                            Watch live channels and online broadcasts
-                            depending on your subscription and application.
+                            <strong>Live TV:</strong>
+                            Watch TV channels and live broadcasts online
+                            depending on the plan and application used.
                         </div>
 
                     </div>
@@ -3290,8 +4159,8 @@
 
                         <div>
                             <strong>Sports & Entertainment:</strong>
-                            A variety of channels and entertainment content
-                            available through the service.
+                            A variety of channels and content available
+                            within the service.
                         </div>
 
                     </div>
@@ -3303,8 +4172,8 @@
 
                         <div>
                             <strong>VOD Library:</strong>
-                            Movies, series, and on-demand content depending
-                            on the available service and subscription plans.
+                            Movies, series, and on-demand content depending on the service
+                            and available plans.
                         </div>
 
                     </div>
@@ -3316,7 +4185,7 @@
 
                         <div>
                             <strong>Device Compatibility:</strong>
-                            Smart TV, Android, TV Box, and computer support
+                            Smart TV, Android, TV Box, and computers
                             depending on the compatible application.
                         </div>
 
@@ -3327,9 +4196,8 @@
 
                 <p style="margin-top:15px;">
 
-                    Compatible applications are available for Android and
-                    TV Box devices. You can choose the appropriate application
-                    from the Android APK section below.
+                    Compatible applications are available for Android and TV Box devices
+                    and you can choose the appropriate app from the Android APK section below.
 
                 </p>
 
@@ -3363,16 +4231,15 @@
             <div class="accordion-content">
 
                 <p>
-                    Download the X IPTV application on your Android phone,
-                    Android TV, or TV BOX and choose the version that suits
-                    your device.
+                    Download the X IPTV Server app on your mobile phone or
+                    Android screens and TV BOX devices, then choose the version that suits you.
                 </p>
 
 
                 <div style="margin-top:15px;">
 
                     <strong>
-                        📱 X IPTV Applications:
+                        📱 X IPTV Apps:
                     </strong>
 
                     <br>
@@ -3430,8 +4297,7 @@
 
 
                 <p style="margin-top:10px;">
-                    You can try any of the available codes depending on
-                    the application or download method suitable for your device.
+                    You can try any of the available codes depending on the app or download method suitable for your device.
                 </p>
 
             </div>
@@ -3464,9 +4330,8 @@
             <div class="accordion-content">
 
                 <p>
-                    To use X Server on iPhone, iPad, and Apple TV,
-                    you can use IPTV applications compatible with
-                    the Apple operating system.
+                    To use X Server on iPhone, iPad, and Apple TV devices,
+                    you can use IPTV applications compatible with Apple devices.
                 </p>
 
 
@@ -3545,15 +4410,15 @@
 
                         <i class="fa-solid fa-display"></i>
 
-                        X IPTV on LG & SAMSUNG TVs
+                        Using X IPTV on LG & SAMSUNG TVs
 
                     </h3>
 
 
                     <p>
-                        Search for the <strong>PLAYER 0</strong> application
-                        in your TV's app store. Open the application and
-                        select <strong>PORTAL CODE</strong>.
+                        Search for the <strong>PLAYER 0</strong> app
+                        in your TV app store, then open the app
+                        and select <strong>PORTAL CODE</strong>.
                     </p>
 
                 </div>
@@ -3572,9 +4437,9 @@
 
                 <p style="margin-top:12px;">
 
-                    After entering the code, enter the
+                    After entering the code, enter your
                     <strong>username and password</strong>
-                    associated with your subscription to complete the setup.
+                    for your subscription to complete setup.
 
                 </p>
 
@@ -3608,7 +4473,7 @@
             <div class="accordion-content">
 
                 You can use X IPTV on computers and laptops
-                with an IPTV application compatible with Windows.
+                using an IPTV application compatible with Windows.
 
 
                 <a
@@ -3617,7 +4482,7 @@
                     target="_blank"
                     rel="noopener">
 
-                    Download Application
+                    Download App
 
                 </a>
 
@@ -3654,9 +4519,8 @@
             </h3>
 
             <p>
-                X IPTV is an online streaming service that provides access
-                to television and entertainment content through compatible
-                applications and devices.
+                X IPTV is an online streaming service that provides access to
+                TV and entertainment content through compatible apps and devices.
             </p>
 
         </div>
@@ -3669,9 +4533,8 @@
             </h3>
 
             <p>
-                Choose the plan that suits you from the subscription section,
-                then contact technical support through WhatsApp to learn
-                about the subscription and activation process.
+                Choose the suitable plan from the plans section, then contact
+                technical support via WhatsApp for subscription and activation steps.
             </p>
 
         </div>
@@ -3680,13 +4543,12 @@
         <div class="faq-item">
 
             <h3>
-                How can I renew X IPTV?
+                How to Renew X IPTV?
             </h3>
 
             <p>
-                Contact technical support and let us know that you want
-                to renew your current X IPTV subscription. The renewal
-                steps will then be explained to you.
+                Contact technical support and let us know that you want to renew your
+                current X IPTV subscription. We will explain the renewal steps.
             </p>
 
         </div>
@@ -3695,13 +4557,12 @@
         <div class="faq-item">
 
             <h3>
-                Can I use X IPTV on my phone?
+                Can X IPTV be used on a phone?
             </h3>
 
             <p>
-                Yes. The service can be used on devices compatible with
-                IPTV applications. Setup steps may vary depending on
-                the application and device.
+                Yes, the service can be used on devices compatible with
+                IPTV applications, and setup varies by application.
             </p>
 
         </div>
@@ -3710,13 +4571,12 @@
         <div class="faq-item">
 
             <h3>
-                Can I use X Server on a Smart TV?
+                Can X Server be used on a Smart TV?
             </h3>
 
             <p>
-                The service can be used on compatible Smart TV devices
-                through IPTV applications. Setup steps may vary depending
-                on the TV operating system.
+                The service can be used on Smart TVs compatible with
+                IPTV applications, and setup steps vary by TV operating system.
             </p>
 
         </div>
@@ -3734,7 +4594,7 @@
 <footer>
 
     <p>
-        All Rights Reserved © 2026
+        All rights reserved © 2026
         <strong>X IPTV - X Server</strong>
     </p>
 
@@ -3779,7 +4639,7 @@
 <!-- ================= WHATSAPP ================= -->
 
 <a
-    href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20X%20IPTV"
+    href="https://wa.me/201212515179?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20X%20IPTV%20Server"
     class="whatsapp-float"
     target="_blank"
     rel="noopener"
@@ -3809,71 +4669,24 @@ const htmlElement =
 
 
 function applyTheme(theme) {
+    const safeTheme = theme === 'dark' ? 'dark' : 'light';
+    htmlElement.setAttribute('data-theme', safeTheme);
 
-    const safeTheme =
-        theme === 'dark' ? 'dark' : 'light';
+    themeIcon.classList.toggle('fa-moon', safeTheme === 'light');
+    themeIcon.classList.toggle('fa-sun', safeTheme === 'dark');
 
-    htmlElement.setAttribute(
-        'data-theme',
-        safeTheme
-    );
-
-
-    themeIcon.classList.toggle(
-        'fa-moon',
-        safeTheme === 'light'
-    );
-
-
-    themeIcon.classList.toggle(
-        'fa-sun',
-        safeTheme === 'dark'
-    );
-
-
-    themeToggleBtn.title =
-        safeTheme === 'dark'
-            ? 'Light Mode'
-            : 'Dark Mode';
-
-
-    themeToggleBtn.setAttribute(
-        'aria-label',
-        safeTheme === 'dark'
-            ? 'Light Mode'
-            : 'Dark Mode'
-    );
+    themeToggleBtn.title = safeTheme === 'dark' ? 'Light mode' : 'Dark mode';
+    themeToggleBtn.setAttribute('aria-label', safeTheme === 'dark' ? 'Light mode' : 'Dark mode');
 }
 
+themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'light';
+    const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+    applyTheme(nextTheme);
+    localStorage.setItem('xiptv-theme', nextTheme);
+});
 
-themeToggleBtn.addEventListener(
-    'click',
-    () => {
-
-        const currentTheme =
-            htmlElement.getAttribute('data-theme')
-            || 'light';
-
-        const nextTheme =
-            currentTheme === 'light'
-                ? 'dark'
-                : 'light';
-
-        applyTheme(nextTheme);
-
-        localStorage.setItem(
-            'xiptv-theme',
-            nextTheme
-        );
-
-    }
-);
-
-
-applyTheme(
-    localStorage.getItem('xiptv-theme')
-    || 'light'
-);
+applyTheme(localStorage.getItem('xiptv-theme') || 'light');
 
 
 /* =====================================================
@@ -3961,17 +4774,17 @@ function setRegion(region) {
 
         btn3mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%203-month%20plan%20%28200%20EGP%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%203-month%20plan%20(200%20EGP)';
 
 
         btn6mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%206-month%20plan%20%28350%20EGP%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%206-month%20plan%20(350%20EGP)';
 
 
         btn12mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%20premium%2012-month%20plan%20%28500%20EGP%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%2012-month%20premium%20plan%20(500%20EGP)';
 
 
     } else {
@@ -3994,20 +4807,175 @@ function setRegion(region) {
 
         btn3mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%203-month%20plan%20%28%2415%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%203-month%20plan%20($15)';
 
 
         btn6mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%206-month%20plan%20%28%2420%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%206-month%20plan%20($20)';
 
 
         btn12mLink.href =
             'https://wa.me/201212515179?text=' +
-            'Hello%2C%20I%20want%20to%20subscribe%20to%20the%20premium%2012-month%20plan%20%28%2430%29';
+            'Hello%2C%20I%20would%20like%20to%20subscribe%20to%20the%2012-month%20premium%20plan%20($30)';
 
     }
 
+}
+
+
+/* =====================================================
+   KEYWORDS TICKER — Each keyword opens WhatsApp directly
+===================================================== */
+
+const waNumber = '201212515179';
+
+const tickerKeywords = [
+    { text: 'X IPTV Subscription',              msg: 'Hello, I would like to subscribe to X IPTV' },
+    { text: 'X IPTV Renewal',               msg: 'Hello, I would like to renew my X IPTV subscription' },
+    { text: 'X Server Subscription',           msg: 'Hello, I would like to subscribe to X Server' },
+    { text: 'X Server Renewal',            msg: 'Hello, I would like to renew my X Server subscription' },
+    { text: 'X Server',                    msg: 'Hello, I would like to subscribe to X Server' },
+    { text: 'X IPTV Egypt',                msg: 'Hello, I would like to subscribe to X IPTV Egypt' },
+    { text: 'IPTV Egypt',                    msg: 'Hello, I would like to ask about IPTV in Egypt' },
+    { text: 'IPTV Subscription',                 msg: 'Hello, I would like to subscribe to IPTV' },
+    { text: 'Smooth IPTV',             msg: 'Hello, I would like an IPTV server with smooth streaming' },
+    { text: 'X IPTV Trial',                msg: 'Hello, I would like to try X IPTV' },
+    { text: '24-Hour Free Trial',        msg: 'Hello, I would like a free 24-hour trial of X IPTV Server' },
+    { text: 'X IPTV Activation Code',            msg: 'Hello, I would like an X IPTV activation code' },
+    { text: 'X IPTV Prices',                msg: 'Hello, I would like to know X IPTV prices' },
+    { text: 'X IPTV Plans',                msg: 'Hello, I would like to know the X IPTV plans' },
+    { text: '3-Month IPTV Subscription',          msg: 'Hello, I would like to subscribe to the 3-month plan' },
+    { text: '6-Month IPTV Subscription',          msg: 'Hello, I would like to subscribe to the 6-month plan' },
+    { text: '1-Year IPTV Subscription',             msg: 'Hello, I would like to subscribe to the one-year plan' },
+    { text: 'Sports Channels',                msg: 'Hello, I would like to ask about sports channels' },
+    { text: 'International Channels',                msg: 'Hello, I would like to ask about international channels' },
+    { text: 'Live TV',                     msg: 'Hello, I would like to ask about the live TV service' },
+    { text: 'Movies & Series',             msg: 'Hello, I would like to ask about the movies and series library' },
+    { text: '4K Quality',                     msg: 'Hello, I would like to ask about 4K quality' },
+    { text: 'Full HD',                     msg: 'Hello, I would like to ask about Full HD quality' },
+    { text: 'Smart TV',                    msg: 'Hello, I would like to know how to use X IPTV on Smart TV' },
+    { text: 'Samsung TV',                  msg: 'Hello, I would like to know how to use X IPTV on a Samsung TV' },
+    { text: 'LG TV',                       msg: 'Hello, I would like to know how to use X IPTV on an LG TV' },
+    { text: 'Android TV',                  msg: 'Hello, I would like to know how to use X IPTV on Android TV' },
+    { text: 'TV Box',                      msg: 'Hello, I would like to know how to use X IPTV on a TV Box' },
+    { text: 'Android Box',                 msg: 'Hello, I would like to know how to use X IPTV on an Android Box' },
+    { text: 'IPTV on Mobile',           msg: 'Hello, I would like to know how to use X IPTV on mobile' },
+    { text: 'IPTV on iPhone',            msg: 'Hello, I would like to know how to use X IPTV on iPhone' },
+    { text: 'IPTV on Computer',          msg: 'Hello, I would like to know how to use X IPTV on a computer' },
+    { text: 'IPTV on All Devices',          msg: 'Hello, I would like to ask about using X IPTV on all devices' },
+    { text: 'How to Use X IPTV',          msg: 'Hello, I would like to know how to use X IPTV' },
+    { text: 'How to Renew X IPTV',          msg: 'Hello, I would like to know how to renew X IPTV' },
+    { text: 'Renew Expired Subscription',          msg: 'Hello, my subscription has expired and I would like to renew it' },
+    { text: 'Technical support X IPTV',              msg: 'Hello, I need technical support for X IPTV' },
+    { text: 'X IPTV Subscription Prices',         msg: 'Hello, I would like to know X IPTV subscription prices' },
+    { text: 'X IPTV Subscription',                  msg: 'Hello, I would like to subscribe to X IPTV' },
+    { text: 'XIPTV',                  msg: 'Hello, I would like to subscribe to X IPTV' },
+    { text: 'XIPTV APK',                  msg: 'Hello, I would like to subscribe to X IPTV' },
+    { text: 'X IPTV Renewal',            msg: 'Hello, I would like to renew my X IPTV subscription' }
+];
+
+function buildTicker() {
+
+    const track = document.getElementById('tickerTrack');
+    if (!track) return;
+
+    const itemsHTML = tickerKeywords.map((k, i) => {
+
+        const link = `https://wa.me/${waNumber}?text=${encodeURIComponent(k.msg)}`;
+        const accent = i % 2 === 0 ? 'accent-red' : 'accent-gold';
+
+        return `<a href="${link}" class="ticker-item ${accent}" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>${k.text}
+                </a>`;
+
+    }).join('');
+
+    /* Duplicate the content to ensure continuous scrolling without gaps */
+    track.innerHTML = itemsHTML + itemsHTML;
+}
+
+buildTicker();
+
+
+/* =====================================================
+   PROMO SLIDER — Automatic slider
+===================================================== */
+
+let currentSlide = 0;
+let sliderTimer = null;
+
+const slides = document.querySelectorAll('.promo-slider .slide');
+const dotsWrap = document.getElementById('sliderDots');
+const progressBar = document.getElementById('sliderProgressBar');
+
+function buildDots() {
+
+    if (!dotsWrap) return;
+
+    dotsWrap.innerHTML = '';
+
+    slides.forEach((_, i) => {
+
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => goToSlide(i));
+
+        dotsWrap.appendChild(dot);
+
+    });
+
+}
+
+function playProgressBar() {
+
+    if (!progressBar) return;
+
+    progressBar.classList.remove('animate');
+
+    /* Force a repaint so the animation restarts from the beginning */
+    void progressBar.offsetWidth;
+
+    progressBar.classList.add('animate');
+}
+
+function showSlide(index) {
+
+    slides.forEach(s => s.classList.remove('active'));
+
+    document
+        .querySelectorAll('.dot')
+        .forEach(d => d.classList.remove('active'));
+
+    slides[index].classList.add('active');
+
+    const dot = dotsWrap ? dotsWrap.children[index] : null;
+    if (dot) dot.classList.add('active');
+
+    currentSlide = index;
+
+    playProgressBar();
+}
+
+function nextSlide() {
+    showSlide((currentSlide + 1) % slides.length);
+}
+
+function startSliderTimer() {
+    sliderTimer = setInterval(nextSlide, 4500);
+}
+
+function goToSlide(index) {
+    clearInterval(sliderTimer);
+    showSlide(index);
+    startSliderTimer();
+}
+
+if (slides.length) {
+    buildDots();
+    playProgressBar();
+    startSliderTimer();
 }
 
 </script>
@@ -4028,7 +4996,7 @@ function setRegion(region) {
       "name": "What is X IPTV?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "X IPTV is an online streaming service that provides access to television and entertainment content through compatible applications and devices."
+        "text": "X IPTV is an online streaming service that provides access to TV and entertainment content through compatible apps and devices."
       }
     },
 
@@ -4037,13 +5005,13 @@ function setRegion(region) {
       "name": "How can I subscribe to X IPTV?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Choose the appropriate subscription plan and contact technical support through WhatsApp to learn about the subscription and activation process."
+        "text": "Choose the suitable plan, then contact technical support via WhatsApp for subscription and activation steps."
       }
     },
 
     {
       "@type": "Question",
-      "name": "How can I renew X IPTV?",
+      "name": "How to Renew X IPTV?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "To renew your subscription, contact technical support and let us know that you want to renew your current X IPTV subscription."
@@ -4052,19 +5020,19 @@ function setRegion(region) {
 
     {
       "@type": "Question",
-      "name": "Can I use X IPTV on my phone?",
+      "name": "Can X IPTV be used on a phone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The service can be used on devices compatible with IPTV applications. Setup steps may vary depending on the device and application."
+        "text": "The service can be used on devices compatible with IPTV applications, and setup varies by device and application."
       }
     },
 
     {
       "@type": "Question",
-      "name": "Can I use X Server on a Smart TV?",
+      "name": "Can X Server be used on a Smart TV?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The service can be used on compatible Smart TV devices through IPTV applications."
+        "text": "The service can be used on Smart TVs compatible with IPTV applications."
       }
     }
 
@@ -4076,4 +5044,3 @@ function setRegion(region) {
 
 </body>
 </html>
-```
