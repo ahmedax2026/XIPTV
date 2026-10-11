@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Ads Conversion Tracking: X IPTV -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18462139495"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18462139495');
+
+      // Track clicks on all WhatsApp links, including dynamically generated ticker links.
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href*="wa.me/"]');
+        if (!link) return;
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18462139495/iP2PCKaM5I0dEOfIt-NE',
+          'transport_type': 'beacon'
+        });
+      }, true);
+    </script>
+
     <!-- ================= SEO ================= -->
     <title>X IPTV | XTV | X TV | سيرفر اكس - اشتراك وتجديد IPTV</title>
 
