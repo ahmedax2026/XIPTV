@@ -1,0 +1,14 @@
+{
+  "name": "X IPTV - سيرفر إكس",
+  "short_name": "X IPTV",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#e5091a",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }
+  ]
+}
