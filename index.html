@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اشتراك X IPTV | سيرفر إكس من 200 ج.م</title>
+    <title>اشتراك X IPTV | سيرفر إكس الذهبي</title>
     <meta name="description" content="اشترك أو جدّد سيرفر إكس X IPTV على Smart TV والموبايل وTV Box. باقات 3 و6 و12 شهر داخل مصر من 200 ج.م، وتجربة 24 ساعة ودعم فني طوال الاشتراك.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="X IPTV">
     <meta name="theme-color" content="#e5091a">
+    
+    <!-- Canonical & Hreflang الموحدة -->
     <link rel="canonical" href="https://xiptv.live/">
     <link rel="alternate" hreflang="ar" href="https://xiptv.live/">
-    <link rel="alternate" hreflang="en" href="https://xiptv.live/en">
+    <link rel="alternate" hreflang="en" href="https://xiptv.live/en.html">
     <link rel="alternate" hreflang="x-default" href="https://xiptv.live/">
+    
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="X IPTV">
     <meta property="og:locale" content="ar_EG">
@@ -24,15 +29,27 @@
     <meta property="og:url" content="https://xiptv.live/">
     <meta property="og:image" content="https://xiptv.live/logo.png">
     <meta property="og:image:alt" content="شعار X IPTV - سيرفر إكس">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="اشتراك X IPTV | سيرفر إكس من 200 ج.م">
     <meta name="twitter:description" content="باقات اشتراك وتجديد سيرفر إكس مع تشغيل على Smart TV والموبايل.">
     <meta name="twitter:image" content="https://xiptv.live/logo.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;600;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- حماية ضد اختفاء المحتوى عن عناكب جوجل بسبب كلاس reveal -->
+    <noscript>
+        <style>
+            .reveal { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+        </style>
+    </noscript>
+
+    <!-- Schema.org مصحح ومتوافق مع معايير جوجل -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,6 +73,7 @@
           "image": "https://xiptv.live/logo.png",
           "contactPoint": {
             "@type": "ContactPoint",
+            "telephone": "+201212515179",
             "contactType": "customer support",
             "availableLanguage": ["ar", "en"],
             "url": "https://wa.me/201212515179"
@@ -71,23 +89,36 @@
           "isPartOf": { "@id": "https://xiptv.live/#website" }
         },
         {
-          "@type": "Product",
-          "name": "اشتراك X IPTV",
+          "@type": "Service",
+          "name": "اشتراك X IPTV - سيرفر إكس",
           "description": "اشتراك سيرفر إكس للتشغيل على Smart TV والموبايل وTV Box والكمبيوتر.",
-          "brand": { "@type": "Brand", "name": "X IPTV" },
-          "image": "https://xiptv.live/logo.png",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "EGP",
-            "lowPrice": "200",
-            "highPrice": "500",
-            "offerCount": "3",
-            "availability": "https://schema.org/InStock",
-            "url": "https://xiptv.live/#pricing",
-            "offers": [
-              { "@type": "Offer", "name": "اشتراك 3 أشهر", "price": "200", "priceCurrency": "EGP", "availability": "https://schema.org/InStock", "url": "https://xiptv.live/#pricing" },
-              { "@type": "Offer", "name": "اشتراك 6 أشهر", "price": "350", "priceCurrency": "EGP", "availability": "https://schema.org/InStock", "url": "https://xiptv.live/#pricing" },
-              { "@type": "Offer", "name": "اشتراك 12 شهر", "price": "500", "priceCurrency": "EGP", "availability": "https://schema.org/InStock", "url": "https://xiptv.live/#pricing" }
+          "provider": { "@id": "https://xiptv.live/#org" },
+          "areaServed": "EG",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "باقات X IPTV",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "اشتراك 3 أشهر" },
+                "price": "200",
+                "priceCurrency": "EGP",
+                "url": "https://xiptv.live/#pricing"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "اشتراك 6 أشهر" },
+                "price": "350",
+                "priceCurrency": "EGP",
+                "url": "https://xiptv.live/#pricing"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "اشتراك 12 شهر" },
+                "price": "500",
+                "priceCurrency": "EGP",
+                "url": "https://xiptv.live/#pricing"
+              }
             ]
           }
         },
@@ -150,7 +181,7 @@
             <i class="fa-solid fa-moon" id="themeIcon"></i>
         </button>
         <a href="en.html" class="language-toggle-btn" title="English" aria-label="Open English version">EN</a>
-        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="nav-btn" target="_blank" rel="noopener noreferrer">اشترك الآن</a>
+        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="nav-btn" target="_blank" rel="nofollow noopener noreferrer">اشترك الآن</a>
     </div>
 </header>
 
@@ -165,7 +196,7 @@
     <p>باقات واضحة، تفعيل سريع، وتشغيل على Smart TV والموبايل وTV Box والكمبيوتر. إذا كنت تبحث عن XTV أو X TV فهذه هي صفحة الاشتراك والتجديد الرسمية لسيرفر إكس.</p>
     <div class="hero-buttons">
         <a href="#pricing" class="btn-main"><i class="fa-solid fa-tags"></i> تصفح الباقات</a>
-        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="btn-sec" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play"></i> تجربة مجانية 24 ساعة</a>
+        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D9%87%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="btn-sec" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-solid fa-play"></i> تجربة مجانية 24 ساعة</a>
     </div>
     <div class="trust-banner">
         <div class="trust-item"><i class="fa-solid fa-bolt"></i> تفعيل سريع</div>
@@ -240,7 +271,7 @@
                 <li><i class="fa-solid fa-check"></i> دعم الأجهزة المتوافقة</li>
                 <li><i class="fa-solid fa-check"></i> دعم فني</li>
             </ul>
-            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%203%20%D8%A3%D8%B4%D9%87%D8%B1%20(200%20%D8%AC.%D9%85)" class="card-btn" id="btn-3m-link" target="_blank" rel="noopener noreferrer">اشترك الآن</a>
+            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%203%20%D8%A3%D8%B4%D9%87%D8%B1%20(200%20%D8%AC.%D9%85)" class="card-btn" id="btn-3m-link" target="_blank" rel="nofollow noopener noreferrer">اشترك الآن</a>
         </article>
         <article class="price-card featured">
             <div class="badge-popular">الأكثر مبيعاً</div>
@@ -253,7 +284,7 @@
                 <li><i class="fa-solid fa-check"></i> تشغيل على الأجهزة المتوافقة</li>
                 <li><i class="fa-solid fa-check"></i> دعم فني متواصل</li>
             </ul>
-            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A9%2012%20%D8%B4%D9%87%D8%B1%20(500%20%D8%AC.%D9%85)" class="card-btn" id="btn-12m-link" target="_blank" rel="noopener noreferrer">اشترك الآن</a>
+            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A9%2012%20%D8%B4%D9%87%D8%B1%20(500%20%D8%AC.%D9%85)" class="card-btn" id="btn-12m-link" target="_blank" rel="nofollow noopener noreferrer">اشترك الآن</a>
         </article>
         <article class="price-card">
             <h3>اشتراك 6 أشهر</h3>
@@ -265,7 +296,7 @@
                 <li><i class="fa-solid fa-check"></i> دعم الأجهزة المتوافقة</li>
                 <li><i class="fa-solid fa-check"></i> دعم فني</li>
             </ul>
-            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%206%20%D8%A3%D8%B4%D9%87%D8%B1%20(350%20%D8%AC.%D9%85)" class="card-btn" id="btn-6m-link" target="_blank" rel="noopener noreferrer">اشترك الآن</a>
+            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%206%20%D8%A3%D8%B4%D9%87%D8%B1%20(350%20%D8%AC.%D9%85)" class="card-btn" id="btn-6m-link" target="_blank" rel="nofollow noopener noreferrer">اشترك الآن</a>
         </article>
     </div>
 </section>
@@ -325,8 +356,8 @@
             <div class="accordion-content">
                 <p>حمّل تطبيق سيرفر إكس على الموبايل أو شاشات Android وأجهزة TV Box.</p>
                 <div style="margin-top:15px;">
-                    <a href="https://eurofinal.site/XTV_PRO.apk" class="download-btn-inline" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i> XTV PRO</a>
-                    <a href="https://eurofinal.site/XTV_Code_V3.apk" class="download-btn-inline" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i> XTV Code V3</a>
+                    <a href="https://eurofinal.site/XTV_PRO.apk" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-solid fa-download"></i> XTV PRO</a>
+                    <a href="https://eurofinal.site/XTV_Code_V3.apk" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-solid fa-download"></i> XTV Code V3</a>
                 </div>
                 <p style="margin-top:15px;">أكواد Downloader (اضغط للنسخ):
                     <span class="code-badge" data-copy="5833417">5833417</span>
@@ -341,8 +372,8 @@
             <div class="accordion-content">
                 <p>استخدم تطبيقات IPTV المتوافقة مع نظام Apple.</p>
                 <div style="margin-top:15px;">
-                    <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar" class="download-btn-inline" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-apple"></i> Smarters Player Lite</a>
-                    <a href="https://apps.apple.com/eg/app/code-play/id1661811116?l=ar" class="download-btn-inline" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-apple"></i> Code Play</a>
+                    <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-apple"></i> Smarters Player Lite</a>
+                    <a href="https://apps.apple.com/eg/app/code-play/id1661811116?l=ar" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-apple"></i> Code Play</a>
                 </div>
                 <p style="margin-top:15px;">كود Code Play: <span class="code-badge" data-copy="070">070</span></p>
             </div>
@@ -362,7 +393,7 @@
             <div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-laptop icon-device"></i> الكمبيوتر واللاب توب</span><i class="fa-solid fa-chevron-down toggle-icon"></i></div>
             <div class="accordion-content">
                 يمكنك التشغيل على Windows عبر تطبيق IPTV متوافق.
-                <a href="https://www.mhiptv.net/iptv/IPTVSmartersPro-1.1.1.exe" class="download-btn-inline" target="_blank" rel="noopener noreferrer">تحميل التطبيق</a>
+                <a href="https://www.mhiptv.net/iptv/IPTVSmartersPro-1.1.1.exe" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer">تحميل التطبيق</a>
             </div>
         </div>
     </div>
@@ -382,7 +413,7 @@
         <div class="reseller-step"><b>2</b> اعرف نظام الموزعين</div>
         <div class="reseller-step"><b>3</b> ابدأ التوزيع</div>
     </div>
-    <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A3%D9%86%20%D8%A3%D8%B5%D8%A8%D8%AD%20%D9%85%D9%88%D8%B2%D8%B9%D8%A7%D9%8B%20%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20X%20IPTV" class="btn-main" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> سجّل كموزع الآن</a>
+    <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A3%D9%86%20%D8%A3%D8%B5%D8%A8%D8%AD%20%D9%85%D9%88%D8%B2%D8%B9%D8%A7%D9%8B%20%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20X%20IPTV" class="btn-main" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> سجّل كموزع الآن</a>
 </section>
 
 <section class="faq-section reveal" id="faq">
@@ -424,12 +455,12 @@
         <a href="privacy.html"><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a>
         <a href="terms.html"><i class="fa-solid fa-file-contract"></i> الشروط والأحكام</a>
         <a href="#reseller"><i class="fa-solid fa-handshake"></i> كن موزعاً</a>
-        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20X%20IPTV" target="_blank" rel="noopener noreferrer" class="footer-contact"><i class="fa-brands fa-whatsapp"></i> تواصل معنا</a>
+        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20X%20IPTV" target="_blank" rel="nofollow noopener noreferrer" class="footer-contact"><i class="fa-brands fa-whatsapp"></i> تواصل معنا</a>
     </div>
 </footer>
 
-<a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="التواصل عبر واتساب"><i class="fa-brands fa-whatsapp"></i></a>
-<div class="mobile-cta"><a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> اشترك عبر واتساب</a></div>
+<a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" class="whatsapp-float" target="_blank" rel="nofollow noopener noreferrer" aria-label="التواصل عبر واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+<div class="mobile-cta"><a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20IPTV%20%D8%A5%D9%83%D8%B3" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> اشترك عبر واتساب</a></div>
 <div class="toast" id="toast" role="status"></div>
 <script src="assets/app.js" defer></script>
 </body>
