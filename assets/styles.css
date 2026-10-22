@@ -915,8 +915,23 @@ footer strong { color: #fff; }
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-.reveal { opacity: 0; transform: translateY(18px); transition: .6s cubic-bezier(.22, 1, .36, 1); }
-.reveal.visible { opacity: 1; transform: none; }
+/* الحالة الافتراضية: المحتوى ظاهر بالكامل لعناكب جوجل وأي متصفح */
+.reveal {
+    opacity: 1;
+    transform: none;
+    transition: .6s cubic-bezier(.22, 1, .36, 1);
+}
+
+/* لا يتم إخفاء العنصر لعمل الأنيميشن إلا لو الجافاسكريبت شغال ومفعل */
+.js-ready .reveal:not(.visible) {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
 
 [dir="ltr"] body, [dir="ltr"] button, [dir="ltr"] a { font-family: Inter, 'Cairo', sans-serif; }
 [dir="ltr"] .brand-text-container,
@@ -978,5 +993,5 @@ footer strong { color: #fff; }
         transition: none !important;
         scroll-behavior: auto !important;
     }
-    .reveal { opacity: 1; transform: none; }
+    .reveal { opacity: 1 !important; transform: none !important; }
 }
