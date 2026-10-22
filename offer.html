@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اشتراك سيرفر اكس X TV  </title>
+    <title>اشتراك سيرفر اكس | X TV الأصلي من 200 ج.م</title>
     <meta name="description" content="اشترك أو جدّد باقات سيرفر اكس X TV الرقمية على Smart TV والموبايل وTV Box. باقات 3 و6 و12 شهر داخل مصر من 200 ج.م، وتجربة 24 ساعة ودعم فني طوال الاشتراك.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="X TV">
@@ -25,7 +25,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;600;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
@@ -40,32 +40,37 @@
             --dark: #080a0f;
             --dark-2: #0d1118;
             --dark-3: #151a23;
-            --light: #f6f7f9;
+            --light: #f4f6fa;
             --white: #ffffff;
-            --text: #10141c;
-            --muted: #667085;
+            --text: #0f172a;
+            --muted: #64748b;
             --border: rgba(15, 23, 42, .09);
-            --card: rgba(255, 255, 255, .94);
+            --card: #ffffff;
+            --surface-2: #f8fafc;
             --header: rgba(255, 255, 255, .90);
-            --hero: radial-gradient(circle at 50% 0%, rgba(229, 9, 26, .13), transparent 55%);
-            --red-gradient: linear-gradient(135deg, #ff2438 0%, #e5091a 50%, #b70714 100%);
-            --gold-gradient: linear-gradient(135deg, #e2c27b, #b88938);
-            --shadow: 0 18px 45px rgba(15, 23, 42, .06);
-            --radius: 22px;
+            --hero: radial-gradient(circle at 50% 0%, rgba(229, 9, 26, .12), transparent 55%);
+            --red-gradient: linear-gradient(135deg, #ff2438 0%, #e5091a 55%, #b70714 100%);
+            --gold-gradient: linear-gradient(135deg, #e5c687 0%, #c9a35b 50%, #9e762c 100%);
+            --dark-gradient: linear-gradient(145deg, #161b26 0%, #0d1118 100%);
+            --shadow: 0 20px 50px rgba(15, 23, 42, .06);
+            --shadow-lg: 0 25px 60px rgba(229, 9, 26, .14);
+            --radius: 24px;
             color-scheme: light;
         }
 
         html[data-theme="dark"],
         body[data-theme="dark"] {
-            --light: #080a0f;
+            --light: #07090e;
             --white: #ffffff;
-            --text: #ffffff;
-            --muted: #9aa4b2;
+            --text: #f8fafc;
+            --muted: #94a3b8;
             --border: rgba(255, 255, 255, .09);
-            --card: rgba(18, 22, 30, .92);
-            --header: rgba(8, 10, 15, .92);
-            --hero: radial-gradient(circle at 50% 0%, rgba(229, 9, 26, .20), transparent 60%);
-            --shadow: 0 18px 45px rgba(0, 0, 0, .28);
+            --card: #111621;
+            --surface-2: #171e2c;
+            --header: rgba(7, 9, 14, .90);
+            --hero: radial-gradient(circle at 50% 0%, rgba(229, 9, 26, .22), transparent 60%);
+            --shadow: 0 20px 50px rgba(0, 0, 0, .35);
+            --shadow-lg: 0 25px 65px rgba(229, 9, 26, .22);
             color-scheme: dark;
         }
 
@@ -114,6 +119,7 @@
         }
 
         .brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; flex-shrink: 0; }
+        .brand-logo-img { height: 42px; width: auto; border-radius: 10px; object-fit: contain; }
         .logo-graphic { display: flex; align-items: center; font-size: 28px; font-weight: 900; line-height: 1; flex-shrink: 0; }
         .logo-graphic .arrows { color: var(--red); margin-left: 2px; filter: drop-shadow(0 0 7px rgba(229, 9, 26, .45)); }
         .logo-graphic .x-white { color: var(--text); font-weight: 900; transition: color 0.25s ease; }
@@ -128,14 +134,14 @@
         .site-nav { display: flex; align-items: center; gap: 4px; }
         .site-nav a {
             text-decoration: none; font-size: 13.5px; font-weight: 800; color: var(--muted);
-            padding: 7px 11px; border-radius: 999px; transition: .25s; white-space: nowrap;
+            padding: 7px 12px; border-radius: 999px; transition: .25s; white-space: nowrap;
         }
         .site-nav a:hover { color: var(--text); background: rgba(229, 9, 26, .08); }
 
         .header-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 
         .menu-toggle, .theme-toggle-btn {
-            width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border);
+            width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border);
             background: var(--card); color: var(--text); display: flex; align-items: center;
             justify-content: center; cursor: pointer; transition: .3s; flex-shrink: 0; font-size: 15px;
         }
@@ -175,28 +181,28 @@
         .hero { padding: 185px 5% 55px; text-align: center; position: relative; background: var(--hero); color: var(--text); }
         .badge-pill {
             display: inline-flex; align-items: center; gap: 7px; padding: 6px 16px; border-radius: 30px;
-            color: var(--red); background: rgba(229, 9, 26, .07); border: 1px solid rgba(229, 9, 26, .20); font-size: 12.5px; font-weight: 800; margin-bottom: 18px;
+            color: var(--red); background: rgba(229, 9, 26, .08); border: 1px solid rgba(229, 9, 26, .22); font-size: 12.5px; font-weight: 800; margin-bottom: 18px;
         }
-        .hero h1 { font-size: clamp(28px, 4.5vw, 48px); line-height: 1.3; font-weight: 900; margin-bottom: 15px; color: var(--text); }
+        .hero h1 { font-size: clamp(28px, 4.5vw, 50px); line-height: 1.3; font-weight: 900; margin-bottom: 15px; color: var(--text); }
         .red-text { color: var(--red); text-shadow: 0 0 25px rgba(229, 9, 26, .18); }
         .silver-text { background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
         .hero p { max-width: 720px; margin: auto auto 26px; color: var(--muted); font-size: 16px; line-height: 1.9; }
         .hero-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-        .btn-main, .btn-sec { padding: 13px 28px; border-radius: 30px; font-size: 14.5px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
-        .btn-sec { background: var(--card); border: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 800; transition: .3s; }
+        .btn-main, .btn-sec { padding: 14px 30px; border-radius: 30px; font-size: 15px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-sec { background: var(--card); border: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 800; transition: .3s; box-shadow: var(--shadow); }
         .btn-sec:hover { border-color: var(--red); color: var(--red); transform: translateY(-3px); }
 
         .trust-banner {
-            max-width: 1000px; margin: 32px auto 0; padding: 14px 18px; display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
-            background: var(--card); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow);
+            max-width: 1000px; margin: 36px auto 0; padding: 16px 20px; display: flex; justify-content: center; gap: 22px; flex-wrap: wrap;
+            background: var(--card); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow);
         }
-        .trust-item { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; font-weight: 700; }
-        .trust-item i { color: var(--gold); font-size: 15px; }
+        .trust-item { display: flex; align-items: center; gap: 7px; color: var(--text); font-size: 13px; font-weight: 800; }
+        .trust-item i { color: var(--gold); font-size: 16px; }
 
         /* سلايدر المميزات */
         .promo-slider { padding: 0 5% 55px; background: var(--light); }
         .slider-box {
-            position: relative; max-width: 720px; margin: auto; background: var(--card); border: 1px solid var(--border);
+            position: relative; max-width: 740px; margin: auto; background: var(--card); border: 1px solid var(--border);
             border-radius: 24px; padding: 42px 48px 34px; text-align: center; overflow: hidden; min-height: 220px;
             display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); color: var(--text);
         }
@@ -214,90 +220,322 @@
         .slide-tag.accent-red { color: var(--red); background: rgba(229, 9, 26, .08); border: 1px solid rgba(229, 9, 26, .20); }
         .slide-tag.accent-gold { color: var(--gold); background: rgba(201, 163, 91, .10); border: 1px solid rgba(201, 163, 91, .25); }
         .slide h3 { font-size: 21px; font-weight: 900; margin-bottom: 8px; color: var(--text); }
-        .slide p { color: var(--muted); font-size: 13.5px; line-height: 1.8; max-width: 450px; margin: auto; }
+        .slide p { color: var(--muted); font-size: 14px; line-height: 1.8; max-width: 460px; margin: auto; }
         .slider-nav {
-            position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%;
-            border: 1px solid var(--border); background: var(--card); color: var(--text); display: flex; align-items: center;
+            position: absolute; top: 50%; transform: translateY(-50%); width: 38px; height: 38px; border-radius: 50%;
+            border: 1px solid var(--border); background: var(--surface-2); color: var(--text); display: flex; align-items: center;
             justify-content: center; cursor: pointer; font-size: 12px; z-index: 2; transition: .3s;
         }
         .slider-nav:hover { color: #fff; background: var(--red-gradient); border-color: transparent; }
-        .slider-nav.prev { left: 12px; } .slider-nav.next { right: 12px; }
+        .slider-nav.prev { left: 14px; } .slider-nav.next { right: 14px; }
         .slider-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 2; }
         .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); cursor: pointer; transition: .3s; border: none; padding: 0; }
         .dot.active { width: 22px; border-radius: 6px; background: var(--red); }
 
         /* إحصائيات */
         .stats-section {
-            display: grid; grid-template-columns: repeat(4, 1fr); background: var(--dark-2); padding: 32px 5%;
+            display: grid; grid-template-columns: repeat(4, 1fr); background: var(--dark-2); padding: 36px 5%;
             border-top: 1px solid rgba(255, 255, 255, .05); border-bottom: 1px solid rgba(255, 255, 255, .05); text-align: center;
         }
         .stat-item { position: relative; padding: 4px 10px; }
         .stat-item:not(:last-child)::after { content: ""; position: absolute; left: 0; top: 15%; height: 70%; width: 1px; background: rgba(255, 255, 255, .08); }
-        .stat-item h3 { color: #fff; font-size: 28px; font-weight: 900; }
+        .stat-item h3 { color: #fff; font-size: 30px; font-weight: 900; font-family: 'Inter', 'Cairo', sans-serif; }
         .percent-red, .plus-red { color: var(--red) !important; }
-        .stat-item p { color: #8993a2; font-size: 12.5px; margin-top: 2px; }
+        .stat-item p { color: #94a3b8; font-size: 13px; font-weight: 700; margin-top: 4px; }
 
         /* الأقسام العامة */
         .pricing-section, .apps-section, .faq-section, .steps-section, .reseller-section, .testimonials-section {
-            padding: 75px 5%; text-align: center; background: var(--light); color: var(--text);
+            padding: 85px 5%; text-align: center; background: var(--light); color: var(--text);
         }
-        .section-title { font-size: clamp(25px, 4vw, 35px); font-weight: 900; margin-bottom: 8px; color: var(--text); }
-        .section-subtitle { color: var(--muted); font-size: 14.5px; margin-bottom: 26px; }
+        .section-badge {
+            display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px;
+            font-size: 12px; font-weight: 800; color: var(--gold); background: rgba(201, 163, 91, .12);
+            border: 1px solid rgba(201, 163, 91, .3); margin-bottom: 12px;
+        }
+        .section-title { font-size: clamp(26px, 4vw, 38px); font-weight: 900; margin-bottom: 10px; color: var(--text); line-height: 1.3; }
+        .section-subtitle { color: var(--muted); font-size: 15px; max-width: 650px; margin: 0 auto 32px; }
 
-        /* اختيار الدولة والجهاز */
-        .region-selector { display: inline-flex; padding: 4px; background: var(--card); border: 1px solid var(--border); border-radius: 40px; margin-bottom: 20px; }
-        .region-btn { border: none; background: transparent; color: var(--muted); padding: 8px 22px; border-radius: 30px; font-size: 13.5px; font-weight: 800; cursor: pointer; transition: .3s; }
-        .region-btn.active { color: #fff; background: var(--red-gradient); box-shadow: 0 5px 18px rgba(229, 9, 26, .25); }
+        /* ========================
+           تصميم قسم الأسعار الفخم (VIP Pricing)
+           ======================== */
+        .pricing-controls-box {
+            max-width: 820px; margin: 0 auto 45px; padding: 22px 24px;
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 24px; box-shadow: var(--shadow);
+            display: flex; flex-direction: column; gap: 18px; align-items: center;
+        }
 
-        .device-selector-wrap { max-width: 750px; margin: 0 auto 38px; }
-        .device-selector-label { display: block; font-size: 12.5px; font-weight: 800; color: var(--muted); margin-bottom: 10px; }
-        .device-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; }
+        .region-selector {
+            display: inline-flex; padding: 5px; background: var(--surface-2);
+            border: 1px solid var(--border); border-radius: 999px;
+        }
+        .region-btn {
+            border: none; background: transparent; color: var(--muted);
+            padding: 10px 28px; border-radius: 999px; font-size: 14px; font-weight: 800;
+            cursor: pointer; transition: .3s; display: inline-flex; align-items: center; gap: 8px;
+        }
+        .region-btn.active {
+            color: #fff; background: var(--red-gradient);
+            box-shadow: 0 8px 20px rgba(229, 9, 26, .28);
+        }
+
+        .device-selector-wrap { width: 100%; }
+        .device-selector-label {
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+            font-size: 13px; font-weight: 800; color: var(--text); margin-bottom: 12px;
+        }
+        .device-selector-label i { color: var(--red); }
+        .device-pills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
         .device-pill {
-            padding: 7px 15px; border-radius: 30px; border: 1px solid var(--border); background: var(--card);
-            color: var(--text); font-size: 12.5px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: .25s;
+            padding: 11px 14px; border-radius: 16px; border: 1.5px solid var(--border);
+            background: var(--surface-2); color: var(--text); font-size: 13px; font-weight: 800;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+            transition: all .25s ease;
         }
-        .device-pill i { color: var(--gold); }
-        .device-pill.active { border-color: var(--red); background: rgba(229, 9, 26, .08); color: var(--red); }
+        .device-pill i { color: var(--gold); font-size: 16px; transition: .25s; }
+        .device-pill:hover { border-color: rgba(229, 9, 26, .4); transform: translateY(-2px); }
+        .device-pill.active {
+            border-color: var(--red); background: rgba(229, 9, 26, .08);
+            color: var(--red); box-shadow: 0 6px 18px rgba(229, 9, 26, .12);
+        }
+        .device-pill.active i { color: var(--red); transform: scale(1.1); }
 
-        /* بطاقات الأسعار */
-        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1100px; margin: auto; }
+        .pricing-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+            max-width: 1140px; margin: auto; align-items: stretch;
+        }
+
         .price-card {
-            position: relative; padding: 32px 24px; background: var(--card); color: var(--text);
-            border: 1px solid var(--border); border-radius: var(--radius); text-align: right; box-shadow: var(--shadow); transition: .35s;
+            position: relative; padding: 36px 28px 30px; background: var(--card); color: var(--text);
+            border: 1.5px solid var(--border); border-radius: 28px; text-align: right;
+            box-shadow: var(--shadow); transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;
         }
-        .price-card:hover { transform: translateY(-6px); border-color: rgba(229, 9, 26, .35); }
-        .price-card.featured { border: 1px solid rgba(229, 9, 26, .65); box-shadow: 0 15px 45px rgba(229, 9, 26, .12); transform: translateY(-7px); }
+        .price-card::before {
+            content: ""; position: absolute; top: 0; right: 0; left: 0; height: 5px;
+            background: var(--border); transition: .3s;
+        }
+        .price-card:hover {
+            transform: translateY(-8px); border-color: rgba(201, 163, 91, .5);
+            box-shadow: 0 25px 55px rgba(15, 23, 42, .12);
+        }
+        .price-card:hover::before { background: var(--gold-gradient); }
+
+        /* البطاقة المميزة 12 شهر */
+        .price-card.featured {
+            background: linear-gradient(180deg, rgba(229, 9, 26, .04) 0%, var(--card) 45%);
+            border: 2px solid var(--red);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-12px);
+        }
+        .price-card.featured::before { height: 6px; background: var(--red-gradient); }
+        .price-card.featured:hover { transform: translateY(-16px); }
+
+        .card-top-meta {
+            display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px;
+        }
+        .pkg-tag {
+            display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px;
+            border-radius: 999px; font-size: 11.5px; font-weight: 800;
+            background: var(--surface-2); color: var(--muted); border: 1px solid var(--border);
+        }
+        .featured .pkg-tag {
+            background: rgba(201, 163, 91, .15); color: var(--gold); border-color: rgba(201, 163, 91, .35);
+        }
+
         .badge-popular {
-            position: absolute; top: -12px; right: 50%; transform: translateX(50%); background: var(--red-gradient);
-            color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 11px; font-weight: 800; white-space: nowrap;
+            background: var(--red-gradient); color: #fff; padding: 5px 14px;
+            border-radius: 999px; font-size: 11.5px; font-weight: 900;
+            box-shadow: 0 6px 16px rgba(229, 9, 26, .3); display: inline-flex; align-items: center; gap: 5px;
         }
-        .price-card h3 { font-size: 19px; font-weight: 900; text-align: center; margin-bottom: 15px; color: var(--text); }
-        .price { text-align: center; color: var(--red); font-size: 38px; font-weight: 900; margin-bottom: 18px; }
-        .price span { font-size: 13.5px; color: var(--muted); font-weight: 600; }
-        .features-list { list-style: none; margin-bottom: 26px; }
-        .features-list li { display: flex; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 13px; }
-        .features-list li i { color: var(--gold); font-size: 11px; }
+
+        .price-card h3 { font-size: 22px; font-weight: 900; margin-bottom: 6px; color: var(--text); }
+        .price-card-desc { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+
+        .price-box {
+            background: var(--surface-2); border: 1px solid var(--border);
+            border-radius: 20px; padding: 18px 16px; margin-bottom: 22px; text-align: center;
+            position: relative;
+        }
+        .featured .price-box {
+            background: linear-gradient(135deg, rgba(229, 9, 26, .08), rgba(201, 163, 91, .08));
+            border-color: rgba(229, 9, 26, .22);
+        }
+        .price-old {
+            display: block; font-size: 13px; color: var(--muted);
+            text-decoration: line-through; font-weight: 700; margin-bottom: 2px;
+        }
+        .price {
+            color: var(--text); font-size: 44px; font-weight: 900; line-height: 1.1;
+            font-family: 'Inter', 'Cairo', sans-serif; display: flex; align-items: baseline; justify-content: center; gap: 6px;
+        }
+        .featured .price { color: var(--red); }
+        .price span { font-size: 16px; color: var(--muted); font-weight: 800; font-family: 'Cairo', sans-serif; }
+        .price-save-pill {
+            display: inline-block; margin-top: 8px; padding: 3px 12px; border-radius: 999px;
+            font-size: 11.5px; font-weight: 800; background: rgba(34, 197, 94, .12); color: #16a34a;
+        }
+        html[data-theme="dark"] .price-save-pill { color: #4ade80; }
+
+        .features-list { list-style: none; margin-bottom: 26px; flex-grow: 1; }
+        .features-list li {
+            display: flex; align-items: center; gap: 10px; padding: 10px 0;
+            border-bottom: 1px dashed var(--border); color: var(--text); font-size: 13.5px; font-weight: 700;
+        }
+        .features-list li:last-child { border-bottom: none; }
+        .features-list li i {
+            width: 22px; height: 22px; border-radius: 50%;
+            background: rgba(201, 163, 91, .14); color: var(--gold);
+            display: inline-flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0;
+        }
+        .featured .features-list li i { background: rgba(229, 9, 26, .14); color: var(--red); }
+
         .card-btn {
-            display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; text-align: center; padding: 12px;
-            border-radius: 30px; text-decoration: none; font-size: 13.5px; font-weight: 800; background: rgba(229, 9, 26, .08);
-            border: 1px solid rgba(229, 9, 26, .20); color: var(--text); transition: .3s; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
+            text-align: center; padding: 14px 18px; border-radius: 18px; text-decoration: none;
+            font-size: 14.5px; font-weight: 900; background: var(--surface-2);
+            border: 1.5px solid var(--border); color: var(--text); transition: .3s; cursor: pointer;
         }
-        .card-btn:hover { background: var(--red-gradient); color: #fff; border-color: transparent; }
-        .featured .card-btn { background: var(--red-gradient); color: #fff; border: none; }
+        .card-btn i { font-size: 18px; color: #25d366; transition: .3s; }
+        .card-btn:hover {
+            background: var(--red-gradient); color: #fff; border-color: transparent;
+            transform: translateY(-2px); box-shadow: 0 10px 25px rgba(229, 9, 26, .28);
+        }
+        .card-btn:hover i { color: #fff; }
+        .featured .card-btn {
+            background: var(--red-gradient); color: #fff; border: none;
+            box-shadow: 0 10px 28px rgba(229, 9, 26, .32);
+        }
+        .featured .card-btn i { color: #fff; }
+
+        /* ========================
+           تصميم قسم تشغيل الأجهزة الاحترافي (Smart Hub)
+           ======================== */
+        .apps-hub-wrapper {
+            max-width: 1020px; margin: 0 auto;
+            background: var(--card); border: 1.5px solid var(--border);
+            border-radius: 28px; padding: 28px; box-shadow: var(--shadow);
+            text-align: right;
+        }
+
+        .apps-tabs-nav {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+            background: var(--surface-2); padding: 8px; border-radius: 20px;
+            border: 1px solid var(--border); margin-bottom: 28px;
+        }
+
+        .app-tab-btn {
+            border: 1px solid transparent; background: transparent; color: var(--muted);
+            padding: 13px 12px; border-radius: 14px; font-size: 13.5px; font-weight: 800;
+            cursor: pointer; transition: all .25s ease;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .app-tab-btn i { font-size: 18px; color: var(--gold); transition: .25s; }
+        .app-tab-btn:hover { color: var(--text); background: rgba(255, 255, 255, .04); }
+        .app-tab-btn.active {
+            background: var(--card); color: var(--text);
+            border-color: rgba(229, 9, 26, .35);
+            box-shadow: 0 8px 22px rgba(15, 23, 42, .08);
+        }
+        .app-tab-btn.active i { color: var(--red); transform: scale(1.1); }
+
+        .app-panel { display: none; animation: fadeInPanel .35s ease; }
+        .app-panel.active { display: block; }
+        @keyframes fadeInPanel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        .panel-grid {
+            display: grid; grid-template-columns: 1.15fr 1fr; gap: 22px; align-items: stretch;
+        }
+
+        .panel-info-card, .panel-codes-card {
+            background: var(--surface-2); border: 1px solid var(--border);
+            border-radius: 22px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between;
+        }
+
+        .panel-header-tag {
+            display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px;
+            border-radius: 999px; font-size: 11.5px; font-weight: 800;
+            background: rgba(229, 9, 26, .1); color: var(--red); margin-bottom: 12px; width: fit-content;
+        }
+        .panel-info-card h3 { font-size: 20px; font-weight: 900; color: var(--text); margin-bottom: 8px; }
+        .panel-info-card p { font-size: 13.5px; color: var(--muted); line-height: 1.8; margin-bottom: 18px; }
+
+        .setup-mini-steps { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        .setup-mini-steps li {
+            display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; color: var(--text);
+            background: var(--card); padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border);
+        }
+        .setup-mini-steps li .num-badge {
+            width: 24px; height: 24px; border-radius: 50%; background: var(--red-gradient);
+            color: #fff; font-size: 12px; font-weight: 900; display: grid; place-items: center; flex-shrink: 0;
+        }
+
+        .codes-card-title {
+            font-size: 14px; font-weight: 900; color: var(--text); margin-bottom: 6px;
+            display: flex; align-items: center; gap: 7px;
+        }
+        .codes-card-title i { color: var(--gold); }
+        .codes-card-sub { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
+
+        .codes-bento-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 18px;
+        }
+        .codes-bento-grid.single-col { grid-template-columns: 1fr; }
+
+        .code-copy-card {
+            background: var(--card); border: 1.5px solid var(--border); border-radius: 16px;
+            padding: 12px 14px; cursor: pointer; transition: all .25s ease;
+            display: flex; align-items: center; justify-content: space-between; gap: 8px;
+        }
+        .code-copy-card:hover {
+            border-color: var(--gold); transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(201, 163, 91, .15);
+        }
+        .code-copy-card.copied {
+            border-color: #22c55e; background: rgba(34, 197, 94, .06);
+        }
+        .code-meta { display: flex; flex-direction: column; text-align: right; }
+        .code-label { font-size: 10.5px; font-weight: 800; color: var(--muted); }
+        .code-val {
+            font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 900;
+            color: var(--text); letter-spacing: 1px; direction: ltr;
+        }
+        .copy-action-pill {
+            display: inline-flex; align-items: center; gap: 5px; padding: 6px 10px;
+            border-radius: 10px; background: rgba(201, 163, 91, .14); color: var(--gold);
+            font-size: 11.5px; font-weight: 800; transition: .25s; flex-shrink: 0;
+        }
+        .code-copy-card:hover .copy-action-pill { background: var(--gold-gradient); color: #fff; }
+        .code-copy-card.copied .copy-action-pill { background: #22c55e; color: #fff; }
+
+        .store-buttons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: auto; }
+        .store-btn {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 12px 14px; border-radius: 14px; text-decoration: none;
+            font-size: 13px; font-weight: 800; background: var(--card); color: var(--text);
+            border: 1.5px solid var(--border); transition: .25s;
+        }
+        .store-btn i { font-size: 17px; color: var(--red); }
+        .store-btn:hover { border-color: var(--red); color: var(--red); transform: translateY(-2px); }
+        .store-btn.primary-wa {
+            grid-column: 1 / -1; background: var(--red-gradient); color: #fff; border: none;
+            box-shadow: 0 8px 20px rgba(229, 9, 26, .25);
+        }
+        .store-btn.primary-wa i { color: #fff; }
 
         /* خطوات الاشتراك */
-        .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1050px; margin: 0 auto; }
-        .step-card { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 18px; padding: 24px 16px; text-align: center; transition: .3s; box-shadow: var(--shadow); }
+        .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; max-width: 1080px; margin: 0 auto; }
+        .step-card { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 20px; padding: 26px 18px; text-align: center; transition: .3s; box-shadow: var(--shadow); }
         .step-card:hover { transform: translateY(-5px); border-color: rgba(229, 9, 26, .3); }
-        .step-num { width: 36px; height: 36px; margin: 0 auto 12px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 900; background: var(--red-gradient); }
-        .step-card h3 { font-size: 15.5px; margin-bottom: 6px; color: var(--text); }
-        .step-card p { color: var(--muted); font-size: 12.5px; line-height: 1.75; }
+        .step-num { width: 40px; height: 40px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 900; background: var(--red-gradient); font-family: 'Inter', sans-serif; }
+        .step-card h3 { font-size: 16px; font-weight: 900; margin-bottom: 6px; color: var(--text); }
+        .step-card p { color: var(--muted); font-size: 13px; line-height: 1.75; }
 
-        /* الأكورديون والأسئلة الشائعة الاحترافية */
+        /* الأسئلة الشائعة */
         .faq-container { max-width: 850px; margin: 32px auto 0; display: flex; flex-direction: column; gap: 12px; }
         .faq-item {
             background: var(--card); color: var(--text); border: 1px solid var(--border);
-            border-radius: 16px; overflow: hidden; text-align: right; box-shadow: var(--shadow);
+            border-radius: 18px; overflow: hidden; text-align: right; box-shadow: var(--shadow);
             transition: border-color 0.3s ease;
         }
         .faq-item.active { border-color: rgba(229, 9, 26, 0.4); }
@@ -315,27 +553,18 @@
         .faq-item.active .faq-answer { max-height: 500px; padding: 16px 22px 22px; border-top: 1px solid var(--border); }
         .faq-item.active .toggle-icon { transform: rotate(180deg); color: var(--red); }
 
-        /* قسم آراء العملاء المتعدد اللهجات */
+        /* قسم آراء العملاء */
         .testimonials-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; max-width: 1100px; margin: 35px auto 0; }
         .testimonial-card {
-            background: var(--light); border: 1px solid var(--border); border-radius: 18px; padding: 24px;
+            background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 24px;
             text-align: right; box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s;
         }
         .testimonial-card:hover { transform: translateY(-4px); }
 
-        .rich-desc-box { background: rgba(229, 9, 26, .035); border: 1px solid rgba(229, 9, 26, .12); border-radius: 14px; padding: 18px; margin-bottom: 15px; }
-        .rich-desc-box h3 { color: var(--red); margin-bottom: 6px; font-size: 16.5px; display: flex; align-items: center; gap: 7px; }
-        .feature-bullets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; margin: 14px 0; }
-        .feature-bullet-item { display: flex; align-items: flex-start; gap: 8px; padding: 12px; background: rgba(201, 163, 91, .06); border-right: 3px solid var(--gold); border-radius: 10px; color: var(--text); }
-        .feature-bullet-item i { color: var(--gold) !important; font-size: 16px; margin-top: 3px; }
-        .download-btn-inline { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; margin: 4px 3px; background: var(--red-gradient); color: #fff !important; border-radius: 20px; text-decoration: none; font-weight: 800; font-size: 12.5px; }
-        .code-badge { direction: ltr; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; margin: 3px; border-radius: 7px; color: var(--gold); background: rgba(201, 163, 91, .12); border: 1px solid rgba(201, 163, 91, .30); font-weight: 900; cursor: pointer; font-family: Inter, sans-serif; font-size: 13px; }
-        .code-badge:hover { border-color: var(--red); color: var(--red); }
-
         .reseller-section { background: var(--hero); }
         .reseller-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1050px; margin: 32px auto; }
-        .reseller-card { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 18px; padding: 26px 18px; transition: .3s; box-shadow: var(--shadow); }
+        .reseller-card { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 20px; padding: 26px 18px; transition: .3s; box-shadow: var(--shadow); }
         .reseller-card:hover { transform: translateY(-5px); border-color: rgba(229, 9, 26, .35); }
         .reseller-card i { width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; background: var(--red-gradient); margin-bottom: 12px; }
         .reseller-card:nth-child(even) i { background: var(--gold-gradient); }
@@ -360,15 +589,16 @@
         .whatsapp-float:hover { transform: scale(1.08); }
         @keyframes pulseWa { 0%, 100% { box-shadow: 0 8px 25px rgba(37, 211, 102, .30); } 50% { box-shadow: 0 8px 32px rgba(37, 211, 102, .55); } }
 
-        .mobile-cta { display: none; position: fixed; right: 0; left: 0; bottom: 0; z-index: 998; padding: 10px 14px 14px; background: linear-gradient(to top, var(--light), transparent); }
+        .mobile-cta { display: none; position: fixed; right: 0; left: 0; bottom: 0; z-index: 998; padding: 10px 14px 14px; background: linear-gradient(to top, var(--light) 70%, transparent); }
         .mobile-cta a {
-            display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 16px;
+            display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 13px; border-radius: 16px;
             background: var(--red-gradient); color: #fff; text-decoration: none; font-weight: 900; font-size: 14.5px; box-shadow: 0 8px 25px rgba(229, 9, 26, .35);
         }
 
         .toast {
             position: fixed; bottom: 85px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--dark-2); color: #fff;
-            padding: 9px 16px; border-radius: 12px; font-size: 12.5px; font-weight: 800; opacity: 0; pointer-events: none; transition: .3s; z-index: 10000; border: 1px solid var(--gold);
+            padding: 10px 18px; border-radius: 14px; font-size: 13px; font-weight: 800; opacity: 0; pointer-events: none; transition: .3s; z-index: 10000; border: 1px solid var(--gold);
+            box-shadow: 0 12px 30px rgba(0,0,0,.35);
         }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
@@ -381,6 +611,7 @@
         .modal-body p, .modal-body li { color: var(--muted); font-size: 13.5px; line-height: 1.85; margin-bottom: 9px; }
         .modal-body ul { padding-right: 18px; }
 
+        /* التجاوب مع الشاشات المتوسطة والموبايل */
         @media (max-width: 980px) {
             .site-nav {
                 display: none; position: absolute; top: 76px; right: 14px; left: 14px; background: var(--card); border: 1px solid var(--border);
@@ -388,27 +619,48 @@
             }
             header.nav-open .site-nav { display: flex; }
             .menu-toggle { display: flex; }
-            .pricing-grid, .steps-grid, .reseller-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 460px; margin-left: auto; margin-right: auto; gap: 22px; }
+            /* ترتيب الباقة المميزة لتظهر أولاً في الموبايل لزيادة التحويلات */
+            .price-card.featured { order: -1; transform: none; }
+            .price-card.featured:hover { transform: translateY(-5px); }
+            .device-pills { grid-template-columns: repeat(2, 1fr); }
+            .panel-grid { grid-template-columns: 1fr; }
+            .apps-tabs-nav { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid, .reseller-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-section { grid-template-columns: repeat(2, 1fr); gap: 16px; }
             .stat-item:not(:last-child)::after { display: none; }
-            .price-card.featured { transform: none; }
         }
 
         @media (max-width: 600px) {
             header { height: 68px; padding: 0 12px; }
             .ticker-wrap { top: 68px; padding: 7px 0; }
-            .logo-graphic { font-size: 24px; }
+            .brand-logo-img { height: 36px; }
             .brand-text-bottom { font-size: 15px; }
             .brand-text-top { font-size: 9px; }
             header .nav-btn { display: none; }
-            .hero { padding: 155px 14px 40px; }
+            .hero { padding: 150px 14px 36px; }
             .hero h1 { font-size: clamp(24px, 7.5vw, 32px); }
             .hero p { font-size: 13.5px; }
             .hero-buttons { flex-direction: column; gap: 10px; }
-            .btn-main, .btn-sec { width: 100%; justify-content: center; padding: 12px 20px; font-size: 14px; }
-            .promo-slider, .pricing-section, .apps-section, .faq-section, .steps-section, .reseller-section, .testimonials-section { padding-left: 14px; padding-right: 14px; padding-top: 55px; padding-bottom: 55px; }
+            .btn-main, .btn-sec { width: 100%; justify-content: center; padding: 13px 20px; font-size: 14px; }
+            .promo-slider, .pricing-section, .apps-section, .faq-section, .steps-section, .reseller-section, .testimonials-section {
+                padding: 55px 14px;
+            }
+            .pricing-controls-box { padding: 16px 14px; margin-bottom: 30px; }
+            .region-selector { width: 100%; }
+            .region-btn { flex: 1; justify-content: center; padding: 10px 12px; font-size: 13px; }
+            .device-pills { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .device-pill { font-size: 12px; padding: 10px 8px; }
+            .price-card { padding: 26px 20px 24px; border-radius: 24px; }
+            .price { font-size: 38px; }
+            .apps-hub-wrapper { padding: 16px 14px; border-radius: 22px; }
+            .apps-tabs-nav { grid-template-columns: repeat(2, 1fr); gap: 6px; padding: 6px; }
+            .app-tab-btn { font-size: 12px; padding: 11px 8px; }
+            .panel-info-card, .panel-codes-card { padding: 18px 14px; }
+            .codes-bento-grid { grid-template-columns: 1fr; }
+            .store-buttons-grid { grid-template-columns: 1fr; }
+            .steps-grid, .reseller-grid { grid-template-columns: 1fr; }
             .slider-box { padding: 32px 18px 28px; min-height: 200px; }
-            .feature-bullets { grid-template-columns: 1fr; }
             footer { padding: 22px 14px 88px; }
             .whatsapp-float { width: 50px; height: 50px; left: 14px; bottom: 72px; font-size: 24px; }
             .mobile-cta { display: block; }
@@ -421,7 +673,8 @@
 
 <header id="mainHeader">
     <a href="#" class="brand-logo" aria-label="X TV الصفحة الرئيسية">
-        <div class="logo-graphic"><span class="arrows">❯❯</span><span class="x-white">X</span></div>
+        <img src="/logo.png" alt="سيرفر اكس X TV" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('fallbackGraphic').style.display='flex';">
+        <div class="logo-graphic" id="fallbackGraphic" style="display:none;"><span class="arrows">❯❯</span><span class="x-white">X</span></div>
         <div class="brand-text-container">
             <span class="brand-text-top">منصة X TV</span>
             <span class="brand-text-bottom">سيرفر اكس</span>
@@ -430,8 +683,8 @@
 
     <nav class="site-nav" aria-label="التنقل الرئيسي">
         <a href="#pricing">الباقات</a>
+        <a href="#apps">تشغيل الأجهزة</a>
         <a href="#steps">طريقة الاشتراك</a>
-        <a href="#apps">التشغيل</a>
         <a href="#reviews">آراء العملاء</a>
         <a href="#faq">الأسئلة</a>
     </nav>
@@ -459,8 +712,8 @@
         <h1>اشتراك وتجديد <span class="red-text">سيرفر اكس</span> <span class="silver-text">X TV</span></h1>
         <p>باقات ترفيهية رقمية واضحة، تفعيل فوري، وتشغيل سلس على Smart TV والموبايل وTV Box والكمبيوتر. إذا كنت تبحث عن XTV أو X Server فهذه هي البوابة الرسمية للاشتراك والتجديد.</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20X%20TV" class="btn-main wa-direct" target="_blank" rel="nofollow noopener noreferrer">
-                <i class="fa-brands fa-whatsapp"></i> اشترك الآن عبر واتساب
+            <a href="#pricing" class="btn-main">
+                <i class="fa-solid fa-tags"></i> استعرض الباقات والأسعار
             </a>
             <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20X%20TV" class="btn-sec wa-direct" target="_blank" rel="nofollow noopener noreferrer">
                 <i class="fa-solid fa-play"></i> تجربة مجانية 24 ساعة
@@ -509,72 +762,329 @@
         <div class="stat-item"><h3><span class="plus-red">+</span>23K</h3><p>مشترك نشط</p></div>
     </section>
 
-    <!-- الباقات والأسعار -->
+    <!-- ========================
+         قسم الباقات والأسعار الفخم
+         ======================== -->
     <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+        <div class="section-badge"><i class="fa-solid fa-crown"></i> باقات VIP معتمدة</div>
         <h2 class="section-title" id="pricing-title">أسعار اشتراك سيرفر اكس</h2>
-        <p class="section-subtitle">اختر منطقتك ونوع جهازك ثم اضغط اشترك الآن ليتم تحويلك مباشرة إلى واتساب.</p>
+        <p class="section-subtitle">اختر منطقتك ونوع جهازك وسيتم تجهيز طلبك تلقائياً للتفعيل الفوري عبر واتساب.</p>
 
-        <div class="region-selector" role="group" aria-label="اختيار المنطقة">
-            <button type="button" class="region-btn active" id="btnEgypt" aria-pressed="true" onclick="setRegion('egypt')">🇪🇬 داخل مصر</button>
-            <button type="button" class="region-btn" id="btnIntl" aria-pressed="false" onclick="setRegion('intl')">🌍 خارج مصر</button>
-        </div>
+        <div class="pricing-controls-box">
+            <div class="region-selector" role="group" aria-label="اختيار المنطقة">
+                <button type="button" class="region-btn active" id="btnEgypt" aria-pressed="true" onclick="setRegion('egypt')">
+                    🇪🇬 داخل مصر (ج.م)
+                </button>
+                <button type="button" class="region-btn" id="btnIntl" aria-pressed="false" onclick="setRegion('intl')">
+                    🌍 خارج مصر (الدولار $)
+                </button>
+            </div>
 
-        <div class="device-selector-wrap">
-            <span class="device-selector-label">حدد جهازك لتجهيز رسالة التفعيل فوراً على واتساب:</span>
-            <div class="device-pills">
-                <button type="button" class="device-pill active" onclick="setDevice('شاشة Smart TV', this)"><i class="fa-solid fa-tv"></i> شاشة Smart TV</button>
-                <button type="button" class="device-pill" onclick="setDevice('أندرويد / TV Box', this)"><i class="fa-brands fa-android"></i> أندرويد / TV Box</button>
-                <button type="button" class="device-pill" onclick="setDevice('iPhone / iPad', this)"><i class="fa-brands fa-apple"></i> iPhone / iPad</button>
-                <button type="button" class="device-pill" onclick="setDevice('كمبيوتر Windows', this)"><i class="fa-solid fa-laptop"></i> كمبيوتر</button>
+            <div class="device-selector-wrap">
+                <span class="device-selector-label"><i class="fa-solid fa-wand-magic-sparkles"></i> اختر جهازك المفضل لتجهيز رسالة التفعيل:</span>
+                <div class="device-pills">
+                    <button type="button" class="device-pill active" onclick="setDevice('شاشة Smart TV', this)"><i class="fa-solid fa-tv"></i> شاشة Smart TV</button>
+                    <button type="button" class="device-pill" onclick="setDevice('أندرويد / TV Box', this)"><i class="fa-brands fa-android"></i> أندرويد / TV Box</button>
+                    <button type="button" class="device-pill" onclick="setDevice('iPhone / iPad', this)"><i class="fa-brands fa-apple"></i> iPhone / iPad</button>
+                    <button type="button" class="device-pill" onclick="setDevice('كمبيوتر Windows', this)"><i class="fa-solid fa-laptop"></i> كمبيوتر</button>
+                </div>
             </div>
         </div>
 
         <div class="pricing-grid">
+            <!-- 3 أشهر -->
             <article class="price-card">
-                <h3>اشتراك 3 أشهر</h3>
-                <div class="price" id="price-3m">200 <span>ج.م</span></div>
-                <ul class="features-list">
-                    <li><i class="fa-solid fa-check"></i> باقة ترفيهية متكاملة</li>
-                    <li><i class="fa-solid fa-check"></i> مكتبة محتوى عائلي</li>
-                    <li><i class="fa-solid fa-check"></i> جودة Full HD / 4K</li>
-                    <li><i class="fa-solid fa-check"></i> دعم كافة الأجهزة</li>
-                    <li><i class="fa-solid fa-check"></i> دعم فني طوال المدة</li>
-                </ul>
+                <div>
+                    <div class="card-top-meta">
+                        <span class="pkg-tag"><i class="fa-regular fa-clock"></i> ربع سنوي</span>
+                    </div>
+                    <h3>اشتراك 3 أشهر</h3>
+                    <p class="price-card-desc">مثالي للتجربة الطويلة والاستمتاع بكامل المميزات</p>
+                    <div class="price-box">
+                        <span class="price-old" id="old-3m">250 ج.م</span>
+                        <div class="price" id="price-3m">200 <span>ج.م</span></div>
+                        <span class="price-save-pill">تفعيل فوري</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> باقة ترفيهية متكاملة شاملة</li>
+                        <li><i class="fa-solid fa-check"></i> مكتبة محتوى عائلي متجددة</li>
+                        <li><i class="fa-solid fa-check"></i> جودات متعددة حتى Full HD / 4K</li>
+                        <li><i class="fa-solid fa-check"></i> يعمل على جهازك المختار بسهولة</li>
+                        <li><i class="fa-solid fa-check"></i> دعم فني طوال فترة الاشتراك</li>
+                    </ul>
+                </div>
                 <a href="#" class="card-btn wa-direct" id="btn-3m-link" target="_blank" rel="nofollow noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i> اشترك الآن عبر واتساب
+                    <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 3 أشهر
                 </a>
             </article>
 
+            <!-- 12 شهر (المميزة) -->
             <article class="price-card featured">
-                <div class="badge-popular">الأكثر مبيعاً وتوفيراً</div>
-                <h3>اشتراك 12 شهر</h3>
-                <div class="price" id="price-12m">500 <span>ج.م</span></div>
-                <ul class="features-list">
-                    <li><i class="fa-solid fa-check"></i> وصول كامل لكافة المزایا</li>
-                    <li><i class="fa-solid fa-check"></i> مكتبة ضخمة ومحدثة</li>
-                    <li><i class="fa-solid fa-check"></i> ثبات فائق وجودة 4K</li>
-                    <li><i class="fa-solid fa-check"></i> تشغيل سلس على أجهزتك</li>
-                    <li><i class="fa-solid fa-check"></i> أولوية الدعم الفني</li>
-                </ul>
+                <div>
+                    <div class="card-top-meta">
+                        <span class="pkg-tag"><i class="fa-solid fa-gem"></i> باقة VIP السنوية</span>
+                        <span class="badge-popular"><i class="fa-solid fa-fire"></i> الأكثر مبيعاً</span>
+                    </div>
+                    <h3>اشتراك 12 شهر</h3>
+                    <p class="price-card-desc">أفضل قيمة مقابل سعر لراحة بال طوال العام</p>
+                    <div class="price-box">
+                        <span class="price-old" id="old-12m">800 ج.م</span>
+                        <div class="price" id="price-12m">500 <span>ج.م</span></div>
+                        <span class="price-save-pill" id="save-12m">وفر 300 ج.م من قيمة التجديد</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> وصول كامل لكافة المزايا والواجهات</li>
+                        <li><i class="fa-solid fa-check"></i> أضخم مكتبة محتوى محدثة يومياً</li>
+                        <li><i class="fa-solid fa-check"></i> ثبات فائق وجودة 4K / FHD حقيقية</li>
+                        <li><i class="fa-solid fa-check"></i> تشغيل سلس على كافة الأجهزة الذكية</li>
+                        <li><i class="fa-solid fa-check"></i> أولوية قصوى في الدعم الفني والتحديثات</li>
+                    </ul>
+                </div>
                 <a href="#" class="card-btn wa-direct" id="btn-12m-link" target="_blank" rel="nofollow noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i> اشترك الآن عبر واتساب
+                    <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 12 شهر الآن
                 </a>
             </article>
 
+            <!-- 6 أشهر -->
             <article class="price-card">
-                <h3>اشتراك 6 أشهر</h3>
-                <div class="price" id="price-6m">350 <span>ج.م</span></div>
-                <ul class="features-list">
-                    <li><i class="fa-solid fa-check"></i> باقة ترفيهية لنصف عام</li>
-                    <li><i class="fa-solid fa-check"></i> محتوى مترجم ومتجدد</li>
-                    <li><i class="fa-solid fa-check"></i> جودة 4K / Full HD</li>
-                    <li><i class="fa-solid fa-check"></i> دعم الأجهزة المتوافقة</li>
-                    <li><i class="fa-solid fa-check"></i> دعم فني متواصل</li>
-                </ul>
+                <div>
+                    <div class="card-top-meta">
+                        <span class="pkg-tag"><i class="fa-regular fa-calendar-check"></i> نصف سنوي</span>
+                    </div>
+                    <h3>اشتراك 6 أشهر</h3>
+                    <p class="price-card-desc">خيار متوازن يجمع بين التوفير والمدة المتوسطة</p>
+                    <div class="price-box">
+                        <span class="price-old" id="old-6m">400 ج.م</span>
+                        <div class="price" id="price-6m">350 <span>ج.م</span></div>
+                        <span class="price-save-pill" id="save-6m">اختيار اقتصادي</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> باقة ترفيهية كاملة لنصف عام</li>
+                        <li><i class="fa-solid fa-check"></i> محتوى مترجم ومتجدد باستمرار</li>
+                        <li><i class="fa-solid fa-check"></i> جودة 4K / Full HD مستقرة</li>
+                        <li><i class="fa-solid fa-check"></i> دعم كافة الأجهزة المتوافقة</li>
+                        <li><i class="fa-solid fa-check"></i> دعم فني متواصل عبر واتساب</li>
+                    </ul>
+                </div>
                 <a href="#" class="card-btn wa-direct" id="btn-6m-link" target="_blank" rel="nofollow noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i> اشترك الآن عبر واتساب
+                    <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 6 أشهر
                 </a>
             </article>
+        </div>
+    </section>
+
+    <!-- ========================
+         قسم تشغيل الأجهزة الاحترافي (Smart Hub)
+         ======================== -->
+    <section class="apps-section" id="apps">
+        <div class="section-badge"><i class="fa-solid fa-microchip"></i> مركز التشغيل الذكي</div>
+        <h2 class="section-title">تشغيل سيرفر اكس على الأجهزة</h2>
+        <p class="section-subtitle">اختر نوع جهازك بالأسفل لتظهر لك خطوات التشغيل المباشرة وأكواد التفعيل جاهزة للنسخ بضغطة واحدة.</p>
+
+        <div class="apps-hub-wrapper">
+            <!-- شريط اختيار الجهاز -->
+            <div class="apps-tabs-nav" role="tablist" aria-label="أجهزة التشغيل">
+                <button type="button" class="app-tab-btn active" onclick="switchAppTab('android', this)">
+                    <i class="fa-brands fa-android"></i> أندرويد & TV Box
+                </button>
+                <button type="button" class="app-tab-btn" onclick="switchAppTab('smarttv', this)">
+                    <i class="fa-solid fa-tv"></i> شاشات LG & Samsung
+                </button>
+                <button type="button" class="app-tab-btn" onclick="switchAppTab('ios', this)">
+                    <i class="fa-brands fa-apple"></i> iPhone & iPad
+                </button>
+                <button type="button" class="app-tab-btn" onclick="switchAppTab('overview', this)">
+                    <i class="fa-solid fa-laptop"></i> الكمبيوتر ومعلومات عامة
+                </button>
+            </div>
+
+            <!-- 1. لوحة أندرويد و TV Box -->
+            <div class="app-panel active" id="panel-android">
+                <div class="panel-grid">
+                    <div class="panel-info-card">
+                        <div>
+                            <span class="panel-header-tag"><i class="fa-brands fa-android"></i> Android & Firestick & TV Box</span>
+                            <h3>طريقة التشغيل على أندرويد و TV Box</h3>
+                            <p>يمكنك تنزيل التطبيق الرسمي مباشرة على شاشات الأندرويد، أجهزة شاومي و Firestick، أو هواتف الأندرويد عبر تطبيق Downloader.</p>
+                            <ul class="setup-mini-steps">
+                                <li><span class="num-badge">1</span> حمّل تطبيق <strong>Downloader</strong> من متجر Google Play.</li>
+                                <li><span class="num-badge">2</span> انسخ أحد الأكواد المقابلة وضعه داخل التطبيق للتحميل.</li>
+                                <li><span class="num-badge">3</span> افتح التطبيق وأدخل بيانات اشتراكك المرسلة لك عبر واتساب.</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%A7%D9%84%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%20%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3" class="store-btn primary-wa wa-direct" target="_blank" rel="nofollow noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> استلم ملف التطبيق APK مباشرة عبر واتساب
+                        </a>
+                    </div>
+
+                    <div class="panel-codes-card">
+                        <div>
+                            <div class="codes-card-title"><i class="fa-solid fa-copy"></i> أكواد تطبيق Downloader المعتمدة</div>
+                            <p class="codes-card-sub">اضغط على أي بطاقة لنسخ الكود فوراً إلى الحافظة:</p>
+                            <div class="codes-bento-grid">
+                                <div class="code-copy-card" data-copy="5833417">
+                                    <div class="code-meta">
+                                        <span class="code-label">كود التحميل 1 (الرسمي)</span>
+                                        <span class="code-val">5833417</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ</span>
+                                </div>
+                                <div class="code-copy-card" data-copy="7814261">
+                                    <div class="code-meta">
+                                        <span class="code-label">كود التحميل 2 (إصدار V3)</span>
+                                        <span class="code-val">7814261</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ</span>
+                                </div>
+                                <div class="code-copy-card" data-copy="8539550">
+                                    <div class="code-meta">
+                                        <span class="code-label">كود التحميل 3 (البديل)</span>
+                                        <span class="code-val">8539550</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ</span>
+                                </div>
+                                <div class="code-copy-card" data-copy="2965285">
+                                    <div class="code-meta">
+                                        <span class="code-label">كود التحميل 4 (سريع)</span>
+                                        <span class="code-val">2965285</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--muted); background: var(--card); padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border);">
+                            <i class="fa-solid fa-circle-info" style="color: var(--gold);"></i> جميع الأكواد محدثة وتعمل على كافة أجهزة الأندرويد والشاشات الذكية.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. لوحة شاشات LG & SAMSUNG -->
+            <div class="app-panel" id="panel-smarttv">
+                <div class="panel-grid">
+                    <div class="panel-info-card">
+                        <div>
+                            <span class="panel-header-tag"><i class="fa-solid fa-tv"></i> Smart TV (WebOS & Tizen)</span>
+                            <h3>التشغيل على شاشات LG و SAMSUNG</h3>
+                            <p>يعمل سيرفر اكس مباشرة على متاجر الشاشات الذكية الرسمية بدون الحاجة لأي أجهزة خارجية وبأعلى ثبات.</p>
+                            <ul class="setup-mini-steps">
+                                <li><span class="num-badge">1</span> افتح متجر التطبيقات في شاشتك وابحث عن تطبيق <strong>PLAYER 0</strong>.</li>
+                                <li><span class="num-badge">2</span> بعد فتح التطبيق اختر خيار <strong>PORTAL CODE</strong>.</li>
+                                <li><span class="num-badge">3</span> أدخل كود البورتال المقابل ثم اسم المستخدم وكلمة المرور الخاصة بك.</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9%20%D9%81%D9%8A%20%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20%D8%B9%D9%84%D9%89%20%D8%B4%D8%A7%D8%B4%D8%A9%20Smart%20TV" class="store-btn primary-wa wa-direct" target="_blank" rel="nofollow noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> تواصل مع الدعم للمساعدة في إعداد شاشتك
+                        </a>
+                    </div>
+
+                    <div class="panel-codes-card">
+                        <div>
+                            <div class="codes-card-title"><i class="fa-solid fa-key"></i> كود البورتال الرسمي للشاشات</div>
+                            <p class="codes-card-sub">اضغط على الكود لنسخه واستخدامه داخل تطبيق PLAYER 0:</p>
+                            <div class="codes-bento-grid single-col">
+                                <div class="code-copy-card" data-copy="75886993">
+                                    <div class="code-meta">
+                                        <span class="code-label">PORTAL CODE (PLAYER 0)</span>
+                                        <span class="code-val" style="font-size: 22px;">75886993</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ الكود</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="font-size: 12.5px; color: var(--muted); background: var(--card); padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); line-height: 1.7;">
+                            <strong style="color: var(--text); display:block; margin-bottom:4px;"><i class="fa-solid fa-lightbulb" style="color: var(--gold);"></i> بدائل أخرى مدعومة:</strong>
+                            يدعم السيرفر أيضاً تطبيقات <strong>IBO Player</strong> و <strong>Smarters Pro</strong> و <strong>Duplecast</strong> على كافة الشاشات الذكية.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. لوحة iPhone و iPad -->
+            <div class="app-panel" id="panel-ios">
+                <div class="panel-grid">
+                    <div class="panel-info-card">
+                        <div>
+                            <span class="panel-header-tag"><i class="fa-brands fa-apple"></i> iOS & iPadOS & Apple TV</span>
+                            <h3>التشغيل على أجهزة iPhone و iPad</h3>
+                            <p>استمتع بتجربة مشاهدة فائقة السلاسة على كافة أجهزة Apple عبر المشغلات الرسمية المعتمدة في متجر App Store.</p>
+                            <ul class="setup-mini-steps">
+                                <li><span class="num-badge">1</span> حمّل تطبيق <strong>Code Play</strong> أو <strong>Smarters Lite</strong> من الأزرار المقابلة.</li>
+                                <li><span class="num-badge">2</span> في تطبيق Code Play أدخل الكود <strong>070</strong> ثم بيانات حسابك.</li>
+                                <li><span class="num-badge">3</span> أو استخدم بيانات Xtream Codes مباشرة في تطبيق Smarters.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-codes-card">
+                        <div>
+                            <div class="codes-card-title"><i class="fa-brands fa-app-store-ios"></i> كود التفعيل وروابط التحميل المباشرة</div>
+                            <p class="codes-card-sub">اضغط لنسخ كود التفعيل أو تحميل التطبيق من App Store:</p>
+                            <div class="codes-bento-grid single-col">
+                                <div class="code-copy-card" data-copy="070">
+                                    <div class="code-meta">
+                                        <span class="code-label">كود تفعيل تطبيق Code Play</span>
+                                        <span class="code-val" style="font-size: 22px;">070</span>
+                                    </div>
+                                    <span class="copy-action-pill"><i class="fa-regular fa-copy"></i> نسخ الكود</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="store-buttons-grid">
+                            <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar" class="store-btn" target="_blank" rel="nofollow noopener noreferrer">
+                                <i class="fa-brands fa-apple"></i> Smarters Player Lite
+                            </a>
+                            <a href="https://apps.apple.com/eg/app/code-play/id1661811116?l=ar" class="store-btn" target="_blank" rel="nofollow noopener noreferrer">
+                                <i class="fa-brands fa-apple"></i> تطبيق Code Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. لوحة الكمبيوتر ومعلومات عامة -->
+            <div class="app-panel" id="panel-overview">
+                <div class="panel-grid">
+                    <div class="panel-info-card">
+                        <div>
+                            <span class="panel-header-tag"><i class="fa-solid fa-laptop"></i> Windows & Mac & معلومات الخدمة</span>
+                            <h3>التشغيل على الكمبيوتر واللاب توب</h3>
+                            <p>يقدم سيرفر اكس X TV باقات رقمية عالية الاستقرار تعمل على أنظمة Windows و Mac بالإضافة إلى كافة الأجهزة الذكية، مع دعم فني مخصص طوال فترة اشتراكك.</p>
+                            <ul class="setup-mini-steps">
+                                <li><span class="num-badge">1</span> تواصل معنا لاستلام برنامج التشغيل المخصص للكمبيوتر (Windows / Mac).</li>
+                                <li><span class="num-badge">2</span> سجّل الدخول ببيانات اشتراكك المفعّلة واستمتع بالمشاهدة فوراً.</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1" class="store-btn primary-wa wa-direct" target="_blank" rel="nofollow noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> اطلب برنامج الكمبيوتر عبر واتساب
+                        </a>
+                    </div>
+
+                    <div class="panel-codes-card">
+                        <div>
+                            <div class="codes-card-title"><i class="fa-solid fa-shield-heart"></i> لماذا يختار المشتركون سيرفر اكس؟</div>
+                            <p class="codes-card-sub">مميزات تقنية تضمن لك أفضل تجربة ترفيهية:</p>
+                            <div class="codes-bento-grid single-col">
+                                <div class="code-copy-card" style="cursor: default;">
+                                    <div class="code-meta">
+                                        <span class="code-label">استقرار الخوادم</span>
+                                        <span style="font-size: 14px; font-weight: 800; color: var(--text);">خوادم سريعة بتقنية منع التقطيع 99.9%</span>
+                                    </div>
+                                    <i class="fa-solid fa-bolt" style="color: var(--gold); font-size: 18px;"></i>
+                                </div>
+                                <div class="code-copy-card" style="cursor: default;">
+                                    <div class="code-meta">
+                                        <span class="code-label">تعدد الجودات الذكي</span>
+                                        <span style="font-size: 14px; font-weight: 800; color: var(--text);">يدعم 4K / FHD / HD / SD ليتناسب مع سرعة الإنترنت</span>
+                                    </div>
+                                    <i class="fa-solid fa-Sliders" style="color: var(--red); font-size: 18px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -587,77 +1097,6 @@
             <div class="step-card"><div class="step-num">2</div><h3>تواصل واتساب</h3><p>اضغط على زر الباقة لفتح محادثة واتساب مباشرة.</p></div>
             <div class="step-card"><div class="step-num">3</div><h3>أكّد التفعيل</h3><p>بعد تأكيد العملية يصلك حسابك المفعّل بسرعة.</p></div>
             <div class="step-card"><div class="step-num">4</div><h3>شغّل جهازك</h3><p>اتبع دليل التشغيل البسيط حسب نوع شاشتك أو هاتفك.</p></div>
-        </div>
-    </section>
-
-    <!-- التشغيل والأجهزة -->
-    <section class="apps-section" id="apps">
-        <h2 class="section-title">تشغيل سيرفر اكس على الأجهزة</h2>
-        <p class="section-subtitle">اختر جهازك لمعرفة طريقة التشغيل وأكواد التفعيل (اضغط على أي كود لنسخه).</p>
-        <div class="accordion-container">
-            <div class="accordion-item active">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-tv icon-device"></i> معلومات عن سيرفر اكس X TV</span>
-                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="rich-desc-box">
-                        <h3><i class="fa-solid fa-circle-play"></i> خدمة ترفيهية متكاملة</h3>
-                        <p>يقدم سيرفر اكس باقات رقمية عالية الاستقرار على الأجهزة الذكية المتوافقة، مع دعم فني للمساعدة في الإعداد.</p>
-                    </div>
-                    <div class="feature-bullets">
-                        <div class="feature-bullet-item"><i class="fa-solid fa-bolt-lightning"></i><div><strong>أداء مستقر:</strong> خوادم سريعة ومستقرة.</div></div>
-                        <div class="feature-bullet-item"><i class="fa-solid fa-trophy"></i><div><strong>محتوى شامل:</strong> باقات ترفيهية متنوعة.</div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-brands fa-android icon-device"></i> أندرويد و TV Box</span>
-                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    <p>استخدم أكواد تطبيق Downloader التالية (اضغط للنسخ):</p>
-                    <p style="margin-top:10px;">
-                        <span class="code-badge" data-copy="5833417">5833417</span>
-                        <span class="code-badge" data-copy="7814261">7814261</span>
-                        <span class="code-badge" data-copy="8539550">8539550</span>
-                        <span class="code-badge" data-copy="2965285">2965285</span>
-                    </p>
-                    <div style="margin-top:12px;">
-                        <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%A7%D9%84%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF%20%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3" class="download-btn-inline wa-direct" target="_blank" rel="nofollow noopener noreferrer">
-                            <i class="fa-brands fa-whatsapp"></i> استلم التطبيق عبر واتساب
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-brands fa-apple icon-device"></i> iPhone و iPad</span>
-                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    <p>حمّل المشغل من متجر App Store:</p>
-                    <div style="margin-top:10px;">
-                        <a href="https://apps.apple.com/kw/app/smarters-player-lite/id1628995509?l=ar" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-apple"></i> Smarters Player Lite</a>
-                        <a href="https://apps.apple.com/eg/app/code-play/id1661811116?l=ar" class="download-btn-inline" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-apple"></i> Code Play</a>
-                    </div>
-                    <p style="margin-top:10px;">كود Code Play: <span class="code-badge" data-copy="070">070</span></p>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-tv icon-device"></i> شاشات LG و SAMSUNG</span>
-                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    <p>ابحث عن تطبيق <strong>PLAYER 0</strong> ثم اختر <strong>PORTAL CODE</strong>.</p>
-                    <p style="margin-top:8px;">كود الدخول: <span class="code-badge" data-copy="75886993">75886993</span></p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -674,7 +1113,7 @@
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p style="color: var(--text); font-size: 13.5px; line-height: 1.85; margin-bottom: 16px;">
-                        "يا جماعة بجد الخدمة ممتازة جداً، شغال معايا على شاشة سامسونج زي الفل ومفيش أي تقطيع ماتشات خالص، والدعم الفني عبر واتساب ردوا عليا بسرعة وساعدوني في الإعداد في دقيقتين. تسلم ايديكم!"
+                        "يا جماعة بجد الخدمة ممتازة جداً، شغال معايا على شاشة سامسونج زي الفل ومفيش أي تقطيع خالص، والدعم الفني عبر واتساب ردوا عليا بسرعة وساعدوني في الإعداد في دقيقتين. تسلم ايديكم!"
                     </p>
                 </div>
                 <div style="display: flex; align-items: center; gap: 10px; border-top: 1px solid var(--border); padding-top: 12px;">
@@ -693,7 +1132,7 @@
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p style="color: var(--text); font-size: 13.5px; line-height: 1.85; margin-bottom: 16px;">
-                        "ما شاء الله تبارك الله، السيرفر جداً ثقيل وثابت، اشتركت باقة الـ 12 شهر واستاهل كل ريال دفعته. البث مباشر وبجودة 4K حقيقية بدون أي تعليق وقت الضغط. يعطيكم العافية."
+                        "ما شاء الله تبارك الله، السيرفر جداً ثقيل وثابت، اشتركت باقة الـ 12 شهر ويستاهل كل ريال دفعته. جودة 4K حقيقية بدون أي تعليق وقت الضغط. يعطيكم العافية."
                     </p>
                 </div>
                 <div style="display: flex; align-items: center; gap: 10px; border-top: 1px solid var(--border); padding-top: 12px;">
@@ -731,7 +1170,7 @@
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p style="color: var(--text); font-size: 13.5px; line-height: 1.85; margin-bottom: 16px;">
-                        "الصراحة تبارك الله عليكم، الخدمة ممتازة بزاااف وكونكسيون عندي خفيفة ومستقرة، والأفلام والمسلسلات ديما مضافين جودات عالية. شكراً بزاف للدعم الفني."
+                        "الصراحة تبارك الله عليكم، الخدمة ممتازة بزاااف وكونكسيون عندي خفيفة ومستقرة، والمكتبة ديما مضاف فيها جودات عالية. شكراً بزاف للدعم الفني."
                     </p>
                 </div>
                 <div style="display: flex; align-items: center; gap: 10px; border-top: 1px solid var(--border); padding-top: 12px;">
@@ -762,7 +1201,7 @@
         </div>
     </section>
 
-    <!-- قسم الأسئلة الشائعة الاحترافي (مع الكلمات المفتاحية وسحب احترافي) -->
+    <!-- قسم الأسئلة الشائعة -->
     <section class="faq-section" id="faq" aria-labelledby="faq-title">
         <h2 class="section-title" id="faq-title">الأسئلة الشائعة والاستفسارات</h2>
         <p class="section-subtitle">كل ما ترغب في معرفته حول أسعار الباقات، التجديد، وطريقة التشغيل الذكي.</p>
@@ -794,7 +1233,7 @@
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>بالتأكيد! نوفر لك فرصة طلب <strong>تجربة مجانية لمدة 24 ساعة</strong> تتيح لك اختبار كفاءة سيرفر اكس وثبات البث على جهازك المنزلي أو هاتفك قبل تأكيد عملية الاشتراك الرسمي.</p>
+                    <p>بالتأكيد! نوفر لك فرصة طلب <strong>تجربة مجانية لمدة 24 ساعة</strong> تتيح لك اختبار كفاءة سيرفر اكس وثبات الخدمة على جهازك المنزلي أو هاتفك قبل تأكيد عملية الاشتراك الرسمي.</p>
                 </div>
             </div>
 
@@ -804,7 +1243,7 @@
                     <i class="fa-solid fa-chevron-down toggle-icon"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>يعمل سيرفر اكس بكفاءة عالية وبدون تقطيع على مختلف الأجهزة؛ بما في ذلك <strong>شاشات سمارت (Smart TV)</strong> مثل سامسونج وإอล جي، هواتف أندرويد وآيفون، أجهزة TV Box، وأجهزة الكمبيوتر واللاب توب.</p>
+                    <p>يعمل سيرفر اكس بكفاءة عالية وبدون تقطيع على مختلف الأجهزة؛ بما في ذلك <strong>شاشات سمارت (Smart TV)</strong> مثل سامسونج وإل جي، هواتف أندرويد وآيفون، أجهزة TV Box، وأجهزة الكمبيوتر واللاب توب.</p>
                 </div>
             </div>
 
@@ -833,7 +1272,7 @@
     </div>
 </footer>
 
-<a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B5%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20X%20TV" class="whatsapp-float wa-direct" target="_blank" rel="nofollow noopener noreferrer" aria-label="التواصل عبر واتساب">
+<a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B1%D9%81%D8%B1%20%D8%A5%D9%83%D8%B3%20X%20TV" class="whatsapp-float wa-direct" target="_blank" rel="nofollow noopener noreferrer" aria-label="التواصل عبر واتساب">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
@@ -909,8 +1348,18 @@
     }, { passive: true });
 
     const prices = {
-        egypt: { m3: '200', m6: '350', m12: '500', unit: 'ج.م', label3: '200 ج.م', label6: '350 ج.م', label12: '500 ج.م' },
-        intl: { m3: '15', m6: '20', m12: '30', unit: '$', label3: '$15', label6: '$20', label12: '$30' }
+        egypt: {
+            m3: '200', m6: '350', m12: '500', unit: 'ج.م',
+            old3: '250 ج.م', old6: '400 ج.م', old12: '800 ج.م',
+            save12: 'وفر 300 ج.م من قيمة التجديد',
+            label3: '200 ج.م', label6: '350 ج.م', label12: '500 ج.م'
+        },
+        intl: {
+            m3: '15', m6: '20', m12: '30', unit: '$',
+            old3: '$20', old6: '$30', old12: '$60',
+            save12: 'وفر 50% مع الباقة السنوية',
+            label3: '$15', label6: '$20', label12: '$30'
+        }
     };
 
     function updatePackageLinks() {
@@ -918,6 +1367,11 @@
         document.getElementById('price-3m').innerHTML = `${data.m3} <span>${data.unit}</span>`;
         document.getElementById('price-6m').innerHTML = `${data.m6} <span>${data.unit}</span>`;
         document.getElementById('price-12m').innerHTML = `${data.m12} <span>${data.unit}</span>`;
+
+        document.getElementById('old-3m').textContent = data.old3;
+        document.getElementById('old-6m').textContent = data.old6;
+        document.getElementById('old-12m').textContent = data.old12;
+        document.getElementById('save-12m').textContent = data.save12;
 
         const makeUrl = (pkgTitle, priceText) => {
             const text = `السلام عليكم، أريد الاشتراك في سيرفر اكس (X TV)\n- الباقة: ${pkgTitle} (${priceText})\n- الجهاز: ${selectedDevice}`;
@@ -946,6 +1400,17 @@
     window.setDevice = setDevice;
 
     updatePackageLinks();
+
+    // التبديل بين تبويبات تشغيل الأجهزة
+    function switchAppTab(panelId, btnEl) {
+        document.querySelectorAll('.app-tab-btn').forEach((btn) => btn.classList.remove('active'));
+        document.querySelectorAll('.app-panel').forEach((panel) => panel.classList.remove('active'));
+
+        if (btnEl) btnEl.classList.add('active');
+        const target = document.getElementById('panel-' + panelId);
+        if (target) target.classList.add('active');
+    }
+    window.switchAppTab = switchAppTab;
 
     const tickerKeywords = [
         { text: 'اشتراك سيرفر اكس', msg: 'السلام عليكم، أريد الاشتراك في سيرفر اكس X TV' },
@@ -1015,15 +1480,6 @@
         sliderTimer = setInterval(() => showSlide((currentSlide + 1) % slides.length), 4500);
     }
 
-    function toggleAccordion(headerEl) {
-        const item = headerEl.parentElement;
-        const isActive = item.classList.contains('active');
-        document.querySelectorAll('.accordion-item').forEach((acc) => acc.classList.remove('active'));
-        if (!isActive) item.classList.add('active');
-    }
-    window.toggleAccordion = toggleAccordion;
-
-    // دالة سحب الأسئلة الشائعة باحترافية (FAQ Dropdown)
     function toggleFaq(btnEl) {
         const item = btnEl.parentElement;
         const isOpen = item.classList.contains('active');
@@ -1045,26 +1501,44 @@
         if (!toast) return;
         toast.textContent = message;
         toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 1800);
+        setTimeout(() => toast.classList.remove('show'), 2000);
     }
 
-    document.querySelectorAll('[data-copy]').forEach((badge) => {
-        badge.addEventListener('click', () => {
-            const value = badge.getAttribute('data-copy');
+    // نسخ الأكواد مع تأثير بصري فخم
+    document.querySelectorAll('[data-copy]').forEach((card) => {
+        card.addEventListener('click', () => {
+            const value = card.getAttribute('data-copy');
             if (!value) return;
-            const temp = document.createElement('textarea');
-            temp.value = value;
-            document.body.appendChild(temp);
-            temp.select();
-            try {
-                document.execCommand('copy');
-                showToast(`تم نسخ الكود: ${value}`);
-            } catch {
-                showToast(value);
+            const pill = card.querySelector('.copy-action-pill');
+            const originalHTML = pill ? pill.innerHTML : '';
+
+            const triggerSuccess = () => {
+                showToast(`✓ تم نسخ الكود بنجاح: ${value}`);
+                card.classList.add('copied');
+                if (pill) pill.innerHTML = `<i class="fa-solid fa-check"></i> تم النسخ`;
+                setTimeout(() => {
+                    card.classList.remove('copied');
+                    if (pill) pill.innerHTML = originalHTML;
+                }, 1600);
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(value).then(triggerSuccess).catch(() => fallbackCopy(value, triggerSuccess));
+            } else {
+                fallbackCopy(value, triggerSuccess);
             }
-            document.body.removeChild(temp);
         });
     });
+
+    function fallbackCopy(value, callback) {
+        const temp = document.createElement('textarea');
+        temp.value = value;
+        document.body.appendChild(temp);
+        temp.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(temp);
+        callback();
+    }
 
     const legalContent = {
         privacy: {
