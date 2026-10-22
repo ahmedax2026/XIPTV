@@ -4,6 +4,22 @@ const themeToggleBtn = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const htmlElement = document.documentElement;
 
+function getSavedTheme() {
+    try {
+        return localStorage.getItem('xiptv-theme') || 'light';
+    } catch {
+        return 'light';
+    }
+}
+
+function saveTheme(theme) {
+    try {
+        localStorage.setItem('xiptv-theme', theme);
+    } catch {
+        // Ignore storage errors in restricted modes/bots
+    }
+}
+
 function applyTheme(theme) {
     const safeTheme = theme === 'dark' ? 'dark' : 'light';
     htmlElement.setAttribute('data-theme', safeTheme);
@@ -23,10 +39,10 @@ if (themeToggleBtn) {
         const currentTheme = htmlElement.getAttribute('data-theme') || 'light';
         const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
         applyTheme(nextTheme);
-        localStorage.setItem('xiptv-theme', nextTheme);
+        saveTheme(nextTheme);
     });
 }
-applyTheme(localStorage.getItem('xiptv-theme') || 'light');
+applyTheme(getSavedTheme());
 
 const menuToggle = document.getElementById('menuToggle');
 const header = document.querySelector('header');
@@ -51,14 +67,25 @@ function updateProgress() {
 window.addEventListener('scroll', updateProgress, { passive: true });
 updateProgress();
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+// تفعيل أنيميشن الظهور للمستخدمين فقط مع إبقاء المحتوى مكشوفاً بالكامل لعناكب جوجل
+const isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+if (!isBot && 'IntersectionObserver' in window) {
+    htmlElement.classList.add('js-ready');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+} else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+}
 
 function toggleAccordion(headerEl) {
+    if (!headerEl || !headerEl.parentElement) return;
     const item = headerEl.parentElement;
     const isActive = item.classList.contains('active');
     document.querySelectorAll('.accordion-item').forEach((acc) => acc.classList.remove('active'));
@@ -141,7 +168,7 @@ function buildTicker() {
     const itemsHTML = tickerKeywords.map((k, i) => {
         const link = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(k.msg)}`;
         const accent = i % 2 === 0 ? 'accent-red' : 'accent-gold';
-        return `<a href="${link}" class="ticker-item ${accent}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i>${k.text}</a>`;
+        return `<a href="${link}" class="ticker-item ${accent}" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-whatsapp"></i>${k.text}</a>`;
     }).join('');
     track.innerHTML = itemsHTML + itemsHTML;
 }
@@ -161,6 +188,7 @@ function playProgressBar() {
 }
 
 function showSlide(index) {
+    if (!slides.length || !slides[index]) return;
     slides.forEach((s) => s.classList.remove('active'));
     document.querySelectorAll('.dot').forEach((d) => d.classList.remove('active'));
     slides[index].classList.add('active');
@@ -178,6 +206,7 @@ function goToSlide(index) {
 window.goToSlide = goToSlide;
 
 function startSliderTimer() {
+    if (!slides.length) return;
     sliderTimer = setInterval(() => goToSlide((currentSlide + 1) % slides.length), 4500);
 }
 
@@ -192,6 +221,7 @@ if (slides.length) {
     if (dotsWrap) {
         slides.forEach((_, i) => {
             const dot = document.createElement('button');
+            dot.type = 'button';
             dot.className = 'dot' + (i === 0 ? ' active' : '');
             dot.setAttribute('aria-label', 'الانتقال للشريحة ' + (i + 1));
             dot.addEventListener('click', () => goToSlide(i));
@@ -222,7 +252,7 @@ function animateCounters() {
 }
 
 const stats = document.querySelector('.stats-section');
-if (stats) {
+if (stats && !isBot && 'IntersectionObserver' in window) {
     const once = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             animateCounters();
@@ -243,6 +273,7 @@ function showToast(message) {
 document.querySelectorAll('[data-copy]').forEach((btn) => {
     btn.addEventListener('click', async () => {
         const value = btn.getAttribute('data-copy');
+        if (!value) return;
         try {
             await navigator.clipboard.writeText(value);
             showToast('تم نسخ الكود');
