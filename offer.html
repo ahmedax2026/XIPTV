@@ -1364,7 +1364,7 @@
             menuToggle.setAttribute('aria-expanded', String(open));
         });
         document.querySelectorAll('.site-nav a').forEach((link) => {
-            link.addEventListener('click', () => header.classList.remove('nav-open'));
+            link.addEventListener('click', () => { header.classList.remove('nav-open'); menuToggle.setAttribute('aria-expanded', 'false'); });
         });
     }
 
@@ -1424,8 +1424,8 @@
 
     function setDevice(deviceName, btnEl) {
         selectedDevice = deviceName;
-        document.querySelectorAll('.device-pill').forEach((b) => b.classList.remove('active'));
-        if (btnEl) { btnEl.classList.add('active'); btnEl.setAttribute('aria-selected', 'true'); }
+        document.querySelectorAll('.device-pill').forEach((b) => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+        if (btnEl) { btnEl.classList.add('active'); btnEl.setAttribute('aria-pressed', 'true'); }
         updatePackageLinks();
     }
     window.setDevice = setDevice;
@@ -1440,7 +1440,7 @@
         });
         document.querySelectorAll('.app-panel').forEach((panel) => panel.classList.remove('active'));
 
-        if (btnEl) btnEl.classList.add('active');
+        if (btnEl) { btnEl.classList.add('active'); btnEl.setAttribute('aria-selected', 'true'); }
         const target = document.getElementById('panel-' + panelId);
         if (target) target.classList.add('active');
     }
