@@ -672,7 +672,7 @@
 <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
 
 <header id="mainHeader">
-    <a href="#" class="brand-logo" aria-label="X TV الصفحة الرئيسية">
+    <a href="#mainHeader" class="brand-logo" aria-label="X TV - أعلى الصفحة">
         <img src="/logo.png" alt="سيرفر اكس X TV" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('fallbackGraphic').style.display='flex';">
         <div class="logo-graphic" id="fallbackGraphic" style="display:none;"><span class="arrows">❯❯</span><span class="x-white">X</span></div>
         <div class="brand-text-container">
@@ -813,7 +813,7 @@
                         <li><i class="fa-solid fa-check"></i> دعم فني طوال فترة الاشتراك</li>
                     </ul>
                 </div>
-                <a href="#" class="card-btn wa-direct" id="btn-3m-link" target="_blank" rel="nofollow noopener noreferrer">
+                <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%203%20%D8%A3%D8%B4%D9%87%D8%B1%20(200%20%D8%AC.%D9%85)" class="card-btn wa-direct" id="btn-3m-link" target="_blank" rel="nofollow noopener noreferrer">
                     <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 3 أشهر
                 </a>
             </article>
@@ -840,7 +840,7 @@
                         <li><i class="fa-solid fa-check"></i> أولوية قصوى في الدعم الفني والتحديثات</li>
                     </ul>
                 </div>
-                <a href="#" class="card-btn wa-direct" id="btn-12m-link" target="_blank" rel="nofollow noopener noreferrer">
+                <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%2012%20%D8%B4%D9%87%D8%B1%20(500%20%D8%AC.%D9%85)" class="card-btn wa-direct" id="btn-12m-link" target="_blank" rel="nofollow noopener noreferrer">
                     <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 12 شهر الآن
                 </a>
             </article>
@@ -866,7 +866,7 @@
                         <li><i class="fa-solid fa-check"></i> دعم فني متواصل عبر واتساب</li>
                     </ul>
                 </div>
-                <a href="#" class="card-btn wa-direct" id="btn-6m-link" target="_blank" rel="nofollow noopener noreferrer">
+                <a href="https://wa.me/201212515179?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%206%20%D8%A3%D8%B4%D9%87%D8%B1%20(350%20%D8%AC.%D9%85)" class="card-btn wa-direct" id="btn-6m-link" target="_blank" rel="nofollow noopener noreferrer">
                     <i class="fa-brands fa-whatsapp"></i> اشترك في باقة 6 أشهر
                 </a>
             </article>
@@ -1432,14 +1432,6 @@
         track.innerHTML = itemsHTML + itemsHTML;
     }
     buildTicker();
-
-    document.addEventListener('click', (e) => {
-        const waLink = e.target.closest('a[href^="https://wa.me/"]');
-        if (waLink) {
-            e.preventDefault();
-            window.open(waLink.href, '_blank', 'noopener,noreferrer');
-        }
-    });
 
     let currentSlide = 0;
     let sliderTimer = null;
