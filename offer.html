@@ -913,22 +913,22 @@
         <div class="apps-hub-wrapper">
             <!-- شريط اختيار الجهاز -->
             <div class="apps-tabs-nav" role="tablist" aria-label="أجهزة التشغيل">
-                <button type="button" class="app-tab-btn active" onclick="switchAppTab('android', this)">
+                <button type="button" class="app-tab-btn active" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="true" onclick="switchAppTab('android', this)">
                     <i class="fa-brands fa-android"></i> أندرويد & TV Box
                 </button>
-                <button type="button" class="app-tab-btn" onclick="switchAppTab('smarttv', this)">
+                <button type="button" class="app-tab-btn" role="tab" id="tab-smarttv" aria-controls="panel-smarttv" aria-selected="false" onclick="switchAppTab('smarttv', this)">
                     <i class="fa-solid fa-tv"></i> شاشات LG & Samsung
                 </button>
-                <button type="button" class="app-tab-btn" onclick="switchAppTab('ios', this)">
+                <button type="button" class="app-tab-btn" role="tab" id="tab-ios" aria-controls="panel-ios" aria-selected="false" onclick="switchAppTab('ios', this)">
                     <i class="fa-brands fa-apple"></i> iPhone & iPad
                 </button>
-                <button type="button" class="app-tab-btn" onclick="switchAppTab('overview', this)">
+                <button type="button" class="app-tab-btn" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="false" onclick="switchAppTab('overview', this)">
                     <i class="fa-solid fa-laptop"></i> الكمبيوتر ومعلومات عامة
                 </button>
             </div>
 
             <!-- 1. لوحة أندرويد و TV Box -->
-            <div class="app-panel active" id="panel-android">
+            <div class="app-panel active" id="panel-android" role="tabpanel" aria-labelledby="tab-android">
                 <div class="panel-grid">
                     <div class="panel-info-card">
                         <div>
@@ -989,7 +989,7 @@
             </div>
 
             <!-- 2. لوحة شاشات LG & SAMSUNG -->
-            <div class="app-panel" id="panel-smarttv">
+            <div class="app-panel" id="panel-smarttv" role="tabpanel" aria-labelledby="tab-smarttv">
                 <div class="panel-grid">
                     <div class="panel-info-card">
                         <div>
@@ -1030,7 +1030,7 @@
             </div>
 
             <!-- 3. لوحة iPhone و iPad -->
-            <div class="app-panel" id="panel-ios">
+            <div class="app-panel" id="panel-ios" role="tabpanel" aria-labelledby="tab-ios">
                 <div class="panel-grid">
                     <div class="panel-info-card">
                         <div>
@@ -1073,7 +1073,7 @@
             </div>
 
             <!-- 4. لوحة الكمبيوتر ومعلومات عامة -->
-            <div class="app-panel" id="panel-overview">
+            <div class="app-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
                 <div class="panel-grid">
                     <div class="panel-info-card">
                         <div>
@@ -1425,7 +1425,7 @@
     function setDevice(deviceName, btnEl) {
         selectedDevice = deviceName;
         document.querySelectorAll('.device-pill').forEach((b) => b.classList.remove('active'));
-        if (btnEl) btnEl.classList.add('active');
+        if (btnEl) { btnEl.classList.add('active'); btnEl.setAttribute('aria-selected', 'true'); }
         updatePackageLinks();
     }
     window.setDevice = setDevice;
@@ -1434,7 +1434,10 @@
 
     // التبديل بين تبويبات تشغيل الأجهزة
     function switchAppTab(panelId, btnEl) {
-        document.querySelectorAll('.app-tab-btn').forEach((btn) => btn.classList.remove('active'));
+        document.querySelectorAll('.app-tab-btn').forEach((btn) => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-selected', 'false');
+        });
         document.querySelectorAll('.app-panel').forEach((panel) => panel.classList.remove('active'));
 
         if (btnEl) btnEl.classList.add('active');
