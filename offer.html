@@ -683,6 +683,14 @@
             .whatsapp-float { width: 50px; height: 50px; left: 14px; bottom: 72px; font-size: 24px; }
             .mobile-cta { display: block; }
         }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 </head>
 <body data-theme="light">
@@ -1405,6 +1413,8 @@
         selectedRegion = region;
         document.getElementById('btnEgypt')?.classList.toggle('active', region === 'egypt');
         document.getElementById('btnIntl')?.classList.toggle('active', region === 'intl');
+        document.getElementById('btnEgypt')?.setAttribute('aria-pressed', String(region === 'egypt'));
+        document.getElementById('btnIntl')?.setAttribute('aria-pressed', String(region === 'intl'));
         updatePackageLinks();
     }
     window.setRegion = setRegion;
