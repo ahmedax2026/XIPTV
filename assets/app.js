@@ -52,7 +52,7 @@ if (menuToggle && header) {
         menuToggle.setAttribute('aria-expanded', String(open));
     });
     document.querySelectorAll('.site-nav a').forEach((link) => {
-        link.addEventListener('click', () => header.classList.remove('nav-open'));
+        link.addEventListener('click', () => { header.classList.remove('nav-open'); menuToggle.setAttribute('aria-expanded', 'false'); });
     });
 }
 
